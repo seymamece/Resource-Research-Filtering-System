@@ -17736,7 +17736,545 @@
       "minutes": 21
     }
   ],
-  "passages": [],
+  "passages": [
+    {
+      "id": "p-25464a9f",
+      "itemId": "i-fa4cd691",
+      "where": "paragraph 5",
+      "quote": "for the heroes of spirit, spiritual reality and vision who aspire to the same orbit as the Companions of God's Messenger, the stars ornamenting the sky of prophethood",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 1
+        }
+      ],
+      "use": "definition",
+      "status": "proposed"
+    },
+    {
+      "id": "p-68c442fe",
+      "itemId": "i-fa4cd691",
+      "where": "paragraph 5",
+      "quote": "who are aware of the era they are living in; who are wellequipped with science and knowledge; who always keep and observe the balance between this world and the next",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 1
+        }
+      ],
+      "use": "definition",
+      "status": "proposed"
+    },
+    {
+      "id": "p-4c90eed5",
+      "itemId": "i-fa4cd691",
+      "where": "paragraph 7",
+      "quote": "Verily, God does not change the condition of a people until they change that which is within themselves",
+      "qref": "13:11",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 1
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-d5d35511",
+      "itemId": "i-3b2bd809",
+      "where": "paragraph 3",
+      "quote": "Good morals and sound conscience, and good manners and virtues, are like a currency universally acceptable and which is not affected by changes in the values of other means of exchange.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 2
+        }
+      ],
+      "use": "example",
+      "status": "proposed"
+    },
+    {
+      "id": "p-b07f1a8e",
+      "itemId": "i-3b2bd809",
+      "where": "paragraph 8",
+      "quote": "Life blossoms during childhood. During youth it grows through inward tension and spiritual struggle on the way of truth.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 2
+        }
+      ],
+      "use": "example",
+      "status": "proposed"
+    },
+    {
+      "id": "p-0136e5c6",
+      "itemId": "i-bb2fe5f3",
+      "where": "paragraph 7",
+      "quote": "Worship seems to be a strenuous demand, but in reality gives indescribable peace and comfort.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 4
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-9c7491fd",
+      "itemId": "i-bb2fe5f3",
+      "where": "paragraph 7",
+      "quote": "Having belief, the believing soldier sees in every event a door to the wealth of God’s Mercy and knocks on it via prayer and supplication.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 4
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-a80f2742",
+      "itemId": "i-bb2fe5f3",
+      "where": "paragraph 5",
+      "quote": "One soldier takes the right fork. Shouldering his heavy load, his heart and soul are simultaneously freed of any burdensome debt and fear.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 4
+        }
+      ],
+      "use": "story",
+      "status": "proposed"
+    },
+    {
+      "id": "p-1cb6755c",
+      "itemId": "i-d49779af",
+      "where": "paragraph 2",
+      "quote": "Every writer should be well-mannered in words and behavior, refined in language and writing. Otherwise, much damage can be done for the sake of an illusory good.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 6
+        }
+      ],
+      "use": "example",
+      "status": "proposed"
+    },
+    {
+      "id": "p-85657893",
+      "itemId": "i-d49779af",
+      "where": "paragraph 4",
+      "quote": "The media should avoid serving individual fancies and interests, for their main purpose is to enlighten and serve the nation as a whole.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 6
+        }
+      ],
+      "use": "definition",
+      "status": "proposed"
+    },
+    {
+      "id": "p-21fc5cfc",
+      "itemId": "i-1aedd3ef",
+      "where": "section 'The essentials of remaining spirited', paragraph 11",
+      "quote": "if you help bring others to life, you also help yourself to stay alive in spirit. It is unthinkable for a person who resurrects others to personally remain dead.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 7
+        }
+      ],
+      "use": "example",
+      "status": "proposed"
+    },
+    {
+      "id": "p-5ce23067",
+      "itemId": "i-1aedd3ef",
+      "where": "section 'The essentials of remaining spirited', paragraph 12",
+      "quote": "knowing the essential value of time and blowing life into every moment with good deeds and positive action is an indispensable essential",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 7
+        }
+      ],
+      "use": "definition",
+      "status": "proposed"
+    },
+    {
+      "id": "p-18163249",
+      "itemId": "i-e494293e",
+      "where": "paragraph 1",
+      "quote": "Iqra' is thus a universal injunction, an opening for each individual to move away from imperfection and toward virtue and happiness both in this world and the next.",
+      "qref": "96:1",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 9
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-04a59ee1",
+      "itemId": "i-e494293e",
+      "where": "paragraph 3",
+      "quote": "only humanity can read what is written. That is why the Qur'an tells us to \"read\" instead of to \"behold\"",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 9
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-ea685168",
+      "itemId": "i-a7e3faad",
+      "where": "paragraph 1",
+      "quote": "Respect of parents is a primary and sacred obligation. If you do not respect your parents properly, you are disobeying God Almighty.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 10
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-24d2ed25",
+      "itemId": "i-a7e3faad",
+      "where": "paragraph 2",
+      "quote": "respecting parents is a debt of human gratitude as well as a religious obligation",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 10
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-109bd69e",
+      "itemId": "i-5020305f",
+      "where": "paragraph 3",
+      "quote": "Religion is not only an assemblage of rituals and worship, its goals include giving meaning to humanity and the universe",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 14
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-79394eb3",
+      "itemId": "i-fea46551",
+      "where": "paragraph 1",
+      "quote": "Khulla means sincere friendship. It can also denote brother/sisterhood, or loyal friendship. Some have interpreted khulla as penetrating into the depth of something to change its nature, or enveloping it from all sides so that it gains a second nature.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 17
+        }
+      ],
+      "use": "definition",
+      "status": "proposed"
+    },
+    {
+      "id": "p-8a651429",
+      "itemId": "i-a7b8e1b5",
+      "where": "paragraph 3",
+      "quote": "One day several bright young people came to me. They were seeking an effective deterrent to the dangers arising from modern worldly life, youth, and animal desires.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 20
+        }
+      ],
+      "use": "story",
+      "status": "proposed"
+    },
+    {
+      "id": "p-e4b1bb68",
+      "itemId": "i-a7b8e1b5",
+      "where": "paragraph 9",
+      "quote": "the dissolute, religiously forbidden pleasures of youth are like poisonous sweets",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 20
+        }
+      ],
+      "use": "example",
+      "status": "proposed"
+    },
+    {
+      "id": "p-028c8ab6",
+      "itemId": "i-a7b8e1b5",
+      "where": "paragraph 10",
+      "quote": "In short, youth passes. Wasting it results in infinite misfortune and pain in both worlds.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 20
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-e32e1723",
+      "itemId": "i-6ec355bb",
+      "where": "paragraph 1",
+      "quote": "Those who declare: \"Our Lord is God,\" and afterwards are straightforward, the angels descend upon them",
+      "qref": "41:30",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 22
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-70bfae6b",
+      "itemId": "i-6ec355bb",
+      "where": "paragraph 3",
+      "quote": "Declare: \"I have believed in God,\" and then be straightforward, a saying that concisely sums up all essential elements of belief and conduct.",
+      "href": "Muslim 38",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 22
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-d5a94dc9",
+      "itemId": "i-6ec355bb",
+      "where": "paragraph 12",
+      "quote": "The first step is consistency, where a traveler strives to embody Islam's theoretical and practical dimensions. Success in this continuous effort brings one's carnal self under control.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 22
+        }
+      ],
+      "use": "definition",
+      "status": "proposed"
+    },
+    {
+      "id": "p-7bc7160d",
+      "itemId": "i-606adc62",
+      "where": "paragraph 22",
+      "quote": "Putting knowledge into practice or practicing the religious commandments in daily life after learning them is an essential of Islam.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 14
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-56bd4051",
+      "itemId": "i-5b0e219d",
+      "where": "paragraph 7",
+      "quote": "True knowledge shows itself through art. If one has never produced anything in the name of art, how can we say that he or she knows very much?",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 25
+        }
+      ],
+      "use": "example",
+      "status": "proposed"
+    },
+    {
+      "id": "p-153bbf06",
+      "itemId": "i-5b0e219d",
+      "where": "paragraph 6",
+      "quote": "diverse kinds of calligraphy, brilliant gildings; and embroideries as beautiful and fine as butterfly wings, that this once magnificent world of Islam became a gallery of invaluable beauty.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 25
+        }
+      ],
+      "use": "example",
+      "status": "proposed"
+    },
+    {
+      "id": "p-c65bdc12",
+      "itemId": "i-606adc62",
+      "where": "paragraph 3",
+      "quote": "wisdom begins with reflection, curiosity, wonder, and the zeal to study and search, and continues with obedience and worship, ending in spiritual pleasures and eternal happiness.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 27
+        }
+      ],
+      "use": "definition",
+      "status": "proposed"
+    },
+    {
+      "id": "p-95a41b7c",
+      "itemId": "i-606adc62",
+      "where": "paragraph 1",
+      "quote": "Righteous deeds are the willed outcome of knowledge applied, and the beginning of new Divine gifts.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 27
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-8d1de3ff",
+      "itemId": "i-5a966bbc",
+      "where": "paragraph 5",
+      "quote": "Since one may acquire a second nature through education and habituation, moralists divide nature into good and bad.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 28
+        }
+      ],
+      "use": "definition",
+      "status": "proposed"
+    },
+    {
+      "id": "p-01e904f7",
+      "itemId": "i-5a966bbc",
+      "where": "paragraph 11",
+      "quote": "A heart open to good nature is like a very broad space in which one can bury one's anger and rage.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 28
+        }
+      ],
+      "use": "example",
+      "status": "proposed"
+    },
+    {
+      "id": "p-f03ffb5a",
+      "itemId": "i-e82ac01b",
+      "where": "paragraph 4",
+      "quote": "Absolute justice does not permit the violation of the rights of even a single innocent person, regardless of the public benefit that may be at stake.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 29
+        }
+      ],
+      "use": "definition",
+      "status": "proposed"
+    },
+    {
+      "id": "p-80683067",
+      "itemId": "i-e82ac01b",
+      "where": "section 'The Risk of Abuse in Relative Justice', paragraph 5",
+      "quote": "Those entrusted with positions of leadership and governance are obliged, as far as possible, to uphold absolute justice, for it represents the highest ideal.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 29
+        }
+      ],
+      "use": "definition",
+      "status": "proposed"
+    },
+    {
+      "id": "p-a86e5c6f",
+      "itemId": "i-8ab7acb6",
+      "where": "paragraph 1",
+      "quote": "O you Messengers! Partake of (God’s) pure and wholesome bounties, and always act righteously.",
+      "qref": "23:51",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 32
+        }
+      ],
+      "use": "faith",
+      "status": "proposed"
+    },
+    {
+      "id": "p-0980d508",
+      "itemId": "i-8ab7acb6",
+      "where": "paragraph 2",
+      "quote": "Do not take a person’s prayers and fasting as basis; you should see whether a given person speaks truth, remains faithful about something entrusted to him, and observes what is lawful and forbidden while carrying out worldly affairs.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 32
+        }
+      ],
+      "use": "story",
+      "status": "proposed"
+    },
+    {
+      "id": "p-5da69e74",
+      "itemId": "i-8ab7acb6",
+      "where": "section 'The bitter end of one with forbidden food in his stomach', paragraph 7",
+      "quote": "when one pursues the lawful and shows due effort, it will form a “virtuous circle” leading to further good, righteous deeds over time",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 32
+        }
+      ],
+      "use": "example",
+      "status": "proposed"
+    },
+    {
+      "id": "p-606a270d",
+      "itemId": "i-ee1fbebe",
+      "where": "paragraph 1",
+      "quote": "Ask someone who knows; two lots of knowledge are better than one.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 34
+        }
+      ],
+      "use": "example",
+      "status": "proposed"
+    },
+    {
+      "id": "p-699f9419",
+      "itemId": "i-ee1fbebe",
+      "where": "paragraph 2",
+      "quote": "Consultation is the first requirement to reach the right decision. Decisions reached without due reflection or proper consultation usually come to nothing.",
+      "topics": [
+        {
+          "age": 18,
+          "topic": 34
+        }
+      ],
+      "use": "definition",
+      "status": "proposed"
+    }
+  ],
   "topicHints": [
     {
       "id": "h-d38f8b24",
