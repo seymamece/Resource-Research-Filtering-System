@@ -1,7 +1,844 @@
 {
   "version": 1,
-  "resources": [],
-  "items": [],
+  "resources": [
+    {
+      "id": "r-67a85b09",
+      "kind": "website",
+      "title": "Weekend school teacher training and resources (English, Turkish)",
+      "privateName": "BrightRoot",
+      "url": "https://brightroot.org/",
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Courses for weekend school teachers: pedagogy, classroom management, working with parents."
+    },
+    {
+      "id": "r-d0d317c9",
+      "kind": "website",
+      "title": "Character curriculum for primary school (English)",
+      "privateName": "Character First Education",
+      "url": "https://characterfirsteducation.com/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 12
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "One character quality at a time, with stories, crafts, colouring pages and videos."
+    },
+    {
+      "id": "r-d6f88e27",
+      "kind": "website",
+      "title": "Digital guide and education resources (Turkish)",
+      "privateName": "Dijital Rehber ve Eğitim Kaynakları",
+      "url": "https://scientific-daphne-68d.notion.site/Dijital-Rehber-ve-E-itim-Kaynaklar-3236176a6f1880a29b72f79e9acb7774",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "A shared page of links. It needs JavaScript to read, so its contents are still to check."
+    },
+    {
+      "id": "r-7acbf1ed",
+      "kind": "website",
+      "title": "Children's reading platform with quizzes (Turkish, English)",
+      "privateName": "Kitap Okuyorum",
+      "url": "https://kitapokuyorum.org/",
+      "languages": [
+        "tr",
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Books with reading tests and rewards. Only parents can register."
+    },
+    {
+      "id": "r-36b14a10",
+      "kind": "course",
+      "title": "Children's Qur'an workshop (Turkish)",
+      "privateName": "Mavera Akademi - Kur'an-ı Kerim Atölyesi (Çocuklar için)",
+      "url": "https://maveraakademi.com/ders/kuran-at%C3%B6lye",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 7,
+        "max": 12
+      },
+      "strands": [
+        "quran"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-9e834bce",
+      "kind": "website",
+      "title": "Mentoring programmes for young people (English)",
+      "privateName": "Mentor Portal",
+      "url": "https://mentorportal.org/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Programmes for several ages; which of them are open to use is still to check."
+    },
+    {
+      "id": "r-fbd8fb43",
+      "kind": "website",
+      "title": "Articles on the Prophet's life and way (Turkish)",
+      "privateName": "Peygamber Yolu",
+      "url": "https://peygamberyolu.com/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "siyer"
+      ],
+      "lenses": [
+        "hadith-sunnah"
+      ],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-4d811e1f",
+      "kind": "website",
+      "title": "Guidance curriculum for grades 7 to 12 (Turkish)",
+      "privateName": "Okumazamani",
+      "url": "https://okumazamani.de/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 12,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "A guidance book for each grade, quizzes and multimedia."
+    },
+    {
+      "id": "r-9610ddc0",
+      "kind": "website",
+      "title": "Pastoral care and wellbeing curriculum (English)",
+      "privateName": "Welkin - Pastoral Care & Wellbeing",
+      "url": "https://sites.google.com/auf.net.au/pcw-curriculum/home",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 12
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life",
+        "nature"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Lessons by school year on manners, kindness, bullying and caring for the environment. The age range is still to check."
+    },
+    {
+      "id": "r-316a8bd7",
+      "kind": "website",
+      "title": "Talk topics (Turkish)",
+      "privateName": "Sohbet Konuları - can-ada.net",
+      "url": "https://can-ada.net/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "On 2026-10-13 the home page showed unrelated general content, not talk topics."
+    },
+    {
+      "id": "r-1a55f20b",
+      "kind": "website",
+      "title": "The Prophet's life for children: games, videos and radio (Turkish)",
+      "privateName": "Son Peygamber Çocuk",
+      "url": "https://www.sonpeygambercocuk.info/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 12
+      },
+      "strands": [
+        "siyer"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-079c0168",
+      "kind": "course",
+      "title": "Live online religious lessons for children (Turkish)",
+      "privateName": "İlimsen Çocuk Akademisi",
+      "url": "https://www.ilimsencocukakademisi.com/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 12
+      },
+      "strands": [
+        "quran",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-3ae636fd",
+      "kind": "website",
+      "title": "Hocaefendi's works (English)",
+      "privateName": "fgulen.com (English)",
+      "url": "https://www.fgulen.com/en/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-4fdf6d22",
+      "kind": "website",
+      "title": "The Risale-i Nur in several languages, side by side",
+      "privateName": "Risale Global",
+      "url": "https://risaleglobal.com/?lang=en",
+      "languages": [
+        "en",
+        "tr",
+        "ar"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid"
+      ],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-4e785c00",
+      "kind": "website",
+      "title": "Hocaefendi's weekly talks (Turkish)",
+      "privateName": "Herkul",
+      "url": "https://herkul.org/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+    },
+    {
+      "id": "r-c958ee03",
+      "kind": "website",
+      "title": "Islamic studies curriculum with lesson plans (English)",
+      "privateName": "Yaqeen Institute Curriculum",
+      "url": "https://yaqeeninstitute.org/curriculum",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 11,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life",
+        "technology"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "priority": 1,
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "More than 50 lesson plans with presentations, worksheets and assessments."
+    },
+    {
+      "id": "r-89f6aff0",
+      "kind": "course",
+      "title": "Online Islamic school for all school ages (English)",
+      "privateName": "Sahlah Academy",
+      "url": "https://school.sahlah.net/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "quran",
+        "siyer",
+        "prophets",
+        "ilmihal",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "priority": 1,
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "A full school-age programme: Islamic studies, Arabic and the Qur'an."
+    },
+    {
+      "id": "r-140f81c4",
+      "kind": "course",
+      "title": "Risale-i Nur study programme (English)",
+      "privateName": "Risale Academy",
+      "url": "https://www.respectgs.us/risale-academy/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "priority": 1,
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-e860d473",
+      "kind": "website",
+      "title": "Islamic education units with worksheets (English)",
+      "privateName": "Teach Me Islam",
+      "url": "https://teachmeislam.org/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "siyer",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "priority": 2,
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "More than 50 units with worksheets and activities, including Ramadan material."
+    },
+    {
+      "id": "r-a9d09ee6",
+      "kind": "website",
+      "title": "Children's magazine of faith and curiosity (English)",
+      "privateName": "Atlasia Kids",
+      "url": "https://atlasiakids.com/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 6,
+        "max": 11
+      },
+      "strands": [
+        "akaid",
+        "siyer",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "priority": 2,
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "A monthly magazine with stories, puzzles and comics, and an app."
+    },
+    {
+      "id": "r-acc52353",
+      "kind": "website",
+      "title": "Courses and articles on character and the Prophet's teaching (English)",
+      "privateName": "SeekersGuidance",
+      "url": "https://seekersguidance.org/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "priority": 2,
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-abee7109",
+      "kind": "course",
+      "title": "Online Qur'an and tajweed classes (English)",
+      "privateName": "Tarteel Quran",
+      "url": "https://www.tarteelequran.com/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "quran",
+        "ilmihal"
+      ],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "priority": 2,
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-502c47e3",
+      "kind": "website",
+      "title": "Interactive Qur'an learning for children (English)",
+      "privateName": "Learn Quran For Kids",
+      "url": "https://learnquranforkids.com/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "quran"
+      ],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "priority": 2,
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-d0c99907",
+      "kind": "website",
+      "title": "Free Qur'an-based character curriculum (English)",
+      "privateName": "Quranic Tarbiyah",
+      "url": "https://quranictarbiyah.com/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "ilmihal",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "priority": 3,
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-2fff1a7d",
+      "kind": "website",
+      "title": "Islamic educational resources (English)",
+      "privateName": "Al-Kisa Foundation",
+      "url": "https://us.alkisafoundation.org/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "quran",
+        "siyer",
+        "prophets",
+        "ilmihal",
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life",
+        "technology"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "priority": 3,
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-6f10099e",
+      "kind": "website",
+      "title": "Homeschool Islamic studies units (English)",
+      "privateName": "Allamah Education",
+      "url": "https://www.allamaheducation.com/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "quran",
+        "siyer",
+        "prophets",
+        "ilmihal",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "priority": 3,
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-557ce0ee",
+      "kind": "course",
+      "title": "Online Islamic education programme (English)",
+      "privateName": "Zad Academy",
+      "url": "https://zad-academy.com/en",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "priority": 3,
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "The age range on the owner's sheet is school-age; still to check."
+    },
+    {
+      "id": "r-debaa716",
+      "kind": "website",
+      "title": "A teacher's shared Islamic teaching resources (English)",
+      "privateName": "Islamic Teaching Resources (blog)",
+      "url": "https://islamicteachingresources.blog/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "priority": 3,
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Lesson plans and classroom material shared by one teacher."
+    },
+    {
+      "id": "r-b86fbabd",
+      "kind": "website",
+      "title": "Classroom resources on Muslim students' lives (English)",
+      "privateName": "Teaching While Muslim",
+      "url": "https://www.teachingwhilemuslim.org/classroom-resources",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life",
+        "technology"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "priority": 3,
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-ce97d79d",
+      "kind": "course",
+      "title": "Online Qur'an classes (English)",
+      "privateName": "Quran Sheikh",
+      "url": "https://www.quransheikh.com/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "quran"
+      ],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "priority": 3,
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-d54064cb",
+      "kind": "website",
+      "title": "Islamic curriculum database (English)",
+      "privateName": "Islamic Curriculum Database (IELC)",
+      "url": "https://ielc.learnworlds.com/curriculumhub",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "priority": 3,
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-3bbd86c2",
+      "kind": "website",
+      "title": "The Risale-i Nur collection in English",
+      "privateName": "Risale-i Nur Collection",
+      "url": "https://risaleinur.com/risale-i-nur-collection.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid"
+      ],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-aaf36254",
+      "kind": "app",
+      "title": "Risale-i Nur side-by-side reading app",
+      "privateName": "Risale-i Nur (Comparative) app",
+      "url": "https://apps.apple.com/us/app/risale-i-nur-comparative/id1502903479",
+      "languages": [
+        "en",
+        "tr",
+        "ar"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid"
+      ],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-a664c3b2",
+      "kind": "book",
+      "title": "Report on 25 years of an early childhood programme in East Africa",
+      "privateName": "The Madrasa Early Childhood Programme (2008)",
+      "url": "https://static.the.akdn/53832/1641850542-2008_12-akf-the_madrasa_early_childhood_programme-high_res.pdf",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 6
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Background on early childhood religious education in East Africa."
+    }
+  ],
+  "items": [
+    {
+      "id": "i-7d27584f",
+      "resourceId": "r-fbd8fb43",
+      "kind": "article",
+      "title": "The Prophet's way: acting on a broad base (part 2)",
+      "url": "https://peygamberyolu.com/nebevi-bir-yol-genis-tabanli-hareket-2/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "siyer"
+      ],
+      "lenses": [
+        "hadith-sunnah"
+      ],
+      "retrieved": "2026-10-13"
+    }
+  ],
   "passages": [],
   "topicHints": []
 }
