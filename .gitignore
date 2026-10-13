@@ -34,3 +34,6 @@ exports/online-curriculum/*.json
 *.xlsx
 *.pdf
 *.docx
+
+# Fetched texts of other people's work (rule 5): read here, never committed
+cache/

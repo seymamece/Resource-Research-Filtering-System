@@ -84,10 +84,30 @@ def _parse(key: str, value: str):
     return value
 
 
+def _quote_checks(cat: dict, only=None) -> tuple[list, list]:
+    """(problems, unchecked) for passage quotes against their item's cached text."""
+    from . import text
+    problems, unchecked = [], []
+    for p in cat["passages"]:
+        if not p.get("quote") or (only is not None and p["id"] not in only):
+            continue
+        found = text.quote_found(p.get("itemId", ""), p["quote"])
+        if found is False:
+            problems.append((p["id"], "the quote is not in the item's text; copy it exactly"))
+        elif found is None:
+            unchecked.append(p["id"])
+    return problems, unchecked
+
+
 def _save(cat: dict, record_id: str, done: str):
     """Saves only if the record passes every check the site will run."""
     blocked = storage.load_blocked()
     problems = [m for rid, m in model.check(cat, blocked) if rid == record_id]
+    quote_problems, unchecked = _quote_checks(cat, {record_id})
+    problems += [m for _, m in quote_problems]
+    if unchecked:
+        click.echo("Warning: the item has not been fetched, so the quote was not checked. "
+                   "Run `fetch`.", err=True)
     if problems:
         click.echo(f"Not saved - {record_id}:", err=True)
         for m in problems:
@@ -367,6 +387,119 @@ def import_videos(xlsx):
         click.echo(f"  skipped {line}")
 
 
+# --- reading sources -------------------------------------------------------------------------
+
+@cli.command()
+@click.option("-I", "--item", "item_ids", multiple=True, help="These items only.")
+@click.option("-a", "--age", type=click.IntRange(vocab.AGE_MIN, vocab.AGE_MAX),
+              help="Items whose ages include this age.")
+@click.option("-R", "--resource", "resource_id", help="Items of this resource.")
+@click.option("--refresh", is_flag=True, help="Fetch again even if already cached.")
+def fetch(item_ids, age, resource_id, refresh):
+    """Download the text of articles and chapters into cache/text, once each."""
+    from concurrent.futures import ThreadPoolExecutor
+    from . import text
+    cat = storage.load()
+    chosen = [i for i in cat["items"] if i.get("kind") != "video" and i.get("url")]
+    if item_ids:
+        chosen = [i for i in chosen if i["id"] in item_ids]
+    if age is not None:
+        chosen = [i for i in chosen if i["ages"]["min"] <= age <= i["ages"]["max"]]
+    if resource_id:
+        chosen = [i for i in chosen if i["resourceId"] == resource_id]
+    if not refresh:
+        chosen = [i for i in chosen if not text.cache_path(i["id"]).exists()]
+    if not chosen:
+        click.echo("Nothing to fetch.")
+        return
+    click.echo(f"Fetching {len(chosen)} item(s)...")
+    with ThreadPoolExecutor(4) as pool:
+        pages = list(pool.map(lambda i: text.fetch(i["url"]), chosen))
+    fetched, failed = 0, []
+    for item, (status, html) in zip(chosen, pages):
+        if status != 200:
+            failed.append(f"{item['id']}: {'unreachable' if status == 0 else status} {item['url']}")
+            continue
+        title, blocks = text.extract(html)
+        size = sum(len(t.split()) for k, t in blocks if k == "p")
+        if size < 50:
+            failed.append(f"{item['id']}: no readable text found ({size} words) {item['url']}")
+            continue
+        text.write_cache(item, title, blocks, _today())
+        item["retrieved"] = _today()
+        fetched += 1
+    storage.save(cat)
+    click.echo(f"Fetched {fetched}")
+    for line in failed:
+        click.echo(f"  not fetched {line}")
+
+
+@cli.command()
+@click.argument("topic")
+@click.option("-n", "--top", default=5, show_default=True, help="Paragraphs from each list.")
+@click.option("-w", "--words", "extra", default="", help="More words to search for.")
+@click.option("--all", "whole", is_flag=True, help="Print the hinted chapter in full.")
+def shortlist(topic, top, extra, whole):
+    """The paragraphs to read for a topic (like 18:5): from the chapter its hint names,
+    then from everything else fetched. Prints a ready `where` for each."""
+    from . import search, topics
+    t = _topic(topic)
+    key = (t["age"], t["topic"])
+    cat = storage.load()
+    info = topics.load().get(key, {"title": "(topic list not found)", "science": ""})
+    cover = topics.coverage().get(key, "?")
+    hints = [h for h in cat["topicHints"] if (h["age"], h["topic"]) == key]
+    resources = {r["id"]: r for r in cat["resources"]}
+    click.echo(f"{key[0]}:{key[1]}  {info['title']}  (coverage: {cover})")
+    if info["science"]:
+        click.echo(f"  science: {info['science']}")
+    for h in hints:
+        click.echo(f"  hint: {h['hint']}")
+    for p in cat["passages"]:
+        if any((x["age"], x["topic"]) == key for x in p["topics"]):
+            click.echo(f"  already: {p['id']} {p['use']} @ {p['where']}")
+
+    query = " ".join([info["title"], info["science"], extra] + [h["hint"] for h in hints])
+    hinted_titles = {h["hint"].replace(" (related reading)", "") for h in hints}
+    hinted = [i for i in cat["items"] if i["title"] in hinted_titles
+              and i["ages"]["min"] <= key[0] <= i["ages"]["max"]]
+
+    def show(item, n, heading, body):
+        role = resources.get(item["resourceId"], {}).get("role", "?")
+        where = f"section '{heading}', paragraph {n}" if heading else f"paragraph {n}"
+        click.echo(f"\n[{item['id']} | {role} | {where}]  {item['title']}\n{body}")
+
+    for item in hinted:
+        rows = list(search.cached_paragraphs([item]))
+        if not rows:
+            click.echo(f"\n{item['id']} is not fetched yet: py -m cli fetch -I {item['id']}")
+            continue
+        click.echo(f"\n=== From the hinted chapter: {item['title']} ({len(rows)} paragraphs)")
+        if whole:
+            chosen = [(n, heading, body) for _, n, heading, body in rows]
+        else:
+            index = search.Index([((n, heading, body), body) for _, n, heading, body in rows])
+            chosen = [key for _, key in index.rank(query)[:top]]
+            # Few matching words is common in a weak topic; the chapter was still chosen for it,
+            # so what it opens with fills the rest.
+            for _, n, heading, body in rows:
+                if len(chosen) >= top:
+                    break
+                if (n, heading, body) not in chosen:
+                    chosen.append((n, heading, body))
+        for n, heading, body in sorted(chosen):
+            show(item, n, heading, body)
+
+    others = [i for i in cat["items"] if i not in hinted and i.get("kind") != "video"
+              and i["ages"]["min"] <= key[0] <= i["ages"]["max"]]
+    rows = list(search.cached_paragraphs(others))
+    if rows:
+        click.echo(f"\n=== Elsewhere ({len(rows)} paragraphs searched)")
+        index = search.Index([((item, n, heading, body), body) for item, n, heading, body in rows])
+        for _, (item, n, heading, body) in index.rank(query)[:top]:
+            show(item, n, heading, body)
+
+
 # --- correcting and removing -----------------------------------------------------------------
 
 @cli.command("set")
@@ -635,9 +768,12 @@ def validate():
     """Check the whole catalogue against the site's rules."""
     cat = storage.load()
     blocked = storage.load_blocked()
-    problems = model.check(cat, blocked)
+    quote_problems, unchecked = _quote_checks(cat)
+    problems = model.check(cat, blocked) + quote_problems
     for rid, message in problems:
         click.echo(f"{rid}: {message}")
+    if unchecked:
+        click.echo(f"{len(unchecked)} quote(s) not checked: their items are not fetched.", err=True)
     total = sum(len(cat[c]) for c in storage.COLLECTIONS)
     if blocked is None:
         click.echo("Warning: no research/blocked-names.json, so names were not checked. "
@@ -658,6 +794,11 @@ def export(project):
         _fail("research/blocked-names.json is missing, so names cannot be checked. Run `sync-names`.")
     doc, left_out = model.build_export(cat, _today(), blocked)
     problems = model.check(doc, blocked, export=True)
+    quote_problems, unchecked = _quote_checks(doc)
+    problems += quote_problems
+    if unchecked:
+        click.echo(f"Warning: {len(unchecked)} quote(s) not checked against their text. "
+                   f"Run `fetch` first.", err=True)
     if problems:
         click.echo("Nothing exported. The site would refuse the file:", err=True)
         for rid, message in problems:
