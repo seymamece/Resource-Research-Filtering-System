@@ -24,6 +24,8 @@ Thumbs.db
 
 # Project specific
 research/blocked-names.json
+# Books, page images and source files (rule 5: no full texts or book files in git)
+research/*/
 exports/online-curriculum/*.json
 *.json.tmp
 .env
