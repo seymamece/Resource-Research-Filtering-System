@@ -223,6 +223,20 @@ class CatalogueTest(unittest.TestCase):
                                               "catalogueId": None}])
         self.assertIn("id", self.catalogue()["topicHints"][0])
 
+    def test_a_url_that_names_an_institution_stays_here_and_is_left_out_of_the_export(self):
+        kept = self.add_site()
+        named = self.add_site(url="https://example-academy.org/lessons")
+        iid = self.ok("add", "item", "-R", named, "-k", "article", "-t", "A lesson",
+                      "-u", "https://example-academy.org/lessons/1").split()[-1]
+        self.ok("validate")
+        out = self.ok("export")
+        self.assertIn(f"left out {named}: its url carries a blocked name", out)
+        self.assertIn(f"left out {iid}: its resource is left out", out)
+        doc = json.loads((self.root / "exports" / "online-curriculum" / "resources.json")
+                         .read_text(encoding="utf-8"))
+        self.assertEqual([r["id"] for r in doc["resources"]], [kept])
+        self.assertNotIn("academy", json.dumps(doc).lower())
+
     def test_export_refuses_without_the_blocked_names(self):
         self.add_site()
         (self.root / "research" / "blocked-names.json").unlink()

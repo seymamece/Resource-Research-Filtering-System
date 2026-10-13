@@ -312,8 +312,12 @@ def _strings(value, key=None):
             yield from _strings(v, key)
 
 
-def check(cat: dict, blocked=None) -> list[tuple[str, str]]:
-    """Every problem in a catalogue or an export, as (record id, message)."""
+def check(cat: dict, blocked=None, export=False) -> list[tuple[str, str]]:
+    """Every problem in a catalogue or an export, as (record id, message).
+
+    A URL often spells the platform's name. The catalogue may keep it, as it keeps
+    privateName; the export may not, so build_export leaves such records out first.
+    """
     c = _Checker()
     resources = {r.get("id"): r for r in cat.get("resources", [])}
     items = {i.get("id"): i for i in cat.get("items", [])}
@@ -340,7 +344,7 @@ def check(cat: dict, blocked=None) -> list[tuple[str, str]]:
         for collection in ("resources", "items", "passages", "topicHints"):
             for record in cat.get(collection, []):
                 for key, text in _strings(record):
-                    if key in PRIVATE_FIELDS:
+                    if key in PRIVATE_FIELDS or (key == "url" and not export):
                         continue
                     for name in blocked.found_in(text):
                         c.bad(record.get("id", "?"),
@@ -348,7 +352,11 @@ def check(cat: dict, blocked=None) -> list[tuple[str, str]]:
     return c.problems
 
 
-def build_export(cat: dict, today: str) -> tuple[dict, list[tuple[str, str]]]:
+def _names_in_url(record: dict, blocked) -> bool:
+    return bool(blocked and record.get("url") and blocked.found_in(record["url"]))
+
+
+def build_export(cat: dict, today: str, blocked=None) -> tuple[dict, list[tuple[str, str]]]:
     """The file the site reads, and what was left out of it and why."""
     left_out = []
     resources = []
@@ -359,6 +367,8 @@ def build_export(cat: dict, today: str) -> tuple[dict, list[tuple[str, str]]]:
             left_out.append((r["id"], "rights are restricted"))
         elif not r.get("url") and not r.get("catalogueId"):
             left_out.append((r["id"], "no url and not in the site's catalogue"))
+        elif _names_in_url(r, blocked):
+            left_out.append((r["id"], "its url carries a blocked name"))
         else:
             resources.append(r)
     kept = {r["id"] for r in resources}
@@ -369,6 +379,8 @@ def build_export(cat: dict, today: str) -> tuple[dict, list[tuple[str, str]]]:
             left_out.append((i["id"], "its resource is left out"))
         elif "drawn-prophet" in i.get("content", []):
             left_out.append((i["id"], "shows a drawn prophet, never usable"))
+        elif _names_in_url(i, blocked):
+            left_out.append((i["id"], "its url carries a blocked name"))
         else:
             items.append(i)
     kept_items = {i["id"] for i in items}

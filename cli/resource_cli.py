@@ -597,8 +597,8 @@ def export(project):
     blocked = storage.load_blocked()
     if blocked is None:
         _fail("research/blocked-names.json is missing, so names cannot be checked. Run `sync-names`.")
-    doc, left_out = model.build_export(cat, _today())
-    problems = model.check(doc, blocked)
+    doc, left_out = model.build_export(cat, _today(), blocked)
+    problems = model.check(doc, blocked, export=True)
     if problems:
         click.echo("Nothing exported. The site would refuse the file:", err=True)
         for rid, message in problems:
