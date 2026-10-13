@@ -308,6 +308,48 @@ def add_hint(age, topic, text, from_sheet, catalogue_id):
     _new(cat, "topicHints", record)
 
 
+# --- importing the owner's spreadsheets ------------------------------------------------------
+
+def _save_many(cat: dict, changed: list[str]):
+    """Saves an import only if every record it touched passes; otherwise nothing at all."""
+    blocked = storage.load_blocked()
+    touched = set(changed)
+    problems = [(rid, m) for rid, m in model.check(cat, blocked) if rid in touched]
+    if problems:
+        click.echo("Nothing imported. These records would be refused:", err=True)
+        for rid, m in problems:
+            click.echo(f"  {rid}: {m}", err=True)
+        sys.exit(1)
+    storage.save(cat)
+    if blocked is None:
+        click.echo("Warning: no research/blocked-names.json, so names were not checked. "
+                   "Run `sync-names`.", err=True)
+
+
+@cli.group("import")
+def import_group():
+    """Read one of the owner's spreadsheets into the catalogue. Safe to run again."""
+
+
+@import_group.command("topics")
+@click.argument("xlsx", type=click.Path(exists=True, dir_okay=False))
+@click.option("--retrieved", help="Date the linked pages were checked (default: today).")
+def import_topics(xlsx, retrieved):
+    """The topic sheet (S1-S6: Week | Topic | Source): a hint per topic, and each linked page
+    as an item of its site."""
+    from . import importers
+    cat = storage.load()
+    changed, notes, skipped = importers.import_topics(cat, importers.topic_rows(xlsx),
+                                                      retrieved or _today())
+    _save_many(cat, changed)
+    hints = sum(1 for c in changed if c.startswith("h-"))
+    click.echo(f"Topic hints added or updated: {hints}; items added or widened: {len(changed) - hints}")
+    for line in notes:
+        click.echo(line)
+    for line in skipped:
+        click.echo(f"  skipped {line}")
+
+
 # --- correcting and removing -----------------------------------------------------------------
 
 @cli.command("set")
