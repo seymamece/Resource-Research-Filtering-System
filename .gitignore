@@ -1,0 +1,34 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+._*
+Thumbs.db
+
+# Project specific
+research/blocked-names.json
+exports/online-curriculum/*.json
+*.json.tmp
+.env
+
+# Large files
+*.xlsx
+*.pdf
+*.docx
