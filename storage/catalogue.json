@@ -333,7 +333,8 @@
       "privateName": "Herkul",
       "url": "https://herkul.org/",
       "languages": [
-        "tr"
+        "tr",
+        "en"
       ],
       "ages": {
         "min": 13,
@@ -814,6 +815,33 @@
       "status": "to_verify",
       "retrieved": "2026-10-13",
       "notes": "Background on early childhood religious education in East Africa."
+    },
+    {
+      "id": "r-cc658937",
+      "kind": "website",
+      "title": "The Prophet's life and the Companions, for young readers (English)",
+      "privateName": "Green Dome Foundation (greendome.org)",
+      "url": "https://greendome.org/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 18
+      },
+      "strands": [
+        "siyer",
+        "prophets"
+      ],
+      "lenses": [
+        "companions-scholars",
+        "hadith-sunnah"
+      ],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Short stories of the Prophet and the Companions, written for children and young people."
     }
   ],
   "items": [
@@ -837,8 +865,4661 @@
         "hadith-sunnah"
       ],
       "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-1f42203e",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – The First Word (Bismillah)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3660-01a-the-first-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-2db6d36d",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "The Best Example: Our Prophet (pbuh)",
+      "url": "https://greendome.org/the-best-example-our-prophet-pbuh/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-6f8799bf",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Messenger of God: Muhammad – Truthfulness",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/prophet-muhammad/truthfulness",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-194226be",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – The Twenty-First Word (prayer)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3713-21a-the-twenty-first-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-2ec2b300",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – What Is the Point of Worship?",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/what-is-the-point-of-worship-and-why-does-it-have-to-be-done-in-a-certain-way",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-7480d756",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "Ramadan, Frugality, Thanksgiving – Thanksgiving",
+      "url": "https://risaleinur.com/risale-i-nur-collection/67-ramadan-frugality-thanksgiving/3399-14-thanksgiving.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-a7e3faad",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – The Rights of Parents",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/the-rights-of-parents",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-7acb17b8",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Friendship",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/friendship",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-44e96c72",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Sabr (Patience)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/sabr-patience",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-ba88dced",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Tawadu (Humility)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/tawadu-humility",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-0af13829",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Damascus Sermon – Third Word (truthfulness)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/69-the-damascus-sermon/3407-08-third-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-022c9c1d",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Ikhlas (Sincerity)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/ikhlas-sincerity-or-purity-of-intention",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-d13949a3",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Holding One's Tongue",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/holding-ones-tongue",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-62767015",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – The Second Word (happiness of belief)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3662-02-the-second-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-5012af00",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "Who Is Muhammad (pbuh)",
+      "url": "https://greendome.org/who-is-muhammad-pbuh/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-8bc13361",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "Companions of the Prophet (article collection)",
+      "url": "https://greendome.org/companions/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-9b8f1b14",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "Ramadan, Frugality, Thanksgiving – Frugality",
+      "url": "https://risaleinur.com/risale-i-nur-collection/67-ramadan-frugality-thanksgiving/3397-12-frugality.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-ac8027b8",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Shukr (Thankfulness)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/shukr-thankfulness",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-01cce52f",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Essentials of the Islamic Faith – Angels and Their Functions",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/essentials-of-the-islamic-faith/angels-and-their-functions",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-d6d50697",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Toward a Global Civilization of Love and Tolerance – Tolerance in the Life of the Individual and Society",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/forgiveness-tolerance-and-dialogue-en/tolerance-in-the-life-of-the-individual-and-society",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-8ab7acb6",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Broken Jug – Living on Pure (Halal) Sustenance and Doing Good Deeds",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-broken-jug-en/fethullah-gulen-relation-of-living-on-pure-sustenance-and-doing-good-deeds",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-5768de7e",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – Modesty and Effacement",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/modesty-and-effacement",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-fda441cb",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Letters – Addendum Concerning Backbiting (22nd Letter)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/71-the-letters/4444-22c-addendum-concerning-backbiting-1.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-e76e44e4",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – Islam's Perspective on Environmental Responsibility",
+      "url": "https://herkul.org/weekly-sermons/islams-perspective-on-environmental-responsibility/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-a0c48647",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "The Protector of the Helpless: the Prophet (pbuh)",
+      "url": "https://greendome.org/the-protector-of-the-helpless-our-master-the-prophet-pbuh/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-bc3fdef0",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Towards the Lost Paradise – Compassion",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/towards-the-lost-paradise/compassion",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-7dc4bd27",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "A Day in the Life of Our Prophet",
+      "url": "https://greendome.org/a-day-in-the-life-of-our-prophet/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-6fdf377a",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Messenger of God: Muhammad – Trustworthiness",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/prophet-muhammad/trustworthiness",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-8b27f298",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Gleams (Flashes) – The Second Gleam (Prophet Job's patience)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/70-the-gleams/3436-02-the-second-gleam.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-26cd074a",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Letters – The Twenty-First Letter (serving elderly parents)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/71-the-letters/4442-21a-the-twenty-first-letter.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-acf33027",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Haya (Modesty)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/haya-modesty",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-2d66360e",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Letters – The Twenty-Second Letter (brotherhood)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/71-the-letters/4445-22-the-twenty-second-letter-1.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-6d507f51",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – Desire to Emulate, Envy, and Hastening to Do Good",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/desire-to-emulate-envy-and-hastening-to-do-good-as-if-competing-with-one-another",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-2ecf04a6",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "Ramadan, Frugality, Thanksgiving – Zakat",
+      "url": "https://risaleinur.com/risale-i-nur-collection/67-ramadan-frugality-thanksgiving/3398-13-zakat.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-5f5ae0ef",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – The Ninth Word (the five daily prayers)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3669-09-the-ninth-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 13
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-8233a776",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Muhasaba (Self-Criticism)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/muhasaba-self-criticism-or-self-interrogation",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-9c5f079f",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – What Is the Role of Prophethood and of Prophets?",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/what-is-the-role-of-prophethood-and-of-prophets",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-f867c3ed",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Qalb (Heart) 1",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/qalb-heart-1",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-b43108f7",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Messenger of God: Muhammad – Complete Sincerity",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/prophet-muhammad/complete-sincerity",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-afd08ac4",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Humility",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/humility",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-b7a16e01",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – Comprehensive Intention and Comprehensive Gratitude",
+      "url": "https://herkul.org/weekly-sermons/comprehensive-intention-and-comprehensive-gratitude",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-4abae4bb",
+      "resourceId": "r-3ae636fd",
+      "kind": "article",
+      "title": "Moral of the Parable of Cain and Abel (envy)",
+      "url": "https://fgulen.com/en/recent-articles-en/moral-of-the-parable-of-cain-and-abel",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-c1ea6171",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "The Prophet's Compassion for His Ummah",
+      "url": "https://greendome.org/the-prophets-compassion-for-his-ummah/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-c3b52931",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – Accommodating and Reconciling of Hearts",
+      "url": "https://herkul.org/weekly-sermons/accommodating-and-reconciling-of-hearts/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-acbf6166",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Sidq (Truthfulness)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/sidq-truthfulness",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-77bd7166",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Personal Integrity",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/personal-integrity",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-9f33a1b2",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Nafs (The Soul)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-3/the-soul",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-49a55267",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Broken Jug – Spirit of Altruism",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-broken-jug-en/spirit-of-altruism",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-629e615a",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Tawba (Repentance)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/tawba-repentance-inaba-sincere-penitence-and-awba-turning-to-god-in-contrition",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-1152a9d4",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Statue of Our Souls – The Consciousness of Responsibility",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-statue-of-our-souls-en/the-consciousness-of-responsibility",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-a77a72ca",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Essentials of the Islamic Faith – The Holy Qur'an",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/essentials-of-the-islamic-faith/the-holy-quran",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-73ac9b16",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Love",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/love",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-6ec355bb",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Istiqama (Steadfastness)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/istiqama-straightforwardness",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-d6884c40",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – The Twenty-Sixth Word (Divine Determining, Qadar)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3739-26a-the-twenty-sixth-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-cdd61201",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Tafakkur (Reflection)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/tafakkur-reflection",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-88dc28c6",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "The Ties of Brotherhood: the Muhajirun and Ansar",
+      "url": "https://greendome.org/the-ties-of-brotherhood-muhajirun-ansar/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-7c6c057a",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Messenger of God: Muhammad – Trustworthy and Asked No Wage",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/prophet-muhammad/trustworthy-and-asked-no-wage",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-e82ac01b",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – Two Forms of Justice: Absolute and Relative",
+      "url": "https://herkul.org/weekly-sermons/two-forms-of-justice-absolute-and-relative-justice",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-372f0150",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Adab (Good Manners)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-2/adab-mannerliness",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-ee74335e",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – The Tenth Word (Resurrection)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3670-10a-the-tenth-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-d49779af",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – The Media",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/the-media",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-e83963ab",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – What Is Guidance, and Can We Guide Others?",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/what-is-guidance-and-can-we-guide-others",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-90659e31",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Wara' (Abstinence from the Doubtful)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/wara-abstinence",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-23a93c27",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Messenger of God: Muhammad – His Generosity",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/prophet-muhammad/his-generosity",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-18cd246e",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Letters – The Twenty-Fourth Letter (why mercy allows misfortune)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/71-the-letters/4447-24a-the-twenty-fourth-letter-why-divine-mercy-allows-death-and-misfortune.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-d95ae7aa",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Tawakkul (Reliance on God)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/tawakkul-taslim-tafwiz-and-thiqa-reliance-surrender-commitment-and-confidence",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-e6327bef",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – The Twenty-Third Word (virtues of belief)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3718-23a-the-twenty-third-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-9eb627f2",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "The Prayer Journal of Our Prophet (pbuh)",
+      "url": "https://greendome.org/the-prayer-journal-of-our-prophet-pbuh/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-b857595a",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Prophet Muhammad",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/prophet-muhammad",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-24b17c49",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "Exemplary Youth: Muadh ibn Jabal",
+      "url": "https://greendome.org/muadh-ibn-jabal/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-0e7838fb",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – Self-Criticism and Asking Forgiveness from God",
+      "url": "https://herkul.org/weekly-sermons/self-criticism-and-asking-forgiveness-from-god",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 14,
+        "max": 14
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-211d2ae0",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Wijdan (Conscience)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-3/conscience127",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-e73e3d8b",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Tawhid (Unity of God)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-2/tawhid-unity",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-2e063738",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Qalb (Heart) 2",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/qalb-heart-2",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-2a1652f7",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – The Twentieth Word (miracles of the Prophets)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3709-20a-the-twentieth-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-8f5b240f",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – Can Our Intention Save Us?",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/can-our-intention-save-us",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-6d199d5b",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – The True Long Life",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/the-true-long-life",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-63d722b1",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – Mechanisms of Soul and Conscience",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/fethullah-gulen-mechanisms-of-soul-and-conscience",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-2cd8c4d5",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Ihsan (Perfect Goodness)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/ihsan-perfect-goodness",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-71fe2b75",
+      "resourceId": "r-3ae636fd",
+      "kind": "article",
+      "title": "Reliance, Surrender, Commitment, and Confidence",
+      "url": "https://fgulen.com/en/recent-articles-en/fethullah-gulen-reliance-surrender-commitment-and-confidence",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-debc8a5d",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – People of Service",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/people-of-service",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-153be01d",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – The Nature of the Self (Ego)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/fethullah-gulen-the-nature-of-the-self",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-b12f46f9",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Statue of Our Souls – Our Philosophy of Life",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-statue-of-our-souls-en/our-philosophy-of-life",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-c2dfa122",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Science and Knowledge",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/science-and-knowledge",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-be94973f",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Taqwa (Piety)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/taqwa-piety",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-56f0ec22",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – Willpower and Being Tested with It",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/fethullah-gulen-willpower-and-being-tested-with-it",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-84b5ba61",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Man of Service",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/man-of-service",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-9678e1f1",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Towards the Lost Paradise – Some Drop Out Half-Way",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/towards-the-lost-paradise/some-drop-out-half-way",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-a856d711",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Muraqaba (Self-Supervision)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/muraqaba-self-supervision",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-e7818b90",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – The Fourth Word (value of prayer)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3664-04-the-fourth-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-a9114614",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Essentials of the Islamic Faith – The Spirit in the Intermediate World",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/essentials-of-the-islamic-faith/the-spirit-in-the-intermediate-world",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-0d45b946",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Essentials of the Islamic Faith – Science and Religion",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/essentials-of-the-islamic-faith/science-and-religion",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-92028407",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Letters – Twenty-Fourth Letter, First Addendum: Prayer",
+      "url": "https://risaleinur.com/risale-i-nur-collection/71-the-letters/4448-24b-first-addendum-prayer.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-52a1663f",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Morals",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/morals",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-03534097",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – What Is the Purpose of Spiritual Tension?",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/what-is-the-purpose-of-spiritual-tension",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-fdbce0f2",
+      "resourceId": "r-3ae636fd",
+      "kind": "article",
+      "title": "The Wing of the Bird: Fethullah Gülen on Sincerity",
+      "url": "https://fgulen.com/en/fethullah-gulens-life-en/peace-and-dialogue-in-a-plural-society/the-wing-of-the-bird-fethullah-gulen-on-sincerity",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-e5cbd274",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Riyada (Self-Discipline)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-2/riyada-austerity",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-be617a0e",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Clarity about Aims and Means",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/clarity-about-aims-and-means",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-d03a718d",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Towards the Lost Paradise – Self-Renewal",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/towards-the-lost-paradise/self-renewal",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 15
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-7790a42c",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – Addendum on the Prophet's Companions (27th Word)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3747-27c-addendum-on-the-prophets-companions.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-75c923dd",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Halwat and Jalwat (Privacy and Company)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-3/privacy-and-company",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-1aedd3ef",
+      "resourceId": "r-3ae636fd",
+      "kind": "article",
+      "title": "A Spirited and Active Life of Service",
+      "url": "https://fgulen.com/en/recent-articles-en/a-spirited-and-active-life-of-service",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-11c5358a",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – I'thar (Altruism)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-2/ithar-altruism",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-5835e59d",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "The Role of Muslim Youth in the Time of the Prophet (pbuh)",
+      "url": "https://greendome.org/the-role-of-muslim-youth-during-the-time-of-our-prophet-pbuh/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-264cd431",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Statue of Our Souls – Consultation",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-statue-of-our-souls-en/consultation74",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-6f5e5f6f",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Broken Jug – A Spirit of Devotedness for a Lifetime",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-broken-jug-en/a-spirit-of-devotedness-for-a-lifetime",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-cb4bbe60",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – Reviving Faith, Values, and Purpose in a Challenging World",
+      "url": "https://herkul.org/weekly-sermons/reviving-faith-values-and-purpose-in-a-challenging-world",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-3c751d23",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Ibada (Worship and Devotion)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/ibada-ubudiya-and-ubuda-worship-servanthood-and-deep-devotion",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-24f931e7",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "Exemplary Youth: Abdullah ibn Masud",
+      "url": "https://greendome.org/abdullah-ibn-masud/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-f057fafd",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – A Call for Compassion",
+      "url": "https://herkul.org/weekly-sermons/a-call-for-compassion/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-8524e7f8",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "Abu Bakr's Sensitivity in the Cave",
+      "url": "https://greendome.org/abu-bakrs-sensitivity-in-the-cave/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-6fda207b",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Worship",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/worship",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-f9119994",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "The Companion in the Migration: Abu Bakr",
+      "url": "https://greendome.org/the-migration-companion-abu-bakr/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-ee1fbebe",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Consultation",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/consultation",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-893aa192",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – Different Kinds of Tests the Devoted Souls Go Through",
+      "url": "https://herkul.org/weekly-sermons/different-kinds-of-tests-the-devoted-souls-go-through/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-7cac0737",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Statue of Our Souls – Ideal Generations",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-statue-of-our-souls-en/ideal-generations",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-f040b260",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Khushu' (Reverent Awe)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-4/khushu-and-hurma-reverent-awe-and-respect",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-e22588d4",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – A Believer's Stance in the Face of Provocation",
+      "url": "https://herkul.org/weekly-sermons/a-believers-stance-in-the-face-of-provocation",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-6bcf1a18",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Endeavor for Renewal – The Devoted Souls and Life Standards",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/endeavor-for-renewal/the-devoted-souls-and-life-standards",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-8f0d121d",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – Duty of Architects of Revival",
+      "url": "https://herkul.org/weekly-sermons/duty-of-architects-of-revival/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-f0ed75c5",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "Trade Principles According to the Sunnah",
+      "url": "https://greendome.org/trade-principles-according-to-the-sunnah-of-the-prophet-muhammad-pbuh/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-e58b9c4b",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Humanity",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/humanity",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-28fbde56",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "The Leadership Aspect of Our Prophet (pbuh)",
+      "url": "https://greendome.org/the-leadership-aspect-of-our-prophet-pbuh/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-0b851f4e",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Damascus Sermon – Sixth Word (consultation)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/69-the-damascus-sermon/3410-11-sixth-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-12b22720",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Towards the Lost Paradise – The Decline of Spiritual Energy",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/towards-the-lost-paradise/the-decline-of-spiritual-energy",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-00731789",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Statue of Our Souls – The Hero of Thought and Action",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-statue-of-our-souls-en/the-hero-of-thought-and-action",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-8fbd7959",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Statue of Our Souls – The Generations of Hope – I",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-statue-of-our-souls-en/the-generations-of-hope-i",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 16
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-9287eb8a",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – A Generation Devoted to the Qur'an",
+      "url": "https://herkul.org/weekly-sermons/a-generation-devoted-to-the-quran",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-df2a3fe9",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "The Permission for Hijra and Important Advice from the Prophet",
+      "url": "https://greendome.org/the-permission-for-hijra-from-mekka-to-medina-and-important-advice-from-the-prophet/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-d8f8a7a1",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Prophet Muhammad as Commander – The Wisdom of God's Messenger",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/prophet-muhammad-as-commander/the-wisdom-of-gods-messenger",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-ecd23b92",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Heroes of Love",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/heroes-of-love",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-a11c3753",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Towards the Lost Paradise – The Age of Speed",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/towards-the-lost-paradise/the-age-of-speed",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-9ae80e90",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Essentials of the Islamic Faith – The Concept of Science and Technology",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/essentials-of-the-islamic-faith/the-concept-of-science-and-technology",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-721fd6c9",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Essentials of the Islamic Faith – His Life (Prophet Muhammad)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/essentials-of-the-islamic-faith/his-life",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-d8c4453b",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Messenger of God: Muhammad – Calling People Wisely and with Kindness",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/prophet-muhammad/calling-people-wisely-and-with-kindness",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-546dba0c",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "The Fountain of Knowledge and Wisdom: Abdullah ibn Masud",
+      "url": "https://greendome.org/abdullah-ibn-masud-1/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-aefece52",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – The Thirtieth Word, First Aim (the ego, \"ana\")",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3753-30a-the-thirtieth-word-first-aim.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-7bdd7b55",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Towards the Lost Paradise – Generations with No Ideals",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/towards-the-lost-paradise/generations-with-no-ideals",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-2f696430",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Statue of Our Souls – On How to Find Our Path",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-statue-of-our-souls-en/on-how-to-find-our-path",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-17f83ad8",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – Jihad with Different Aspects",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/jihad-with-different-aspects",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-638469a1",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Towards the Lost Paradise – The Spirit of Youth",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/towards-the-lost-paradise/the-spirit-of-youth",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-2aecda2c",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "Balance Between Worldly Life and the Hereafter",
+      "url": "https://greendome.org/what-is-the-concept-of-balance-in-islam/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-7754084d",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Zuhd (Detachment)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/zuhd-asceticism",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-c0b5803c",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – Why Is Atheism So Widespread?",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/why-is-atheism-so-widespread",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-d37215ba",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – Direction and Purpose in Knowledge",
+      "url": "https://herkul.org/weekly-sermons/direction-and-purpose-in-knowledge",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-9e406c78",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Right",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/right",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-6365454c",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Broken Jug – The Spirit of Salam",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-broken-jug-en/fethullah-gulen-the-spirit-of-salam",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-95e52b4c",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – Internalizing Islam",
+      "url": "https://herkul.org/weekly-sermons/internalizing-islam/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 17,
+        "max": 17
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-fa4cd691",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Statue of Our Souls – The Inheritors of the Earth",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-statue-of-our-souls-en/the-inheritors-of-the-earth",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-3b2bd809",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Life, Human Character, and Virtue",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/life-human-character-and-virtue",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-c2b64362",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "The First Migration to Ethiopia",
+      "url": "https://greendome.org/the-first-migration-to-ethiopia/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-bb2fe5f3",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – The Third Word (worship)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3663-03-the-third-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-3df38c27",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – 'Aql (Reason)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-3/reason",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-6720666d",
+      "resourceId": "r-4e785c00",
+      "kind": "article",
+      "title": "Weekly Sermon – The Art of Politics in Line with the Qur'an and Sunnah",
+      "url": "https://herkul.org/weekly-sermons/the-art-of-politics-in-line-with-the-teachings-of-the-quran-and-sunnah/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-e494293e",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – Why Does the Qur'an Open with Iqra' (Read)?",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/why-does-the-quran-open-with-iqra-recite-read",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-c8c6e298",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Statue of Our Souls – The World We Long For",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-statue-of-our-souls-en/the-world-we-long-for",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-5020305f",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Statue of Our Souls – Toward Tomorrow",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-statue-of-our-souls-en/toward-tomorrow73",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-85e1f3d9",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Ilm (Knowledge)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-2/ilm-knowledge",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-fea46551",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Khulla (Sincere Friendship)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-3/sincere-friendship",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-eaf96788",
+      "resourceId": "r-cc658937",
+      "kind": "article",
+      "title": "Umm Ayman: A Life Devoted to the Prophet (pbuh)",
+      "url": "https://greendome.org/umm-ayman/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-201e183b",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – What Is the Sunna's Role Today?",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/what-is-the-sunnas-role-today",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-a7b8e1b5",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Words – Thirteenth Word: A Warning and Lesson to a Group of Unhappy Young People",
+      "url": "https://risaleinur.com/risale-i-nur-collection/75-words/3684-13c-a-warning-and-lesson-to-a-group-of-unhappy-young-people.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-e140149a",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Civilization",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/civilization",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-afc7b4ac",
+      "resourceId": "r-3bbd86c2",
+      "kind": "chapter",
+      "title": "The Damascus Sermon – First Word (hope)",
+      "url": "https://risaleinur.com/risale-i-nur-collection/69-the-damascus-sermon/3405-06-first-word.html",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-5b0e219d",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Art",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/art",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-6dbf98fc",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Towards the Lost Paradise – Regrets about Science and Technology",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/towards-the-lost-paradise/regrets-about-science-and-technology",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-606adc62",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Hikma (Wisdom)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-2/hikma-wisdom",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-5a966bbc",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Khuluq (Good Nature)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/khuluq-good-nature",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-ff604936",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "The Statue of Our Souls – Action and Thought",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/the-statue-of-our-souls-en/action-and-thought75",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-76dcf25d",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Questions and Answers – Submission, Sense, and Reason",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/questions-and-answers-en/submission-sense-and-reason",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-6878ab9c",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Emerald Hills of the Heart (Key Concepts in Sufism) – Halwat and 'Uzlat (Privacy and Seclusion)",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/key-concepts-in-the-practice-of-sufism-1/halwat-and-uzlat-privacy-and-seclusion",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "i-ebaa86ee",
+      "resourceId": "r-3ae636fd",
+      "kind": "chapter",
+      "title": "Pearls of Wisdom – Essentials of the Way",
+      "url": "https://fgulen.com/en/fethullah-gulens-works/pearls-of-wisdom-en/essentials-of-the-way",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 18,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-13"
     }
   ],
   "passages": [],
-  "topicHints": []
+  "topicHints": [
+    {
+      "id": "h-d38f8b24",
+      "age": 13,
+      "topic": 1,
+      "fromSheet": "S1 week 1",
+      "hint": "The Words – The First Word (Bismillah)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-e8499966",
+      "age": 13,
+      "topic": 2,
+      "fromSheet": "S1 week 2",
+      "hint": "The Best Example: Our Prophet (pbuh)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-d8958ad4",
+      "age": 13,
+      "topic": 3,
+      "fromSheet": "S1 week 3",
+      "hint": "The Messenger of God: Muhammad – Truthfulness",
+      "catalogueId": "s-5a47013e44"
+    },
+    {
+      "id": "h-046e3ff1",
+      "age": 13,
+      "topic": 4,
+      "fromSheet": "S1 week 4",
+      "hint": "The Words – The Twenty-First Word (prayer)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-7b73f83e",
+      "age": 13,
+      "topic": 5,
+      "fromSheet": "S1 week 5",
+      "hint": "Questions and Answers – What Is the Point of Worship? (related reading)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-3ad348f6",
+      "age": 13,
+      "topic": 6,
+      "fromSheet": "S1 week 6",
+      "hint": "Ramadan, Frugality, Thanksgiving – Thanksgiving",
+      "catalogueId": null
+    },
+    {
+      "id": "h-9ada83fd",
+      "age": 13,
+      "topic": 7,
+      "fromSheet": "S1 week 7",
+      "hint": "Pearls of Wisdom – The Rights of Parents",
+      "catalogueId": null
+    },
+    {
+      "id": "h-dc4a9af5",
+      "age": 13,
+      "topic": 8,
+      "fromSheet": "S1 week 8",
+      "hint": "Pearls of Wisdom – Friendship",
+      "catalogueId": null
+    },
+    {
+      "id": "h-d75c6d1d",
+      "age": 13,
+      "topic": 9,
+      "fromSheet": "S1 week 9",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Sabr (Patience)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-44737884",
+      "age": 13,
+      "topic": 10,
+      "fromSheet": "S1 week 10",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Tawadu (Humility)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-183d191d",
+      "age": 13,
+      "topic": 11,
+      "fromSheet": "S1 week 11",
+      "hint": "The Damascus Sermon – Third Word (truthfulness)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-bb4840f1",
+      "age": 13,
+      "topic": 12,
+      "fromSheet": "S1 week 12",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Ikhlas (Sincerity)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-e2d26ca5",
+      "age": 13,
+      "topic": 13,
+      "fromSheet": "S1 week 13",
+      "hint": "Pearls of Wisdom – Holding One's Tongue",
+      "catalogueId": null
+    },
+    {
+      "id": "h-3569072a",
+      "age": 13,
+      "topic": 14,
+      "fromSheet": "S1 week 14",
+      "hint": "The Words – The Second Word (happiness of belief)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-09a6dadd",
+      "age": 13,
+      "topic": 15,
+      "fromSheet": "S1 week 15",
+      "hint": "Who Is Muhammad (pbuh)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-d6a4ebd0",
+      "age": 13,
+      "topic": 16,
+      "fromSheet": "S1 week 16",
+      "hint": "Companions of the Prophet (article collection)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-db1a304f",
+      "age": 13,
+      "topic": 17,
+      "fromSheet": "S1 week 17",
+      "hint": "Ramadan, Frugality, Thanksgiving – Frugality",
+      "catalogueId": null
+    },
+    {
+      "id": "h-69513d78",
+      "age": 13,
+      "topic": 18,
+      "fromSheet": "S1 week 18",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Shukr (Thankfulness)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-f6d7ffe2",
+      "age": 13,
+      "topic": 19,
+      "fromSheet": "S1 week 19",
+      "hint": "Essentials of the Islamic Faith – Angels and Their Functions",
+      "catalogueId": "s-4e7221047a"
+    },
+    {
+      "id": "h-772e78bc",
+      "age": 13,
+      "topic": 20,
+      "fromSheet": "S1 week 20",
+      "hint": "Toward a Global Civilization of Love and Tolerance – Tolerance in the Life of the Individual and Society",
+      "catalogueId": null
+    },
+    {
+      "id": "h-1b4b5fe3",
+      "age": 13,
+      "topic": 21,
+      "fromSheet": "S1 week 21",
+      "hint": "The Broken Jug – Living on Pure (Halal) Sustenance and Doing Good Deeds",
+      "catalogueId": null
+    },
+    {
+      "id": "h-1762cdfa",
+      "age": 13,
+      "topic": 22,
+      "fromSheet": "S1 week 22",
+      "hint": "Questions and Answers – Modesty and Effacement",
+      "catalogueId": null
+    },
+    {
+      "id": "h-bca6ae14",
+      "age": 13,
+      "topic": 23,
+      "fromSheet": "S1 week 23",
+      "hint": "The Letters – Addendum Concerning Backbiting (22nd Letter)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-9d0d2c97",
+      "age": 13,
+      "topic": 24,
+      "fromSheet": "S1 week 24",
+      "hint": "Weekly Sermon – Islam's Perspective on Environmental Responsibility",
+      "catalogueId": null
+    },
+    {
+      "id": "h-facb02e8",
+      "age": 13,
+      "topic": 25,
+      "fromSheet": "S1 week 25",
+      "hint": "The Protector of the Helpless: the Prophet (pbuh) (related reading)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-808273ea",
+      "age": 13,
+      "topic": 26,
+      "fromSheet": "S1 week 26",
+      "hint": "Towards the Lost Paradise – Compassion",
+      "catalogueId": null
+    },
+    {
+      "id": "h-6c689572",
+      "age": 13,
+      "topic": 27,
+      "fromSheet": "S1 week 27",
+      "hint": "A Day in the Life of Our Prophet (related reading)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-d42b5d5d",
+      "age": 13,
+      "topic": 28,
+      "fromSheet": "S1 week 28",
+      "hint": "The Messenger of God: Muhammad – Trustworthiness",
+      "catalogueId": "s-5a47013e44"
+    },
+    {
+      "id": "h-673301ab",
+      "age": 13,
+      "topic": 29,
+      "fromSheet": "S1 week 29",
+      "hint": "The Gleams (Flashes) – The Second Gleam (Prophet Job's patience)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-94a7223b",
+      "age": 13,
+      "topic": 30,
+      "fromSheet": "S1 week 30",
+      "hint": "The Letters – The Twenty-First Letter (serving elderly parents)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-ad1a873d",
+      "age": 13,
+      "topic": 31,
+      "fromSheet": "S1 week 31",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Haya (Modesty)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-dfca8256",
+      "age": 13,
+      "topic": 32,
+      "fromSheet": "S1 week 32",
+      "hint": "The Letters – The Twenty-Second Letter (brotherhood)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-8283642c",
+      "age": 13,
+      "topic": 33,
+      "fromSheet": "S1 week 33",
+      "hint": "Questions and Answers – Desire to Emulate, Envy, and Hastening to Do Good",
+      "catalogueId": null
+    },
+    {
+      "id": "h-e2c5d15a",
+      "age": 13,
+      "topic": 34,
+      "fromSheet": "S1 week 34",
+      "hint": "Ramadan, Frugality, Thanksgiving – Zakat",
+      "catalogueId": null
+    },
+    {
+      "id": "h-c23f9b95",
+      "age": 13,
+      "topic": 35,
+      "fromSheet": "S1 week 35",
+      "hint": "The Words – The Ninth Word (the five daily prayers)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-0107fbcd",
+      "age": 13,
+      "topic": 36,
+      "fromSheet": "S1 week 36",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Muhasaba (Self-Criticism)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-b77f1fc9",
+      "age": 14,
+      "topic": 1,
+      "fromSheet": "S2 week 1",
+      "hint": "Questions and Answers – What Is the Role of Prophethood and of Prophets?",
+      "catalogueId": null
+    },
+    {
+      "id": "h-fb1f9b84",
+      "age": 14,
+      "topic": 2,
+      "fromSheet": "S2 week 2",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Qalb (Heart) 1",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-a0c8dd19",
+      "age": 14,
+      "topic": 3,
+      "fromSheet": "S2 week 3",
+      "hint": "The Messenger of God: Muhammad – Complete Sincerity",
+      "catalogueId": "s-5a47013e44"
+    },
+    {
+      "id": "h-7311e397",
+      "age": 14,
+      "topic": 4,
+      "fromSheet": "S2 week 4",
+      "hint": "Pearls of Wisdom – Humility",
+      "catalogueId": null
+    },
+    {
+      "id": "h-af524ff8",
+      "age": 14,
+      "topic": 5,
+      "fromSheet": "S2 week 5",
+      "hint": "Weekly Sermon – Comprehensive Intention and Comprehensive Gratitude",
+      "catalogueId": null
+    },
+    {
+      "id": "h-1511a107",
+      "age": 14,
+      "topic": 6,
+      "fromSheet": "S2 week 6",
+      "hint": "Moral of the Parable of Cain and Abel (envy)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-d8c65e52",
+      "age": 14,
+      "topic": 7,
+      "fromSheet": "S2 week 7",
+      "hint": "The Prophet's Compassion for His Ummah",
+      "catalogueId": null
+    },
+    {
+      "id": "h-1656300d",
+      "age": 14,
+      "topic": 8,
+      "fromSheet": "S2 week 8",
+      "hint": "Weekly Sermon – Accommodating and Reconciling of Hearts",
+      "catalogueId": null
+    },
+    {
+      "id": "h-37754599",
+      "age": 14,
+      "topic": 9,
+      "fromSheet": "S2 week 9",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Sidq (Truthfulness)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-9d9c0218",
+      "age": 14,
+      "topic": 10,
+      "fromSheet": "S2 week 10",
+      "hint": "Pearls of Wisdom – Personal Integrity",
+      "catalogueId": null
+    },
+    {
+      "id": "h-4b005661",
+      "age": 14,
+      "topic": 11,
+      "fromSheet": "S2 week 11",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Nafs (The Soul)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-cbeba44a",
+      "age": 14,
+      "topic": 12,
+      "fromSheet": "S2 week 12",
+      "hint": "The Broken Jug – Spirit of Altruism",
+      "catalogueId": null
+    },
+    {
+      "id": "h-a815d9f2",
+      "age": 14,
+      "topic": 13,
+      "fromSheet": "S2 week 13",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Tawba (Repentance) (related reading)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-4729e3ee",
+      "age": 14,
+      "topic": 14,
+      "fromSheet": "S2 week 14",
+      "hint": "The Statue of Our Souls – The Consciousness of Responsibility",
+      "catalogueId": null
+    },
+    {
+      "id": "h-4e09a5ce",
+      "age": 14,
+      "topic": 15,
+      "fromSheet": "S2 week 15",
+      "hint": "Essentials of the Islamic Faith – The Holy Qur'an",
+      "catalogueId": "s-4e7221047a"
+    },
+    {
+      "id": "h-c645ea2f",
+      "age": 14,
+      "topic": 16,
+      "fromSheet": "S2 week 16",
+      "hint": "Pearls of Wisdom – Love",
+      "catalogueId": null
+    },
+    {
+      "id": "h-14a64573",
+      "age": 14,
+      "topic": 17,
+      "fromSheet": "S2 week 17",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Istiqama (Steadfastness)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-a27ec5d2",
+      "age": 14,
+      "topic": 18,
+      "fromSheet": "S2 week 18",
+      "hint": "The Words – The Twenty-Sixth Word (Divine Determining, Qadar)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-7a4c9084",
+      "age": 14,
+      "topic": 19,
+      "fromSheet": "S2 week 19",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Tafakkur (Reflection)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-8fecb40a",
+      "age": 14,
+      "topic": 20,
+      "fromSheet": "S2 week 20",
+      "hint": "The Ties of Brotherhood: the Muhajirun and Ansar",
+      "catalogueId": null
+    },
+    {
+      "id": "h-2ccfc210",
+      "age": 14,
+      "topic": 21,
+      "fromSheet": "S2 week 21",
+      "hint": "The Messenger of God: Muhammad – Trustworthy and Asked No Wage",
+      "catalogueId": "s-5a47013e44"
+    },
+    {
+      "id": "h-45ec0236",
+      "age": 14,
+      "topic": 22,
+      "fromSheet": "S2 week 22",
+      "hint": "Weekly Sermon – Two Forms of Justice: Absolute and Relative",
+      "catalogueId": null
+    },
+    {
+      "id": "h-5c904573",
+      "age": 14,
+      "topic": 23,
+      "fromSheet": "S2 week 23",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Adab (Good Manners)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-9324d248",
+      "age": 14,
+      "topic": 24,
+      "fromSheet": "S2 week 24",
+      "hint": "The Damascus Sermon – Third Word (truthfulness)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-8bc89483",
+      "age": 14,
+      "topic": 25,
+      "fromSheet": "S2 week 25",
+      "hint": "The Words – The Tenth Word (Resurrection)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-a2bff099",
+      "age": 14,
+      "topic": 26,
+      "fromSheet": "S2 week 26",
+      "hint": "Pearls of Wisdom – The Media",
+      "catalogueId": null
+    },
+    {
+      "id": "h-8f80ac82",
+      "age": 14,
+      "topic": 27,
+      "fromSheet": "S2 week 27",
+      "hint": "Questions and Answers – What Is Guidance, and Can We Guide Others?",
+      "catalogueId": null
+    },
+    {
+      "id": "h-cdd33f67",
+      "age": 14,
+      "topic": 28,
+      "fromSheet": "S2 week 28",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Wara' (Abstinence from the Doubtful)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-430b8668",
+      "age": 14,
+      "topic": 29,
+      "fromSheet": "S2 week 29",
+      "hint": "The Messenger of God: Muhammad – His Generosity",
+      "catalogueId": "s-5a47013e44"
+    },
+    {
+      "id": "h-96725225",
+      "age": 14,
+      "topic": 30,
+      "fromSheet": "S2 week 30",
+      "hint": "The Letters – The Twenty-Fourth Letter (why mercy allows misfortune)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-c7041cb5",
+      "age": 14,
+      "topic": 31,
+      "fromSheet": "S2 week 31",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Tawakkul (Reliance on God)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-63a5a3cf",
+      "age": 14,
+      "topic": 32,
+      "fromSheet": "S2 week 32",
+      "hint": "The Words – The Twenty-Third Word (virtues of belief)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-f8f0707c",
+      "age": 14,
+      "topic": 33,
+      "fromSheet": "S2 week 33",
+      "hint": "The Prayer Journal of Our Prophet (pbuh)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-91f999e3",
+      "age": 14,
+      "topic": 34,
+      "fromSheet": "S2 week 34",
+      "hint": "Pearls of Wisdom – Prophet Muhammad",
+      "catalogueId": null
+    },
+    {
+      "id": "h-84c01f41",
+      "age": 14,
+      "topic": 35,
+      "fromSheet": "S2 week 35",
+      "hint": "Exemplary Youth: Muadh ibn Jabal",
+      "catalogueId": null
+    },
+    {
+      "id": "h-5756af45",
+      "age": 14,
+      "topic": 36,
+      "fromSheet": "S2 week 36",
+      "hint": "Weekly Sermon – Self-Criticism and Asking Forgiveness from God",
+      "catalogueId": null
+    },
+    {
+      "id": "h-108b47b8",
+      "age": 15,
+      "topic": 1,
+      "fromSheet": "S3 week 1",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Wijdan (Conscience)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-48e958ee",
+      "age": 15,
+      "topic": 2,
+      "fromSheet": "S3 week 2",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Tawhid (Unity of God)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-1095ea2c",
+      "age": 15,
+      "topic": 3,
+      "fromSheet": "S3 week 3",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Qalb (Heart) 2",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-bd380bf2",
+      "age": 15,
+      "topic": 4,
+      "fromSheet": "S3 week 4",
+      "hint": "The Words – The Twentieth Word (miracles of the Prophets)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-fdf7112e",
+      "age": 15,
+      "topic": 5,
+      "fromSheet": "S3 week 5",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Tawba (Repentance)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-22a74097",
+      "age": 15,
+      "topic": 6,
+      "fromSheet": "S3 week 6",
+      "hint": "Questions and Answers – Can Our Intention Save Us?",
+      "catalogueId": null
+    },
+    {
+      "id": "h-54b5e3ac",
+      "age": 15,
+      "topic": 7,
+      "fromSheet": "S3 week 7",
+      "hint": "Pearls of Wisdom – The True Long Life",
+      "catalogueId": null
+    },
+    {
+      "id": "h-17f75005",
+      "age": 15,
+      "topic": 8,
+      "fromSheet": "S3 week 8",
+      "hint": "Questions and Answers – What Is the Point of Worship?",
+      "catalogueId": null
+    },
+    {
+      "id": "h-465512b3",
+      "age": 15,
+      "topic": 9,
+      "fromSheet": "S3 week 9",
+      "hint": "Questions and Answers – Mechanisms of Soul and Conscience",
+      "catalogueId": null
+    },
+    {
+      "id": "h-aa4b8a6b",
+      "age": 15,
+      "topic": 10,
+      "fromSheet": "S3 week 10",
+      "hint": "The Statue of Our Souls – The Consciousness of Responsibility",
+      "catalogueId": null
+    },
+    {
+      "id": "h-c691b17d",
+      "age": 15,
+      "topic": 11,
+      "fromSheet": "S3 week 11",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Istiqama (Steadfastness)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-4bceac52",
+      "age": 15,
+      "topic": 12,
+      "fromSheet": "S3 week 12",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Ihsan (Perfect Goodness)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-343ccb6e",
+      "age": 15,
+      "topic": 13,
+      "fromSheet": "S3 week 13",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Sabr (Patience)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-bec10ab6",
+      "age": 15,
+      "topic": 14,
+      "fromSheet": "S3 week 14",
+      "hint": "Reliance, Surrender, Commitment, and Confidence",
+      "catalogueId": null
+    },
+    {
+      "id": "h-e6ee5cba",
+      "age": 15,
+      "topic": 15,
+      "fromSheet": "S3 week 15",
+      "hint": "Pearls of Wisdom – People of Service",
+      "catalogueId": null
+    },
+    {
+      "id": "h-1685dc71",
+      "age": 15,
+      "topic": 16,
+      "fromSheet": "S3 week 16",
+      "hint": "Questions and Answers – The Nature of the Self (Ego)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-ef84fa1b",
+      "age": 15,
+      "topic": 17,
+      "fromSheet": "S3 week 17",
+      "hint": "The Statue of Our Souls – Our Philosophy of Life",
+      "catalogueId": null
+    },
+    {
+      "id": "h-99d1b1e9",
+      "age": 15,
+      "topic": 18,
+      "fromSheet": "S3 week 18",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Muhasaba (Self-Criticism)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-8ca53333",
+      "age": 15,
+      "topic": 19,
+      "fromSheet": "S3 week 19",
+      "hint": "Pearls of Wisdom – Science and Knowledge",
+      "catalogueId": null
+    },
+    {
+      "id": "h-4bc597dc",
+      "age": 15,
+      "topic": 20,
+      "fromSheet": "S3 week 20",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Taqwa (Piety)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-ec7f99b7",
+      "age": 15,
+      "topic": 21,
+      "fromSheet": "S3 week 21",
+      "hint": "Questions and Answers – Willpower and Being Tested with It",
+      "catalogueId": null
+    },
+    {
+      "id": "h-5cacec0f",
+      "age": 15,
+      "topic": 22,
+      "fromSheet": "S3 week 22",
+      "hint": "Pearls of Wisdom – Man of Service",
+      "catalogueId": null
+    },
+    {
+      "id": "h-a3c9a709",
+      "age": 15,
+      "topic": 23,
+      "fromSheet": "S3 week 23",
+      "hint": "Towards the Lost Paradise – Some Drop Out Half-Way",
+      "catalogueId": null
+    },
+    {
+      "id": "h-9a6a4604",
+      "age": 15,
+      "topic": 24,
+      "fromSheet": "S3 week 24",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Muraqaba (Self-Supervision)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-54add16f",
+      "age": 15,
+      "topic": 25,
+      "fromSheet": "S3 week 25",
+      "hint": "The Words – The Fourth Word (value of prayer)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-9b025dc2",
+      "age": 15,
+      "topic": 26,
+      "fromSheet": "S3 week 26",
+      "hint": "Essentials of the Islamic Faith – The Spirit in the Intermediate World",
+      "catalogueId": "s-4e7221047a"
+    },
+    {
+      "id": "h-8bad6d10",
+      "age": 15,
+      "topic": 27,
+      "fromSheet": "S3 week 27",
+      "hint": "Essentials of the Islamic Faith – Science and Religion",
+      "catalogueId": "s-4e7221047a"
+    },
+    {
+      "id": "h-5becbaa0",
+      "age": 15,
+      "topic": 28,
+      "fromSheet": "S3 week 28",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Shukr (Thankfulness)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-9086bc71",
+      "age": 15,
+      "topic": 29,
+      "fromSheet": "S3 week 29",
+      "hint": "The Letters – Twenty-Fourth Letter, First Addendum: Prayer",
+      "catalogueId": null
+    },
+    {
+      "id": "h-d1bb73dc",
+      "age": 15,
+      "topic": 30,
+      "fromSheet": "S3 week 30",
+      "hint": "Pearls of Wisdom – Morals",
+      "catalogueId": null
+    },
+    {
+      "id": "h-503e0e4a",
+      "age": 15,
+      "topic": 31,
+      "fromSheet": "S3 week 31",
+      "hint": "Questions and Answers – What Is the Purpose of Spiritual Tension? (related reading)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-8196e0f5",
+      "age": 15,
+      "topic": 32,
+      "fromSheet": "S3 week 32",
+      "hint": "The Wing of the Bird: Fethullah Gülen on Sincerity",
+      "catalogueId": null
+    },
+    {
+      "id": "h-1284afdb",
+      "age": 15,
+      "topic": 33,
+      "fromSheet": "S3 week 33",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Riyada (Self-Discipline)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-5308ede1",
+      "age": 15,
+      "topic": 34,
+      "fromSheet": "S3 week 34",
+      "hint": "Pearls of Wisdom – Clarity about Aims and Means",
+      "catalogueId": null
+    },
+    {
+      "id": "h-8697d994",
+      "age": 15,
+      "topic": 35,
+      "fromSheet": "S3 week 35",
+      "hint": "Ramadan, Frugality, Thanksgiving – Thanksgiving",
+      "catalogueId": null
+    },
+    {
+      "id": "h-213588a2",
+      "age": 15,
+      "topic": 36,
+      "fromSheet": "S3 week 36",
+      "hint": "Towards the Lost Paradise – Self-Renewal",
+      "catalogueId": null
+    },
+    {
+      "id": "h-c011a4ec",
+      "age": 16,
+      "topic": 1,
+      "fromSheet": "S4 week 1",
+      "hint": "The Words – Addendum on the Prophet's Companions (27th Word)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-203dd7a1",
+      "age": 16,
+      "topic": 2,
+      "fromSheet": "S4 week 2",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Halwat and Jalwat (Privacy and Company)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-2920f2d8",
+      "age": 16,
+      "topic": 3,
+      "fromSheet": "S4 week 3",
+      "hint": "A Spirited and Active Life of Service",
+      "catalogueId": null
+    },
+    {
+      "id": "h-3cf45c8b",
+      "age": 16,
+      "topic": 4,
+      "fromSheet": "S4 week 4",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – I'thar (Altruism)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-90a05c6b",
+      "age": 16,
+      "topic": 5,
+      "fromSheet": "S4 week 5",
+      "hint": "The Role of Muslim Youth in the Time of the Prophet (pbuh)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-91bfa631",
+      "age": 16,
+      "topic": 6,
+      "fromSheet": "S4 week 6",
+      "hint": "The Statue of Our Souls – Consultation",
+      "catalogueId": null
+    },
+    {
+      "id": "h-a322683f",
+      "age": 16,
+      "topic": 7,
+      "fromSheet": "S4 week 7",
+      "hint": "The Broken Jug – A Spirit of Devotedness for a Lifetime",
+      "catalogueId": null
+    },
+    {
+      "id": "h-d3fe16dd",
+      "age": 16,
+      "topic": 8,
+      "fromSheet": "S4 week 8",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Wara' (Abstinence from the Doubtful)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-1db6452a",
+      "age": 16,
+      "topic": 9,
+      "fromSheet": "S4 week 9",
+      "hint": "Weekly Sermon – Reviving Faith, Values, and Purpose in a Challenging World",
+      "catalogueId": null
+    },
+    {
+      "id": "h-6c3c543d",
+      "age": 16,
+      "topic": 10,
+      "fromSheet": "S4 week 10",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Ibada (Worship and Devotion)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-628fd411",
+      "age": 16,
+      "topic": 11,
+      "fromSheet": "S4 week 11",
+      "hint": "Exemplary Youth: Abdullah ibn Masud",
+      "catalogueId": null
+    },
+    {
+      "id": "h-f44c9be7",
+      "age": 16,
+      "topic": 12,
+      "fromSheet": "S4 week 12",
+      "hint": "The Damascus Sermon – Third Word (truthfulness)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-85cd1491",
+      "age": 16,
+      "topic": 13,
+      "fromSheet": "S4 week 13",
+      "hint": "Weekly Sermon – A Call for Compassion",
+      "catalogueId": null
+    },
+    {
+      "id": "h-13be2f2c",
+      "age": 16,
+      "topic": 14,
+      "fromSheet": "S4 week 14",
+      "hint": "Abu Bakr's Sensitivity in the Cave",
+      "catalogueId": null
+    },
+    {
+      "id": "h-da1d2700",
+      "age": 16,
+      "topic": 15,
+      "fromSheet": "S4 week 15",
+      "hint": "Pearls of Wisdom – Worship",
+      "catalogueId": null
+    },
+    {
+      "id": "h-462054fa",
+      "age": 16,
+      "topic": 16,
+      "fromSheet": "S4 week 16",
+      "hint": "The Companion in the Migration: Abu Bakr",
+      "catalogueId": null
+    },
+    {
+      "id": "h-00d6795e",
+      "age": 16,
+      "topic": 17,
+      "fromSheet": "S4 week 17",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Ikhlas (Sincerity)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-5eb18664",
+      "age": 16,
+      "topic": 18,
+      "fromSheet": "S4 week 18",
+      "hint": "Pearls of Wisdom – Consultation",
+      "catalogueId": null
+    },
+    {
+      "id": "h-d024467a",
+      "age": 16,
+      "topic": 19,
+      "fromSheet": "S4 week 19",
+      "hint": "Weekly Sermon – Different Kinds of Tests the Devoted Souls Go Through",
+      "catalogueId": null
+    },
+    {
+      "id": "h-a08990e3",
+      "age": 16,
+      "topic": 20,
+      "fromSheet": "S4 week 20",
+      "hint": "The Broken Jug – Living on Pure (Halal) Sustenance and Doing Good Deeds",
+      "catalogueId": null
+    },
+    {
+      "id": "h-c15c9ad2",
+      "age": 16,
+      "topic": 21,
+      "fromSheet": "S4 week 21",
+      "hint": "The Statue of Our Souls – Ideal Generations",
+      "catalogueId": null
+    },
+    {
+      "id": "h-50c27432",
+      "age": 16,
+      "topic": 22,
+      "fromSheet": "S4 week 22",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Khushu' (Reverent Awe)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-02f26d6a",
+      "age": 16,
+      "topic": 23,
+      "fromSheet": "S4 week 23",
+      "hint": "Toward a Global Civilization of Love and Tolerance – Tolerance in the Life of the Individual and Society",
+      "catalogueId": null
+    },
+    {
+      "id": "h-40ba6715",
+      "age": 16,
+      "topic": 24,
+      "fromSheet": "S4 week 24",
+      "hint": "Weekly Sermon – A Believer's Stance in the Face of Provocation",
+      "catalogueId": null
+    },
+    {
+      "id": "h-4695d7bb",
+      "age": 16,
+      "topic": 25,
+      "fromSheet": "S4 week 25",
+      "hint": "Endeavor for Renewal – The Devoted Souls and Life Standards",
+      "catalogueId": null
+    },
+    {
+      "id": "h-31a5e69c",
+      "age": 16,
+      "topic": 26,
+      "fromSheet": "S4 week 26",
+      "hint": "Weekly Sermon – Comprehensive Intention and Comprehensive Gratitude",
+      "catalogueId": null
+    },
+    {
+      "id": "h-5011cac1",
+      "age": 16,
+      "topic": 27,
+      "fromSheet": "S4 week 27",
+      "hint": "Weekly Sermon – Duty of Architects of Revival",
+      "catalogueId": null
+    },
+    {
+      "id": "h-a325018f",
+      "age": 16,
+      "topic": 28,
+      "fromSheet": "S4 week 28",
+      "hint": "Trade Principles According to the Sunnah",
+      "catalogueId": null
+    },
+    {
+      "id": "h-0916b065",
+      "age": 16,
+      "topic": 29,
+      "fromSheet": "S4 week 29",
+      "hint": "Pearls of Wisdom – Humanity",
+      "catalogueId": null
+    },
+    {
+      "id": "h-fb52e3fb",
+      "age": 16,
+      "topic": 30,
+      "fromSheet": "S4 week 30",
+      "hint": "The Prayer Journal of Our Prophet (pbuh)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-9d168e1e",
+      "age": 16,
+      "topic": 31,
+      "fromSheet": "S4 week 31",
+      "hint": "The Leadership Aspect of Our Prophet (pbuh)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-8f3e4ab6",
+      "age": 16,
+      "topic": 32,
+      "fromSheet": "S4 week 32",
+      "hint": "The Messenger of God: Muhammad – His Generosity",
+      "catalogueId": "s-5a47013e44"
+    },
+    {
+      "id": "h-d5d64416",
+      "age": 16,
+      "topic": 33,
+      "fromSheet": "S4 week 33",
+      "hint": "The Damascus Sermon – Sixth Word (consultation)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-05f181e8",
+      "age": 16,
+      "topic": 34,
+      "fromSheet": "S4 week 34",
+      "hint": "Towards the Lost Paradise – The Decline of Spiritual Energy",
+      "catalogueId": null
+    },
+    {
+      "id": "h-e6e931e1",
+      "age": 16,
+      "topic": 35,
+      "fromSheet": "S4 week 35",
+      "hint": "The Statue of Our Souls – The Hero of Thought and Action",
+      "catalogueId": null
+    },
+    {
+      "id": "h-f31d0715",
+      "age": 16,
+      "topic": 36,
+      "fromSheet": "S4 week 36",
+      "hint": "The Statue of Our Souls – The Generations of Hope – I",
+      "catalogueId": null
+    },
+    {
+      "id": "h-eafa1cb6",
+      "age": 17,
+      "topic": 1,
+      "fromSheet": "S5 week 1",
+      "hint": "Weekly Sermon – A Generation Devoted to the Qur'an",
+      "catalogueId": null
+    },
+    {
+      "id": "h-4c38eaf8",
+      "age": 17,
+      "topic": 2,
+      "fromSheet": "S5 week 2",
+      "hint": "The Permission for Hijra and Important Advice from the Prophet",
+      "catalogueId": null
+    },
+    {
+      "id": "h-02d84427",
+      "age": 17,
+      "topic": 3,
+      "fromSheet": "S5 week 3",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Ibada (Worship and Devotion)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-70848999",
+      "age": 17,
+      "topic": 4,
+      "fromSheet": "S5 week 4",
+      "hint": "Prophet Muhammad as Commander – The Wisdom of God's Messenger",
+      "catalogueId": null
+    },
+    {
+      "id": "h-1aae7ced",
+      "age": 17,
+      "topic": 5,
+      "fromSheet": "S5 week 5",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Ikhlas (Sincerity)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-ec941404",
+      "age": 17,
+      "topic": 6,
+      "fromSheet": "S5 week 6",
+      "hint": "Pearls of Wisdom – Heroes of Love",
+      "catalogueId": null
+    },
+    {
+      "id": "h-2a280f51",
+      "age": 17,
+      "topic": 7,
+      "fromSheet": "S5 week 7",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Tawakkul (Reliance on God)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-61208ea3",
+      "age": 17,
+      "topic": 8,
+      "fromSheet": "S5 week 8",
+      "hint": "Towards the Lost Paradise – The Age of Speed",
+      "catalogueId": null
+    },
+    {
+      "id": "h-a44bbeb9",
+      "age": 17,
+      "topic": 9,
+      "fromSheet": "S5 week 9",
+      "hint": "Essentials of the Islamic Faith – The Concept of Science and Technology (related reading)",
+      "catalogueId": "s-4e7221047a"
+    },
+    {
+      "id": "h-c945830f",
+      "age": 17,
+      "topic": 10,
+      "fromSheet": "S5 week 10",
+      "hint": "A Day in the Life of Our Prophet",
+      "catalogueId": null
+    },
+    {
+      "id": "h-e2d4c501",
+      "age": 17,
+      "topic": 11,
+      "fromSheet": "S5 week 11",
+      "hint": "Essentials of the Islamic Faith – His Life (Prophet Muhammad)",
+      "catalogueId": "s-4e7221047a"
+    },
+    {
+      "id": "h-056568eb",
+      "age": 17,
+      "topic": 12,
+      "fromSheet": "S5 week 12",
+      "hint": "The Messenger of God: Muhammad – Calling People Wisely and with Kindness",
+      "catalogueId": "s-5a47013e44"
+    },
+    {
+      "id": "h-e18e040d",
+      "age": 17,
+      "topic": 13,
+      "fromSheet": "S5 week 13",
+      "hint": "The Fountain of Knowledge and Wisdom: Abdullah ibn Masud",
+      "catalogueId": null
+    },
+    {
+      "id": "h-9cd77d25",
+      "age": 17,
+      "topic": 14,
+      "fromSheet": "S5 week 14",
+      "hint": "Pearls of Wisdom – Man of Service",
+      "catalogueId": null
+    },
+    {
+      "id": "h-f43baa8d",
+      "age": 17,
+      "topic": 15,
+      "fromSheet": "S5 week 15",
+      "hint": "The Words – The Thirtieth Word, First Aim (the ego, \"ana\")",
+      "catalogueId": null
+    },
+    {
+      "id": "h-b2fa1354",
+      "age": 17,
+      "topic": 16,
+      "fromSheet": "S5 week 16",
+      "hint": "Towards the Lost Paradise – Generations with No Ideals (related reading)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-0629488d",
+      "age": 17,
+      "topic": 17,
+      "fromSheet": "S5 week 17",
+      "hint": "The Statue of Our Souls – On How to Find Our Path",
+      "catalogueId": null
+    },
+    {
+      "id": "h-a4d85bde",
+      "age": 17,
+      "topic": 18,
+      "fromSheet": "S5 week 18",
+      "hint": "Trade Principles According to the Sunnah",
+      "catalogueId": null
+    },
+    {
+      "id": "h-0cd37c53",
+      "age": 17,
+      "topic": 19,
+      "fromSheet": "S5 week 19",
+      "hint": "Ramadan, Frugality, Thanksgiving – Thanksgiving",
+      "catalogueId": null
+    },
+    {
+      "id": "h-4a01a5ab",
+      "age": 17,
+      "topic": 20,
+      "fromSheet": "S5 week 20",
+      "hint": "Questions and Answers – Jihad with Different Aspects",
+      "catalogueId": null
+    },
+    {
+      "id": "h-8969bf86",
+      "age": 17,
+      "topic": 21,
+      "fromSheet": "S5 week 21",
+      "hint": "Towards the Lost Paradise – The Spirit of Youth",
+      "catalogueId": null
+    },
+    {
+      "id": "h-f3b2b169",
+      "age": 17,
+      "topic": 22,
+      "fromSheet": "S5 week 22",
+      "hint": "The Statue of Our Souls – The Consciousness of Responsibility",
+      "catalogueId": null
+    },
+    {
+      "id": "h-e4de827e",
+      "age": 17,
+      "topic": 23,
+      "fromSheet": "S5 week 23",
+      "hint": "Balance Between Worldly Life and the Hereafter",
+      "catalogueId": null
+    },
+    {
+      "id": "h-2c4b635c",
+      "age": 17,
+      "topic": 24,
+      "fromSheet": "S5 week 24",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Zuhd (Detachment)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-db73e6b1",
+      "age": 17,
+      "topic": 25,
+      "fromSheet": "S5 week 25",
+      "hint": "Questions and Answers – Modesty and Effacement",
+      "catalogueId": null
+    },
+    {
+      "id": "h-97fd381e",
+      "age": 17,
+      "topic": 26,
+      "fromSheet": "S5 week 26",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Ihsan (Perfect Goodness)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-c02741a9",
+      "age": 17,
+      "topic": 27,
+      "fromSheet": "S5 week 27",
+      "hint": "Questions and Answers – Why Is Atheism So Widespread?",
+      "catalogueId": null
+    },
+    {
+      "id": "h-ca935f6c",
+      "age": 17,
+      "topic": 28,
+      "fromSheet": "S5 week 28",
+      "hint": "Weekly Sermon – Direction and Purpose in Knowledge",
+      "catalogueId": null
+    },
+    {
+      "id": "h-6c1a0fcd",
+      "age": 17,
+      "topic": 29,
+      "fromSheet": "S5 week 29",
+      "hint": "Towards the Lost Paradise – Compassion",
+      "catalogueId": null
+    },
+    {
+      "id": "h-4a2ddefc",
+      "age": 17,
+      "topic": 30,
+      "fromSheet": "S5 week 30",
+      "hint": "Weekly Sermon – Islam's Perspective on Environmental Responsibility (related reading)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-d46f0346",
+      "age": 17,
+      "topic": 31,
+      "fromSheet": "S5 week 31",
+      "hint": "Pearls of Wisdom – Right",
+      "catalogueId": null
+    },
+    {
+      "id": "h-85f3f898",
+      "age": 17,
+      "topic": 32,
+      "fromSheet": "S5 week 32",
+      "hint": "Weekly Sermon – Comprehensive Intention and Comprehensive Gratitude",
+      "catalogueId": null
+    },
+    {
+      "id": "h-e6be78de",
+      "age": 17,
+      "topic": 33,
+      "fromSheet": "S5 week 33",
+      "hint": "The Leadership Aspect of Our Prophet (pbuh)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-136b39ca",
+      "age": 17,
+      "topic": 34,
+      "fromSheet": "S5 week 34",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Muhasaba (Self-Criticism)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-abeb92a9",
+      "age": 17,
+      "topic": 35,
+      "fromSheet": "S5 week 35",
+      "hint": "The Broken Jug – The Spirit of Salam",
+      "catalogueId": null
+    },
+    {
+      "id": "h-e2191786",
+      "age": 17,
+      "topic": 36,
+      "fromSheet": "S5 week 36",
+      "hint": "Weekly Sermon – Internalizing Islam",
+      "catalogueId": null
+    },
+    {
+      "id": "h-968e2721",
+      "age": 18,
+      "topic": 1,
+      "fromSheet": "S6 week 1",
+      "hint": "The Statue of Our Souls – The Inheritors of the Earth",
+      "catalogueId": null
+    },
+    {
+      "id": "h-693f34a7",
+      "age": 18,
+      "topic": 2,
+      "fromSheet": "S6 week 2",
+      "hint": "Pearls of Wisdom – Life, Human Character, and Virtue",
+      "catalogueId": null
+    },
+    {
+      "id": "h-8c5f00f0",
+      "age": 18,
+      "topic": 3,
+      "fromSheet": "S6 week 3",
+      "hint": "The First Migration to Ethiopia",
+      "catalogueId": null
+    },
+    {
+      "id": "h-85413e82",
+      "age": 18,
+      "topic": 4,
+      "fromSheet": "S6 week 4",
+      "hint": "The Words – The Third Word (worship)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-ebf7f641",
+      "age": 18,
+      "topic": 5,
+      "fromSheet": "S6 week 5",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – 'Aql (Reason)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-3e704225",
+      "age": 18,
+      "topic": 6,
+      "fromSheet": "S6 week 6",
+      "hint": "Pearls of Wisdom – The Media",
+      "catalogueId": null
+    },
+    {
+      "id": "h-b7440dfc",
+      "age": 18,
+      "topic": 7,
+      "fromSheet": "S6 week 7",
+      "hint": "A Spirited and Active Life of Service",
+      "catalogueId": null
+    },
+    {
+      "id": "h-02ad796e",
+      "age": 18,
+      "topic": 8,
+      "fromSheet": "S6 week 8",
+      "hint": "Weekly Sermon – The Art of Politics in Line with the Qur'an and Sunnah",
+      "catalogueId": null
+    },
+    {
+      "id": "h-d13d6a3b",
+      "age": 18,
+      "topic": 9,
+      "fromSheet": "S6 week 9",
+      "hint": "Questions and Answers – Why Does the Qur'an Open with Iqra' (Read)?",
+      "catalogueId": null
+    },
+    {
+      "id": "h-e3650a5c",
+      "age": 18,
+      "topic": 10,
+      "fromSheet": "S6 week 10",
+      "hint": "Pearls of Wisdom – The Rights of Parents",
+      "catalogueId": null
+    },
+    {
+      "id": "h-c372b99d",
+      "age": 18,
+      "topic": 11,
+      "fromSheet": "S6 week 11",
+      "hint": "Exemplary Youth: Abdullah ibn Masud",
+      "catalogueId": null
+    },
+    {
+      "id": "h-a7e5a52d",
+      "age": 18,
+      "topic": 12,
+      "fromSheet": "S6 week 12",
+      "hint": "The Statue of Our Souls – The World We Long For",
+      "catalogueId": null
+    },
+    {
+      "id": "h-6591cf22",
+      "age": 18,
+      "topic": 13,
+      "fromSheet": "S6 week 13",
+      "hint": "Weekly Sermon – Islam's Perspective on Environmental Responsibility",
+      "catalogueId": null
+    },
+    {
+      "id": "h-dfb6f9dd",
+      "age": 18,
+      "topic": 14,
+      "fromSheet": "S6 week 14",
+      "hint": "The Statue of Our Souls – Toward Tomorrow",
+      "catalogueId": null
+    },
+    {
+      "id": "h-8a1cdef7",
+      "age": 18,
+      "topic": 15,
+      "fromSheet": "S6 week 15",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Ilm (Knowledge)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-6586b0a4",
+      "age": 18,
+      "topic": 16,
+      "fromSheet": "S6 week 16",
+      "hint": "Pearls of Wisdom – People of Service",
+      "catalogueId": null
+    },
+    {
+      "id": "h-1484a533",
+      "age": 18,
+      "topic": 17,
+      "fromSheet": "S6 week 17",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Khulla (Sincere Friendship)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-07d3c7fe",
+      "age": 18,
+      "topic": 18,
+      "fromSheet": "S6 week 18",
+      "hint": "Umm Ayman: A Life Devoted to the Prophet (pbuh)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-ec50dda3",
+      "age": 18,
+      "topic": 19,
+      "fromSheet": "S6 week 19",
+      "hint": "Questions and Answers – What Is the Sunna's Role Today?",
+      "catalogueId": null
+    },
+    {
+      "id": "h-c9dec803",
+      "age": 18,
+      "topic": 20,
+      "fromSheet": "S6 week 20",
+      "hint": "The Words – Thirteenth Word: A Warning and Lesson to a Group of Unhappy Young People",
+      "catalogueId": null
+    },
+    {
+      "id": "h-30216fa1",
+      "age": 18,
+      "topic": 21,
+      "fromSheet": "S6 week 21",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Zuhd (Detachment)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-99cd09e9",
+      "age": 18,
+      "topic": 22,
+      "fromSheet": "S6 week 22",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Istiqama (Steadfastness)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-9045e6ee",
+      "age": 18,
+      "topic": 23,
+      "fromSheet": "S6 week 23",
+      "hint": "Pearls of Wisdom – Civilization",
+      "catalogueId": null
+    },
+    {
+      "id": "h-9d770ea3",
+      "age": 18,
+      "topic": 24,
+      "fromSheet": "S6 week 24",
+      "hint": "The Damascus Sermon – First Word (hope)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-0a69e0ba",
+      "age": 18,
+      "topic": 25,
+      "fromSheet": "S6 week 25",
+      "hint": "Pearls of Wisdom – Art",
+      "catalogueId": null
+    },
+    {
+      "id": "h-70ed6069",
+      "age": 18,
+      "topic": 26,
+      "fromSheet": "S6 week 26",
+      "hint": "Towards the Lost Paradise – Regrets about Science and Technology",
+      "catalogueId": null
+    },
+    {
+      "id": "h-965938f3",
+      "age": 18,
+      "topic": 27,
+      "fromSheet": "S6 week 27",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Hikma (Wisdom)",
+      "catalogueId": null
+    },
+    {
+      "id": "h-c816adea",
+      "age": 18,
+      "topic": 28,
+      "fromSheet": "S6 week 28",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Khuluq (Good Nature)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-d01ba972",
+      "age": 18,
+      "topic": 29,
+      "fromSheet": "S6 week 29",
+      "hint": "Weekly Sermon – Two Forms of Justice: Absolute and Relative",
+      "catalogueId": null
+    },
+    {
+      "id": "h-4e3a09a7",
+      "age": 18,
+      "topic": 30,
+      "fromSheet": "S6 week 30",
+      "hint": "The Statue of Our Souls – Action and Thought",
+      "catalogueId": null
+    },
+    {
+      "id": "h-c5f089c8",
+      "age": 18,
+      "topic": 31,
+      "fromSheet": "S6 week 31",
+      "hint": "Questions and Answers – Submission, Sense, and Reason",
+      "catalogueId": null
+    },
+    {
+      "id": "h-99e5cf1e",
+      "age": 18,
+      "topic": 32,
+      "fromSheet": "S6 week 32",
+      "hint": "The Broken Jug – Living on Pure (Halal) Sustenance and Doing Good Deeds",
+      "catalogueId": null
+    },
+    {
+      "id": "h-c8e6e74a",
+      "age": 18,
+      "topic": 33,
+      "fromSheet": "S6 week 33",
+      "hint": "Emerald Hills of the Heart (Key Concepts in Sufism) – Halwat and 'Uzlat (Privacy and Seclusion)",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "h-9d555a7d",
+      "age": 18,
+      "topic": 34,
+      "fromSheet": "S6 week 34",
+      "hint": "Pearls of Wisdom – Consultation",
+      "catalogueId": null
+    },
+    {
+      "id": "h-24cf62bc",
+      "age": 18,
+      "topic": 35,
+      "fromSheet": "S6 week 35",
+      "hint": "Pearls of Wisdom – The True Long Life",
+      "catalogueId": null
+    },
+    {
+      "id": "h-06ff23c8",
+      "age": 18,
+      "topic": 36,
+      "fromSheet": "S6 week 36",
+      "hint": "Pearls of Wisdom – Essentials of the Way",
+      "catalogueId": null
+    }
+  ]
 }
