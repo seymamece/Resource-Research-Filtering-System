@@ -211,7 +211,7 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Lessons by school year on manners, kindness, bullying and caring for the environment. The age range is still to check."
+      "notes": "Lessons by school year on manners, kindness, bullying and caring for the environment, and a page of more than 80 guidance videos on the same site. The age range is still to check."
     },
     {
       "id": "r-316a8bd7",
@@ -989,6 +989,2488 @@
       "status": "to_verify",
       "retrieved": "2026-10-13",
       "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles."
+    },
+    {
+      "id": "r-727199d9",
+      "kind": "channel",
+      "title": "Hocaefendi's talks and sermons (Turkish)",
+      "privateName": "HerkulNagme",
+      "url": "https://www.youtube.com/channel/UCiAv2GTh72OdtlNzptHocsw",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+    },
+    {
+      "id": "r-678605e7",
+      "kind": "channel",
+      "title": "News of community work around the world (Turkish)",
+      "privateName": "Hizmetten",
+      "url": "https://www.youtube.com/channel/UCVgCN_DrSYXlLo4kbCYcmuQ",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: news about the movement's work, not lesson material."
+    },
+    {
+      "id": "r-ae627919",
+      "kind": "channel",
+      "title": "Culture, literature and science videos (Turkish)",
+      "privateName": "Raindrops TV",
+      "url": "https://www.youtube.com/channel/UC7lxCthaiqkPpQvr17tGu1A",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 10,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [
+        "science",
+        "history"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Mixed content; some of it is about the movement."
+    },
+    {
+      "id": "r-0f921a29",
+      "kind": "website",
+      "title": "Answers to religious, moral and social questions (Turkish)",
+      "privateName": "Hikmet.net",
+      "url": "http://hikmet.net/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ilmihal",
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-90cefc86",
+      "kind": "channel",
+      "title": "Education and dialogue projects (English)",
+      "privateName": "AfSV",
+      "url": "https://www.youtube.com/user/AfSVUSA",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: an organisation's education and dialogue activities."
+    },
+    {
+      "id": "r-cf0e74e1",
+      "kind": "channel",
+      "title": "Science, culture and literature magazine (Turkish)",
+      "privateName": "Çağlayan Dergisi (YouTube)",
+      "url": "https://www.youtube.com/channel/UC_bUPlk_LlF13GM-DQRbwlA",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [
+        "science"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-de496148",
+      "kind": "channel",
+      "title": "Videos on the Qur'an, the Prophet and Islamic sciences (Turkish)",
+      "privateName": "Wise Institute",
+      "url": "https://www.youtube.com/channel/UC-sFhQjQ-vjhWUEOhj0YHbQ",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "quran",
+        "siyer"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-40df5d0c",
+      "kind": "channel",
+      "title": "Hocaefendi's sermons and talks, main channel (Turkish)",
+      "privateName": "Fethullah Gülen (YouTube)",
+      "url": "https://www.youtube.com/channel/UCBNg4gJ9EOxJlvBWRYknNDA",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+    },
+    {
+      "id": "r-e91cb4f3",
+      "kind": "channel",
+      "title": "Science, culture and literature podcast (Turkish)",
+      "privateName": "Çağlayan Podcast",
+      "url": "https://www.spreaker.com/user/caglayan",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [
+        "science"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "The audio side of the magazine channel."
+    },
+    {
+      "id": "r-1465c989",
+      "kind": "channel",
+      "title": "Values for young people (English), social page",
+      "privateName": "Knowledge garden (Facebook)",
+      "url": "https://www.facebook.com/knowledgegardenn",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: social media page; the same account's YouTube channel is catalogued."
+    },
+    {
+      "id": "r-6aa6ee46",
+      "kind": "channel",
+      "title": "Language and culture festival (English, Turkish)",
+      "privateName": "IFLC International Festival of Language and Culture",
+      "url": "https://www.youtube.com/channel/UC08k3u5MD40gqtVd-DShRoA",
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a festival's official channel."
+    },
+    {
+      "id": "r-88d45705",
+      "kind": "channel",
+      "title": "Language olympiad and naat programmes (English)",
+      "privateName": "Ümit Nağmeleri",
+      "url": "https://www.youtube.com/channel/UC7xioFzZ_tkKgqzPWa6wLKw",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: recordings of events."
+    },
+    {
+      "id": "r-b1d50e88",
+      "kind": "channel",
+      "title": "Interfaith dialogue (English)",
+      "privateName": "Indialogue Foundation",
+      "url": "https://www.youtube.com/channel/UCT-hl4XdKNDDvONmv1C4mPA",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a dialogue organisation."
+    },
+    {
+      "id": "r-6adaf58e",
+      "kind": "channel",
+      "title": "Turkish language lessons for Indonesian speakers",
+      "privateName": "Halo Turkce",
+      "url": "https://www.youtube.com/@haloturkce8933",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a language course."
+    },
+    {
+      "id": "r-422ff6b9",
+      "kind": "website",
+      "title": "Guidance site: nutrition, Qur'an learning, du'a and more (Turkish)",
+      "privateName": "Okuflix",
+      "url": "https://okuflix.net/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "quran",
+        "ilmihal"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-cced3fe4",
+      "kind": "channel",
+      "title": "Religion, culture and art videos (Turkish)",
+      "privateName": "Kuş Bakışı",
+      "url": "https://www.youtube.com/@kusbakisi2023",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-4a19c798",
+      "kind": "channel",
+      "title": "Cultural, artistic and religious talks and events (Turkish)",
+      "privateName": "Kuzey Işıkları",
+      "url": "https://www.youtube.com/channel/UCu4KYgQkJPT-x_41WgkX1tg",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Talks mixed with event recordings."
+    },
+    {
+      "id": "r-74ec8c3b",
+      "kind": "channel",
+      "title": "Religion and guidance videos (Turkish)",
+      "privateName": "IBM",
+      "url": "https://www.youtube.com/@canal-ibm",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-33502cde",
+      "kind": "channel",
+      "title": "Young people's questions answered (Turkish)",
+      "privateName": "Gençler Soruyor",
+      "url": "https://www.youtube.com/playlist?list=PLsva5rRubcEasl7DxxnAKGn7wpLiVWR_S",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "A playlist."
+    },
+    {
+      "id": "r-a738f054",
+      "kind": "channel",
+      "title": "Guidance videos (Turkish)",
+      "privateName": "Kum Saati",
+      "url": "https://www.youtube.com/@kumsaati33",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-e469d7bb",
+      "kind": "website",
+      "title": "Guidance curriculum (Turkish)",
+      "privateName": "Genç Akademi",
+      "url": "https://gencakademi.fr/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 12,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-f499eb84",
+      "kind": "website",
+      "title": "Theology lessons and articles (Turkish)",
+      "privateName": "Sophia Academy",
+      "url": "https://academysophia.nl/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 18
+      },
+      "strands": [
+        "akaid"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-52714c24",
+      "kind": "website",
+      "title": "Encyclopaedia of the movement's concepts (Turkish)",
+      "privateName": "Hizmetpedia",
+      "url": "https://tr.hizmetpedia.org/doku.php?id=ana_sayfa",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: about the movement, not lesson material."
+    },
+    {
+      "id": "r-d073e5db",
+      "kind": "channel",
+      "title": "Religious videos (Turkish)",
+      "privateName": "Kuran Time",
+      "url": "https://www.youtube.com/@KuranTime",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 18
+      },
+      "strands": [
+        "quran"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-632cf4d9",
+      "kind": "channel",
+      "title": "Religious lessons (English)",
+      "privateName": "ISRA ACADEMY",
+      "url": "https://www.youtube.com/@israacademy",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-cf8ff5e3",
+      "kind": "channel",
+      "title": "A teacher's religious posts (English), social page",
+      "privateName": "Seyfullah Erdoğan (Instagram)",
+      "url": "https://www.instagram.com/seyferdogan",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: social media account."
+    },
+    {
+      "id": "r-35d44051",
+      "kind": "channel",
+      "title": "Religious guidance videos (English)",
+      "privateName": "Doors",
+      "url": "https://www.youtube.com/channel/UCIRLUQ7h2dS1m97bjo2sdOg",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-6cc6a825",
+      "kind": "channel",
+      "title": "Stories told in Turkish",
+      "privateName": "Hikaye Alemi",
+      "url": "https://www.youtube.com/@hikayealemi",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 12
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: the link returned 404 on 2026-10-13."
+    },
+    {
+      "id": "r-b2c70b1b",
+      "kind": "channel",
+      "title": "Guidance videos (Turkish)",
+      "privateName": "REFLECTIONS - YANSIMALAR",
+      "url": "https://www.youtube.com/@reflections-yansimalar",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-79a10e5c",
+      "kind": "website",
+      "title": "The three holy months: a full guide (Turkish)",
+      "privateName": "Kutlu Zaman Dilimi 3 Aylar",
+      "url": "https://sites.google.com/view/kutluzamandilimi-3aylar/home",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 18
+      },
+      "strands": [
+        "ilmihal"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-7393d939",
+      "kind": "channel",
+      "title": "Culture and literature for young minds (Turkish), social page",
+      "privateName": "Mutena (Instagram)",
+      "url": "https://www.instagram.com/mutenadergi/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: social media account."
+    },
+    {
+      "id": "r-d166b499",
+      "kind": "website",
+      "title": "Mentoring and guidance for young people (English)",
+      "privateName": "Mentorwise",
+      "url": "https://mentorwise.org.uk/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-9b1e79a1",
+      "kind": "channel",
+      "title": "Mentoring and guidance videos (English)",
+      "privateName": "Mentorwise (YouTube)",
+      "url": "https://www.youtube.com/@mentorwise3606",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-69423f2b",
+      "kind": "website",
+      "title": "Dialogue society (English)",
+      "privateName": "Dialogue Society",
+      "url": "https://www.dialoguesociety.org/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a dialogue organisation."
+    },
+    {
+      "id": "r-17df3025",
+      "kind": "channel",
+      "title": "Dialogue society videos (English)",
+      "privateName": "Dialogue Society (YouTube)",
+      "url": "https://www.youtube.com/@dialoguesociety",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a dialogue organisation."
+    },
+    {
+      "id": "r-2b318bc6",
+      "kind": "website",
+      "title": "Iftar dinners for neighbours (English)",
+      "privateName": "Iftar Me",
+      "url": "https://www.iftar.me/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a dialogue project."
+    },
+    {
+      "id": "r-004ca31d",
+      "kind": "website",
+      "title": "Tradespeople's association (English, Turkish)",
+      "privateName": "Sohbet Society",
+      "url": "https://sohbetsociety.org/",
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: an association of tradespeople."
+    },
+    {
+      "id": "r-bb6e7b68",
+      "kind": "channel",
+      "title": "Tradespeople's association videos (English, Turkish)",
+      "privateName": "Sohbet Society (YouTube)",
+      "url": "https://www.youtube.com/@SohbetSociety",
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: an association of tradespeople."
+    },
+    {
+      "id": "r-9a91b1ff",
+      "kind": "website",
+      "title": "Young business people's association (English)",
+      "privateName": "UKEAC",
+      "url": "https://ukeac.org/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a business association."
+    },
+    {
+      "id": "r-a799c9cf",
+      "kind": "website",
+      "title": "Aid charity (English)",
+      "privateName": "Time to Help",
+      "url": "https://timetohelp.org.uk/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a charity."
+    },
+    {
+      "id": "r-4b234eb3",
+      "kind": "channel",
+      "title": "Aid charity videos (English)",
+      "privateName": "Time to Help (YouTube)",
+      "url": "https://www.youtube.com/@TimetoHelpUK",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a charity."
+    },
+    {
+      "id": "r-00f74d66",
+      "kind": "website",
+      "title": "Human rights group (English)",
+      "privateName": "Human Rights Solidarity",
+      "url": "https://www.hrsolidarity.org/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a human rights group."
+    },
+    {
+      "id": "r-46805f90",
+      "kind": "channel",
+      "title": "Human rights group videos (English)",
+      "privateName": "Human Rights Solidarity (YouTube)",
+      "url": "https://www.youtube.com/@HRSolidarity",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a human rights group."
+    },
+    {
+      "id": "r-2bd209fa",
+      "kind": "channel",
+      "title": "A mosque's talks on religion and dialogue (English)",
+      "privateName": "Rumi Mosque",
+      "url": "https://www.youtube.com/RumiMosque",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Talks mixed with dialogue events."
+    },
+    {
+      "id": "r-3dee907c",
+      "kind": "channel",
+      "title": "A school complex's activities (English)",
+      "privateName": "Nizamiye Complex - Nizamiye Külliyesi",
+      "url": "https://www.youtube.com/channel/UCd5ZBXCZxuSwMZZYLutKyBQ",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: an institution's activities."
+    },
+    {
+      "id": "r-466013b7",
+      "kind": "channel",
+      "title": "Guidance and culture for secondary school and university students (English)",
+      "privateName": "Youth İsland",
+      "url": "https://www.youtube.com/@youthislandny",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 12,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-02c71f63",
+      "kind": "channel",
+      "title": "Inspiring talks and seminars for young people (Turkish)",
+      "privateName": "FKM Youth",
+      "url": "https://www.youtube.com/channel/UCRP2bqwYpmevBF8SDW7EhXQ",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-ecb9d55e",
+      "kind": "website",
+      "title": "A local Islamic centre's site (English)",
+      "privateName": "North East Islamic Community Center",
+      "url": "https://islamiccenter.org/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a local community centre."
+    },
+    {
+      "id": "r-5033312c",
+      "kind": "channel",
+      "title": "Conferences and seminars on society, faith and science (Turkish)",
+      "privateName": "Kuzey Amerika Gündemi",
+      "url": "https://www.youtube.com/channel/UCQfM5KLBskwfeNjpsaxKwBA",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [
+        "science"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-f34909a7",
+      "kind": "channel",
+      "title": "A local Islamic centre's videos (Turkish)",
+      "privateName": "NEICC",
+      "url": "https://www.youtube.com/channel/UCn2xhk-sousI1zt22ApifTQ",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a local community centre."
+    },
+    {
+      "id": "r-0cc06bc5",
+      "kind": "channel",
+      "title": "Views on the movement and Hocaefendi (English, Turkish)",
+      "privateName": "Turquoise Harmony Institute",
+      "url": "https://www.youtube.com/channel/UC5IBA8TOQG3U2eAJrk4OLKw",
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: about the movement, not lesson material."
+    },
+    {
+      "id": "r-6c63c32c",
+      "kind": "channel",
+      "title": "Religious talks (English)",
+      "privateName": "Noorever",
+      "url": "https://www.youtube.com/@noorever",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-7dbfcc60",
+      "kind": "channel",
+      "title": "Religious videos (English)",
+      "privateName": "SkyAkademi",
+      "url": "https://www.youtube.com/@SkyAcademynj",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-e50c1fa3",
+      "kind": "channel",
+      "title": "Talks for young people based on the Risale-i Nur (English)",
+      "privateName": "Nurify",
+      "url": "https://www.youtube.com/@nurifytv",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+    },
+    {
+      "id": "r-05c4e511",
+      "kind": "channel",
+      "title": "Book summaries (Turkish)",
+      "privateName": "Not Defteri",
+      "url": "https://www.youtube.com/channel/UC77JnRP4elz4VKuR4jdwzeA",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-9280d0fb",
+      "kind": "website",
+      "title": "Arabic language school (English)",
+      "privateName": "Nile Center Teaching Arabic to Foreigners",
+      "url": "https://nilecenter.org/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a language course."
+    },
+    {
+      "id": "r-8bf40d23",
+      "kind": "channel",
+      "title": "Content about the movement and Hocaefendi (Turkish)",
+      "privateName": "Bahar Sesleri",
+      "url": "https://www.youtube.com/channel/UCdTJRXSVs3pbo5EW4NT_ktw",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived as about the movement; if it is Hocaefendi's own talks, set to_verify."
+    },
+    {
+      "id": "r-5f84812a",
+      "kind": "channel",
+      "title": "Content about the movement and Hocaefendi (English)",
+      "privateName": "Diamond Sayings",
+      "url": "https://www.youtube.com/channel/UCy8trkZroHXSM0UwB-IJlCg",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived as about the movement; if it is Hocaefendi's own words, set to_verify."
+    },
+    {
+      "id": "r-06c89abd",
+      "kind": "channel",
+      "title": "Truths of faith, the Prophet's life and Risale-i Nur lessons (Turkish)",
+      "privateName": "Kardelen",
+      "url": "https://www.youtube.com/channel/UCO5uUvh_WEIYR04Mqdla_Cg",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "siyer"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-6d1c1c57",
+      "kind": "channel",
+      "title": "Science findings that point to the Creator (English)",
+      "privateName": "RealPerspectiveEvren",
+      "url": "https://www.youtube.com/channel/UCDzYq7JMEszKvfbwWEDUPpg",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid"
+      ],
+      "lenses": [
+        "science",
+        "nature"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-3eaded9b",
+      "kind": "channel",
+      "title": "Islamic sciences lectures and talks (Turkish)",
+      "privateName": "Respect Gradschool (YouTube)",
+      "url": "https://www.youtube.com/channel/UCHTUAizKKQh07g5JXo_aiAA",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 16,
+        "max": 18
+      },
+      "strands": [
+        "akaid"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-3ac2b3bc",
+      "kind": "channel",
+      "title": "Content about the movement and Hocaefendi (English)",
+      "privateName": "Wisdom",
+      "url": "https://www.youtube.com/channel/UCPZnNr_iSyEibgWUzFEWHxA",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived as about the movement; if it is Hocaefendi's own words, set to_verify."
+    },
+    {
+      "id": "r-36db75fa",
+      "kind": "channel",
+      "title": "Qur'an, du'as, articles and audiobooks (Turkish)",
+      "privateName": "Hakikatten Damlalar",
+      "url": "https://www.youtube.com/channel/UCRJ2pjZ1JcfsZVo1MuyQ5uQ",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "quran",
+        "ilmihal"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-c678618c",
+      "kind": "channel",
+      "title": "Faith, philosophy, society and personal growth (Turkish)",
+      "privateName": "eduardnet",
+      "url": "https://www.youtube.com/channel/UCrB1uiPHoT7E0qD3y3Udr0g",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-00a77ab6",
+      "kind": "channel",
+      "title": "Spiritual guidance for young people (Turkish)",
+      "privateName": "FKM Africa",
+      "url": "https://www.youtube.com/channel/UCDiv0y0Rs2qtzRVFc51qr9A",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-39c58148",
+      "kind": "channel",
+      "title": "Science, culture and faith magazine videos (English)",
+      "privateName": "The Fountain Magazine (YouTube)",
+      "url": "https://www.youtube.com/channel/UCTM76UOM1b0ChnAXLgFSbbw",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [
+        "science"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-f07f251d",
+      "kind": "channel",
+      "title": "Audio plays on the lives of the Prophet and Ustad (Turkish)",
+      "privateName": "Sesli Tiyatro",
+      "url": "https://www.youtube.com/channel/UCpYv0V7Knze16aRZku7BV9g",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 18
+      },
+      "strands": [
+        "siyer"
+      ],
+      "lenses": [
+        "history"
+      ],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Drama: a story from it is not a source for what the Prophet said."
+    },
+    {
+      "id": "r-41c7184d",
+      "kind": "channel",
+      "title": "News of community work around the world (Turkish)",
+      "privateName": "MC TV",
+      "url": "https://www.youtube.com/user/samanyolumedya",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: news about the movement's work."
+    },
+    {
+      "id": "r-68282795",
+      "kind": "channel",
+      "title": "Early witnesses recall the first years (Turkish)",
+      "privateName": "Geçmişten İzler",
+      "url": "https://www.youtube.com/channel/UCBfICdGnTH_EDmv3zh8DgPg",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: organisational history, which the owner keeps out of lessons."
+    },
+    {
+      "id": "r-f17a3297",
+      "kind": "channel",
+      "title": "Views on the movement and Hocaefendi (English, Turkish)",
+      "privateName": "Spectra Media",
+      "url": "https://www.youtube.com/user/SpectraMediaTV",
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: about the movement, not lesson material."
+    },
+    {
+      "id": "r-4cb95d2d",
+      "kind": "channel",
+      "title": "Qur'an recitation (Turkish channel)",
+      "privateName": "Kuran İklimi",
+      "url": "https://www.youtube.com/channel/UCLlKQU3KFSYqJ-1CA60xptw",
+      "languages": [
+        "tr",
+        "ar"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "quran"
+      ],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Recitation of the Qur'an itself."
+    },
+    {
+      "id": "r-7ad4cbce",
+      "kind": "channel",
+      "title": "Nasheed albums (Turkish)",
+      "privateName": "Nil Production",
+      "url": "https://www.youtube.com/channel/UCd9m2RRYGGBUg4CAnwJ8PWA",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Music: check each video before use."
+    },
+    {
+      "id": "r-b59fc402",
+      "kind": "channel",
+      "title": "Values education for children (Turkish)",
+      "privateName": "Sözola Çocuk",
+      "url": "https://www.youtube.com/channel/UCFXxNckW7xkk1e8R_Fo3Clg",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 12
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-a3cfa15a",
+      "kind": "channel",
+      "title": "Stories, tales, songs and games for children (Turkish)",
+      "privateName": "Layla TV",
+      "url": "https://www.youtube.com/channel/UCOIbOStebdsXFvfQ16evw7A",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 10
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-14bd86b9",
+      "kind": "channel",
+      "title": "Children's channel (Turkish)",
+      "privateName": "HepSEV TV",
+      "url": "https://www.youtube.com/channel/UC9BMp9os84B4CNmzcaYhdxQ",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 12
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-d0e5dc8e",
+      "kind": "website",
+      "title": "Bookshop (English, Turkish)",
+      "privateName": "ANT Book Store",
+      "url": "https://www.antstores.com/",
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a shop."
+    },
+    {
+      "id": "r-42d28a1e",
+      "kind": "website",
+      "title": "Religious topics, Risale-i Nur and du'as (Turkish)",
+      "privateName": "Keyfiyet Olsun (cetele.org)",
+      "url": "https://cetele.org/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ilmihal"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-766c0aa2",
+      "kind": "website",
+      "title": "Qur'an recitations by different reciters (Turkish site)",
+      "privateName": "Kuran Kürsüsü",
+      "url": "http://www.kurankursusu.com/",
+      "languages": [
+        "tr",
+        "ar"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "quran"
+      ],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Recitation of the Qur'an itself. The sheet linked a login page; this is the home page."
+    },
+    {
+      "id": "r-26effd82",
+      "kind": "channel",
+      "title": "Recorded sermons (Turkish)",
+      "privateName": "Mümince Duruş (SoundCloud)",
+      "url": "https://soundcloud.com/gonuldunyamiz",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+    },
+    {
+      "id": "r-fbeaa67b",
+      "kind": "website",
+      "title": "Qur'an and du'a (Turkish)",
+      "privateName": "Online Dua",
+      "url": "https://onlinedua.org/",
+      "languages": [
+        "tr",
+        "ar"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 18
+      },
+      "strands": [
+        "quran",
+        "ilmihal"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-0fea4dea",
+      "kind": "website",
+      "title": "Family and guidance topics (Turkish)",
+      "privateName": "Çay Saati",
+      "url": "https://sites.google.com/view/ortakduasaati/dualar",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [
+        "ilmihal"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Written for parents."
+    },
+    {
+      "id": "r-d32a2f41",
+      "kind": "website",
+      "title": "Hocaefendi's Pırlanta book series, searchable (Turkish)",
+      "privateName": "Pırlanta Oku",
+      "url": "https://pirlantaoku.com/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-b7b7621f",
+      "kind": "channel",
+      "title": "The Risale-i Nur read aloud (Turkish)",
+      "privateName": "Risale-i Nur Ufku",
+      "url": "https://soundcloud.com/risale-i-nur-ufku",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid"
+      ],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-1174a7c4",
+      "kind": "channel",
+      "title": "Ramadan and the three holy months (Turkish)",
+      "privateName": "Ramazan Ufku",
+      "url": "https://www.youtube.com/@ramazanufku",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 18
+      },
+      "strands": [
+        "ilmihal"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-c50e5af7",
+      "kind": "channel",
+      "title": "Hocaefendi's book of prayers read aloud (Turkish), audio copy",
+      "privateName": "Yakaran Gönüller (SoundCloud)",
+      "url": "https://soundcloud.com/ramazan-ufku-1/sets/yakaran-goenueller",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: the same reading is catalogued on YouTube."
+    },
+    {
+      "id": "r-9629949b",
+      "kind": "channel",
+      "title": "Hocaefendi's book of prayers read aloud (Turkish)",
+      "privateName": "Yakaran Gönüller (YouTube)",
+      "url": "https://www.youtube.com/playlist?list=PLKvIPhSY7wmN7Ox6mYVi2cn_eBnRiictS",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "ilmihal"
+      ],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "A playlist."
+    },
+    {
+      "id": "r-7e6f28cc",
+      "kind": "channel",
+      "title": "A collection of prophetic prayers read aloud (Turkish), audio copy",
+      "privateName": "El Kulubüd Daria (SoundCloud)",
+      "url": "https://soundcloud.com/ramazan-ufku-1/sets/el-kulubued-daria-m-fethullah",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: the same reading is catalogued on YouTube."
+    },
+    {
+      "id": "r-816afdb6",
+      "kind": "channel",
+      "title": "A collection of prophetic prayers read aloud (Turkish)",
+      "privateName": "El Kulubüd Daria (YouTube)",
+      "url": "https://www.youtube.com/playlist?list=PLKvIPhSY7wmNCxxzwS5l447DNLFc8ORf1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "ilmihal"
+      ],
+      "lenses": [
+        "hadith-sunnah"
+      ],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "A playlist."
+    },
+    {
+      "id": "r-88adad3b",
+      "kind": "channel",
+      "title": "Evidence of the Creator in the cosmos (Turkish)",
+      "privateName": "Cosmos",
+      "url": "https://www.youtube.com/@kozmozvebiz",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 10,
+        "max": 18
+      },
+      "strands": [
+        "akaid"
+      ],
+      "lenses": [
+        "science",
+        "nature"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-f84f3c09",
+      "kind": "website",
+      "title": "Science, culture and faith magazine (English)",
+      "privateName": "Fountain (magazine site)",
+      "url": "https://fountainmagazine.com/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [
+        "science"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-6f97144d",
+      "kind": "website",
+      "title": "Family magazine (Turkish)",
+      "privateName": "Nevbahar",
+      "url": "https://nevbahardergisi.com/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Written for parents."
+    },
+    {
+      "id": "r-ad19e2e6",
+      "kind": "website",
+      "title": "Turkish publisher",
+      "privateName": "Süreyya yayınları",
+      "url": "https://sureyyakitap.com/",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a publisher's shop."
+    },
+    {
+      "id": "r-3e53375b",
+      "kind": "website",
+      "title": "English publisher",
+      "privateName": "Tughra Books",
+      "url": "https://tughrabooks.com/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: a publisher's shop."
+    },
+    {
+      "id": "r-e67d8910",
+      "kind": "channel",
+      "title": "Guidance channel made by young people (Turkish)",
+      "privateName": "çek bi' sandalye",
+      "url": "https://www.youtube.com/@cekbisandalye",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-d0615e49",
+      "kind": "channel",
+      "title": "Children's channel (Turkish)",
+      "privateName": "Raindrops TV Kids",
+      "url": "https://www.youtube.com/@raindropstvkids",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 12
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-0c95325e",
+      "kind": "channel",
+      "title": "Thoughts on the movement and Hocaefendi (Turkish)",
+      "privateName": "Fikir Atlası",
+      "url": "https://www.youtube.com/@fikiratlas1960",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: about the movement, not lesson material."
+    },
+    {
+      "id": "r-f7a43464",
+      "kind": "channel",
+      "title": "Children's magazine videos (English)",
+      "privateName": "Atlasia Kids (YouTube)",
+      "url": "https://www.youtube.com/@atlasiakids9811",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 6,
+        "max": 11
+      },
+      "strands": [
+        "akaid",
+        "siyer",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: the link returned 404 on 2026-10-13."
+    },
+    {
+      "id": "r-25ef6d69",
+      "kind": "channel",
+      "title": "Travel videos (Turkish)",
+      "privateName": "Dünya Alem",
+      "url": "https://www.youtube.com/@DunyAlem",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "planning",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: travel."
+    },
+    {
+      "id": "r-0206c9d9",
+      "kind": "channel",
+      "title": "Risale-i Nur lessons (Turkish)",
+      "privateName": "Yılmaz İndi",
+      "url": "https://www.youtube.com/c/Y%C4%B1lmazindi",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 15,
+        "max": 18
+      },
+      "strands": [
+        "akaid"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-a208f56c",
+      "kind": "channel",
+      "title": "The Prophet's life told in animation (English)",
+      "privateName": "Everstar Studio",
+      "url": "https://www.youtube.com/@EverstarStudioXR",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 14
+      },
+      "strands": [
+        "siyer"
+      ],
+      "lenses": [
+        "history"
+      ],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: the link returned 404 on 2026-10-13. Animated: check every video for a drawn prophet, which is never usable."
+    },
+    {
+      "id": "r-29b535fd",
+      "kind": "channel",
+      "title": "Short clips from Hocaefendi's talks (English), Spotify copy",
+      "privateName": "Gulen Podcast (Spotify)",
+      "url": "https://open.spotify.com/episode/25rRp12BDnAZtKoEzKRm6w",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: the same podcast is catalogued on YouTube."
+    },
+    {
+      "id": "r-fd4df2f1",
+      "kind": "channel",
+      "title": "Short clips from Hocaefendi's talks (English)",
+      "privateName": "Gulen Podcast",
+      "url": "https://www.youtube.com/@GulenPodcast",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+    },
+    {
+      "id": "r-9c735580",
+      "kind": "channel",
+      "title": "Short clips from Hocaefendi's talks (English), Apple copy",
+      "privateName": "Gulen Podcast (Apple)",
+      "url": "https://podcasts.apple.com/ro/podcast/forgiveness-and-tolerance/id1766576702",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: the same podcast is catalogued on YouTube."
+    },
+    {
+      "id": "r-32e60b9b",
+      "kind": "channel",
+      "title": "Hocaefendi's sermons and talks (Turkish)",
+      "privateName": "Maneviyatım.com",
+      "url": "https://www.youtube.com/@maneviyatimcom4722",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "akaid",
+        "ahlak"
+      ],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+    },
+    {
+      "id": "r-1c296d97",
+      "kind": "channel",
+      "title": "Recitations of a renowned reciter (Turkish channel)",
+      "privateName": "Mustafa İsmail Medresesi",
+      "url": "https://www.youtube.com/@Mustafaismailmedresesi",
+      "languages": [
+        "tr",
+        "ar"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 18
+      },
+      "strands": [
+        "quran"
+      ],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Recitation of the Qur'an itself."
+    },
+    {
+      "id": "r-7ed35dda",
+      "kind": "website",
+      "title": "Turkish Qur'an translations side by side",
+      "privateName": "Kuran Meali",
+      "url": "https://kuranmeali.com/",
+      "languages": [
+        "tr",
+        "ar"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "quran"
+      ],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-8dcc52a5",
+      "kind": "channel",
+      "title": "Qur'an teaching and student activities (English), Instagram",
+      "privateName": "Harmony & Wisdom (Instagram)",
+      "url": "https://www.instagram.com/hwfoundation19/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: social media account; the YouTube channel is catalogued."
+    },
+    {
+      "id": "r-cb5b263d",
+      "kind": "channel",
+      "title": "Qur'an teaching and student activities (English), Facebook",
+      "privateName": "Harmony & Wisdom (Facebook)",
+      "url": "https://www.facebook.com/harmonyandwisdom/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: social media account; the YouTube channel is catalogued."
+    },
+    {
+      "id": "r-09f17ea7",
+      "kind": "channel",
+      "title": "Qur'an teaching and student activities (English)",
+      "privateName": "Harmony & Wisdom (YouTube)",
+      "url": "https://www.youtube.com/@harmonywisdom",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 8,
+        "max": 18
+      },
+      "strands": [
+        "quran"
+      ],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13",
+      "notes": "Student activities may show children's faces."
+    },
+    {
+      "id": "r-940c62f7",
+      "kind": "channel",
+      "title": "Values for young people (English)",
+      "privateName": "Knowledge garden (YouTube)",
+      "url": "https://www.youtube.com/@knowledgegarden2254",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [
+        "ahlak"
+      ],
+      "lenses": [
+        "daily-life"
+      ],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "r-611df146",
+      "kind": "channel",
+      "title": "Values for young people (English), Instagram",
+      "privateName": "Knowledge garden (Instagram)",
+      "url": "https://www.instagram.com/knowledgegardenn/",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 13,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "archived",
+      "retrieved": "2026-10-13",
+      "notes": "Archived: social media account; the YouTube channel is catalogued."
     }
   ],
   "items": [
