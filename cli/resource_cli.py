@@ -350,6 +350,23 @@ def import_topics(xlsx, retrieved):
         click.echo(f"  skipped {line}")
 
 
+@import_group.command("videos")
+@click.argument("xlsx", type=click.Path(exists=True, dir_okay=False))
+def import_videos(xlsx):
+    """The subtitled-videos sheet (No | title | minutes | channel | link): each video YouTube
+    still serves, as an item of its channel. Checks every video online first."""
+    from . import importers, youtube
+    rows = list(importers.video_rows(xlsx))
+    click.echo(f"Asking YouTube about {len({r['youtubeId'] for r in rows if r['youtubeId']})} videos...")
+    found = youtube.lookup_many(r["youtubeId"] for r in rows if r["youtubeId"])
+    cat = storage.load()
+    changed, skipped = importers.import_videos(cat, rows, found, _today(), storage.load_blocked())
+    _save_many(cat, changed)
+    click.echo(f"Videos added: {len(changed)}")
+    for line in skipped:
+        click.echo(f"  skipped {line}")
+
+
 # --- correcting and removing -----------------------------------------------------------------
 
 @cli.command("set")

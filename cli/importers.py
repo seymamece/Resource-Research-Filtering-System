@@ -142,3 +142,79 @@ def import_topics(cat: dict, rows, today: str) -> tuple[list[str], list[str], li
     if any(h.get("catalogueId") for h in cat["topicHints"] if h["id"] in changed):
         notes.append("Hints for books in the site's catalogue carry their catalogueId.")
     return list(dict.fromkeys(changed)), notes, skipped
+
+
+# --- the subtitled-videos sheet --------------------------------------------------------------
+
+def video_rows(path: str):
+    """No | title | minutes | channel | link text (hyperlinked to the video)."""
+    ws = load_workbook(path).worksheets[0]
+    for row in ws.iter_rows(min_row=2):
+        link = next((c.hyperlink.target for c in row if c.hyperlink), None)
+        values = [c.value for c in row]
+        if not link or len(values) < 5:
+            continue
+        number, title, minutes, channel = values[1:5]
+        yield {
+            "number": number,
+            "title": str(title or "").strip(),
+            "minutes": minutes if isinstance(minutes, (int, float)) and minutes > 0 else None,
+            "channel": str(channel or "").strip(),
+            "url": link,
+            "youtubeId": model.youtube_id(link),
+        }
+
+
+def import_videos(cat: dict, rows, found: dict, today: str, blocked=None):
+    """Adds each video that YouTube still serves as an item of its channel's resource.
+
+    `found` is youtube.lookup_many's answer for the rows' ids. The channel decides the
+    resource, so a channel that is not catalogued yet is reported, not guessed.
+    """
+    from .youtube import channel_key, watch_url
+
+    channels = {}
+    for r in cat["resources"]:
+        if r.get("kind") == "channel" and r.get("url"):
+            channels[channel_key(r["url"])] = r
+    items = {i["id"] for i in cat["items"]}
+    changed, skipped, missing = [], [], {}
+    for row in rows:
+        where = f"row {row['number']}"
+        vid = row["youtubeId"]
+        if not vid:
+            skipped.append(f"{where}: no YouTube id in {row['url']}")
+            continue
+        seen = found.get(vid, {"status": 0})
+        if seen["status"] != 200:
+            reason = "unreachable, try again" if seen["status"] == 0 else "removed or private"
+            skipped.append(f"{where}: {reason} ({vid})")
+            continue
+        resource = channels.get(channel_key(seen["channelUrl"] or ""))
+        if resource is None:
+            missing.setdefault(seen["channelUrl"], seen["channel"])
+            continue
+        if blocked and blocked.found_in(row["title"]):
+            skipped.append(f"{where}: its title carries a blocked name")
+            continue
+        iid = storage.make_id("items", watch_url(vid))
+        if iid in items:
+            continue
+        item = {
+            "id": iid, "resourceId": resource["id"], "kind": "video", "title": row["title"],
+            "url": watch_url(vid), "languages": list(resource["languages"]),
+            "ages": dict(resource["ages"]), "strands": [], "lenses": [], "retrieved": today,
+            "youtubeId": vid, "channelPrivate": seen["channel"],
+            # The sheet lists videos with English subtitles; what else is in them is for
+            # whoever watches each one to record.
+            "subtitles": ["en"],
+        }
+        if row["minutes"]:
+            item["minutes"] = row["minutes"]
+        cat["items"].append(item)
+        items.add(iid)
+        changed.append(iid)
+    for url, name in missing.items():
+        count = sum(1 for r in rows if found.get(r["youtubeId"], {}).get("channelUrl") == url)
+        skipped.append(f"{count} video(s): channel '{name}' is not catalogued yet: {url}")
+    return changed, skipped

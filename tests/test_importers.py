@@ -99,5 +99,58 @@ class TopicSheetTest(unittest.TestCase):
         self.assertEqual(len(self.cat["topicHints"]), 5)
 
 
+class VideoSheetTest(unittest.TestCase):
+    CHANNEL = "https://www.youtube.com/@%C3%87%C4%B1narMedya"
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.path = Path(self.tmp.name) / "videos.xlsx"
+        wb = Workbook()
+        ws = wb.active
+        ws.append([None, None, "VAAZ İSMİ", "SÜRE", "KAYNAK", "LİNK"])
+        for number, title, minutes, vid in [(1, "TEVHID DELILLERI-1", 16, "-hpH6I13U18"),
+                                            (2, "GONE AWAY", 10, "AAAAAAAAAAA"),
+                                            (3, "OTHER CHANNEL", 5, "BBBBBBBBBBB"),
+                                            (4, "TEVHID DELILLERI-1", 16, "-hpH6I13U18"),
+                                            (5, "Example Academy talk", 9, "CCCCCCCCCCC")]:
+            ws.append([None, number, title, minutes, "CINAR MEDYA ENGLISH SUBTITLES", "link"])
+            ws.cell(row=ws.max_row, column=6).hyperlink = \
+                f"https://www.youtube.com/watch?v={vid}&list=PLx&ab_channel=x"
+        ws.append([None, None, None, "=SUM(D3:D502)", None, None])
+        wb.save(self.path)
+        self.cat = storage.empty()
+        channel = site("r-ch", "https://www.youtube.com/@çınarmedya/")
+        channel.update(kind="channel", languages=["tr"], role="religious-supporting")
+        self.cat["resources"] = [channel]
+        here = {"status": 200, "title": "t", "channel": "Çınar Medya", "channelUrl": self.CHANNEL}
+        self.found = {"-hpH6I13U18": here, "AAAAAAAAAAA": {"status": 404},
+                      "BBBBBBBBBBB": dict(here, channel="Other", channelUrl="https://www.youtube.com/@other"),
+                      "CCCCCCCCCCC": here}
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_videos_land_under_their_channel_once_and_the_rest_is_reported(self):
+        from tests.test_catalogue import BLOCKED_NAME, fingerprint
+        from cli.names import BlockedNames
+        blocked = BlockedNames({"version": 1, "names": [fingerprint(BLOCKED_NAME)]})
+        rows = list(importers.video_rows(str(self.path)))
+        changed, skipped = importers.import_videos(self.cat, rows, self.found, "2026-10-13", blocked)
+        self.assertEqual(len(changed), 1)
+        item = self.cat["items"][0]
+        self.assertEqual((item["resourceId"], item["url"], item["minutes"], item["subtitles"],
+                          item["youtubeId"], item["languages"]),
+                         ("r-ch", "https://www.youtube.com/watch?v=-hpH6I13U18", 16, ["en"],
+                          "-hpH6I13U18", ["tr"]))
+        self.assertNotIn("content", item)  # only someone who watched it may say what is in it
+        self.assertIn("row 2: removed or private (AAAAAAAAAAA)", skipped)
+        self.assertIn("row 5: its title carries a blocked name", skipped)
+        self.assertIn("1 video(s): channel 'Other' is not catalogued yet: https://www.youtube.com/@other",
+                      skipped)
+        self.assertEqual(model.check(self.cat), [])
+        again, _ = importers.import_videos(self.cat, rows, self.found, "2026-10-13", blocked)
+        self.assertEqual(again, [])
+
+
 if __name__ == "__main__":
     unittest.main()
