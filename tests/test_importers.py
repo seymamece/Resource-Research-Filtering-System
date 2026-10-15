@@ -14,6 +14,7 @@ YELLOW = PatternFill(fill_type="solid", fgColor="00FFF2CC")
 
 def site(rid, url, ages=(13, 18)):
     return {"id": rid, "kind": "website", "title": "A site", "url": url, "languages": ["en"],
+            "classes": ["lower-secondary-beginner", "upper-secondary-middle"],
             "ages": {"min": ages[0], "max": ages[1]}, "strands": [], "lenses": [],
             "role": "religious", "rights": "pending", "status": "to_verify",
             "retrieved": "2026-10-13"}

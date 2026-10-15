@@ -16,7 +16,7 @@ def catalogue():
     cat["items"] = [video("v1", "r-a", 12), video("v2", "r-a", 9), video("v3", "r-a", 7)]
     for pid, where in (("p-1", "01:00-01:20"), ("p-2", "02:00-02:20"), ("p-3", "03:00-03:20"),
                        ("p-4", "04:00-04:20")):
-        cat["passages"].append({"id": pid, "itemId": "v1", "where": where, "topics": [{"age": 18, "topic": 4}],
+        cat["passages"].append({"id": pid, "itemId": "v1", "where": where, "topics": [{"from": "S6-4"}],
                                 "use": "faith", "status": "proposed"})
     return cat
 
@@ -41,7 +41,9 @@ class ReviewSheetTest(unittest.TestCase):
         wb.save(self.path)
 
     def test_only_rows_that_name_a_person_are_applied(self):
-        self.assertEqual(review.write(self.path, self.cat, {(18, 4): {"title": "Daily Worship"}}, 18), (4, 3))
+        placement = {"S6-4": {"class": "upper-secondary-middle", "week": 29, "main": "S6-4"}}
+        self.assertEqual(review.write(self.path, self.cat, {"S6-4": {"title": "Daily Worship"}},
+                                      "upper-secondary-middle", placement), (4, 3))
         self.fill({"p-1": {"Decision": "accept", "Reviewed by": "Ayse"},
                    "p-2": {"Decision": "reject", "Reviewed by": "Ayse"},
                    "p-3": {"Decision": "accept"},
@@ -80,9 +82,12 @@ class PackTest(unittest.TestCase):
         cat["items"][0]["youtubeId"] = "v1"
         cat["topicHints"] = [{"id": "h-1", "age": 18, "topic": 4, "hint": "The Third Word", "catalogueId": None}]
         corpus = packs.Corpus(cat)
-        page = packs.build(cat, (18, 4), {"title": "Daily Worship", "science": ""}, "weak",
-                           usable=set(), corpus=corpus)
-        self.assertIn("# 18:4 Daily Worship", page)
+        placement = {"S6-4": {"class": "upper-secondary-middle", "week": 29, "main": "S6-4"}}
+        ctx = packs.context("S6-4", {"S6-4": {"title": "Daily Worship", "science": ""}}, {"S6-4": "weak"},
+                            placement, {"S6-4": {"tr": "Günlük İbadet", "written": False}})
+        page = packs.build(cat, ctx, usable=set(), corpus=corpus)
+        self.assertIn("# S6-4 Daily Worship", page)
+        self.assertIn("Class: **Upper Secondary · Middle** (`upper-secondary-middle`), week 29", page)
         self.assertIn("- The Third Word", page)
         self.assertIn("> Worship gives peace and comfort to the heart.", page)
         self.assertIn("*not for the site*", page)

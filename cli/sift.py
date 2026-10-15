@@ -8,7 +8,8 @@ Where the catalogue does not know the answer, the record is left out and the cou
 reported, never guessed: a video nobody has watched is not "without music".
 """
 
-from . import model
+from . import curriculum, model
+from .packs import suits
 from .names import normalise
 
 
@@ -51,14 +52,15 @@ def sift(cat: dict, collection: str, c: dict, usable: set | None, read_text) -> 
     """(results as (record, snippet or None), notes) for one collection.
 
     c holds the conditions given: kind, lang, age, strand, lens, role, rights, status,
-    topic (age, number), use, minutes (low, high), subtitles, without [content],
-    watched (True/False), query. read_text(item_id) gives an item's cached paragraphs.
+    class (with class_ages and class_topics), topic ("S6-5"), use, minutes (low, high),
+    subtitles, without [content], watched (True/False), query. read_text(item_id) gives an
+    item's readable text.
     """
     resources = {r["id"]: r for r in cat["resources"]}
     items = {i["id"]: i for i in cat["items"]}
     reached = {}  # record id -> topics its passages reach
     for p in cat["passages"]:
-        topics = {(t["age"], t["topic"]) for t in p["topics"]}
+        topics = {curriculum.key_of(t) for t in p["topics"]}
         item = items.get(p["itemId"], {})
         for key in (p["id"], p["itemId"], item.get("resourceId")):
             reached.setdefault(key, set()).update(topics)
@@ -69,9 +71,9 @@ def sift(cat: dict, collection: str, c: dict, usable: set | None, read_text) -> 
     results = []
     for record in cat[collection]:
         if collection == "topicHints":
-            if c.get("age") is not None and record["age"] != c["age"]:
+            if c.get("class") and curriculum.key_of(record) not in c["class_topics"]:
                 continue
-            if c.get("topic") and (record["age"], record["topic"]) != c["topic"]:
+            if c.get("topic") and curriculum.key_of(record) != c["topic"]:
                 continue
             if words and not _has_words(words, f"{record['hint']} {record.get('fromSheet', '')}"):
                 continue
@@ -100,15 +102,18 @@ def sift(cat: dict, collection: str, c: dict, usable: set | None, read_text) -> 
         if c.get("status") and (record.get("status") or resource.get("status")) != c["status"]:
             continue
         if c.get("age") is not None:
+            ages = described.get("ages") or resource.get("ages")
+            if not ages or not ages["min"] <= c["age"] <= ages["max"]:
+                continue
+        if c.get("class"):
             if collection == "passages":
-                if c["age"] not in {t["age"] for t in record["topics"]}:
+                if not {curriculum.key_of(t) for t in record["topics"]} & c["class_topics"]:
                     continue
-            elif not described["ages"]["min"] <= c["age"] <= described["ages"]["max"]:
+            elif not suits(described, resource, {"class": c["class"], "ages": c["class_ages"]}):
                 continue
         if c.get("topic") and c["topic"] not in reached.get(record["id"], set()):
             continue
-        if c.get("use") and c["use"] != record.get("use") \
-                and c["use"] not in {t.get("use") for t in record.get("topics", [])}:
+        if c.get("use") and c["use"] != record.get("use"):
             continue
 
         if video_asked:
@@ -153,14 +158,26 @@ def sift(cat: dict, collection: str, c: dict, usable: set | None, read_text) -> 
     return results, notes
 
 
-def topic_status(cat: dict, site_topics: dict, coverage: dict) -> list[dict]:
-    """One row per site topic: its title, coverage, and what the catalogue holds for it."""
+def week_status(cat: dict, tracks: dict, site_topics: dict, coverage: dict, notes: dict) -> list[dict]:
+    """One row per week of every class: its topic, the topics joined into it, its coverage,
+    whether the site has written it, and how many hints and passages the catalogue holds
+    across all of them."""
     hints, passages = {}, {}
     for h in cat["topicHints"]:
-        hints[(h["age"], h["topic"])] = hints.get((h["age"], h["topic"]), 0) + 1
+        key = curriculum.key_of(h)
+        hints[key] = hints.get(key, 0) + 1
     for p in cat["passages"]:
-        for t in p["topics"]:
-            passages[(t["age"], t["topic"])] = passages.get((t["age"], t["topic"]), 0) + 1
-    return [{"age": age, "topic": num, "title": info["title"], "cover": coverage.get((age, num), "?"),
-             "hints": hints.get((age, num), 0), "passages": passages.get((age, num), 0)}
-            for (age, num), info in sorted(site_topics.items())]
+        for key in {curriculum.key_of(t) for t in p["topics"]}:
+            passages[key] = passages.get(key, 0) + 1
+    rows = []
+    for cid, weeks in tracks.items():
+        for w in weeks:
+            codes = [w["from"]] + w["joined"]
+            rows.append({"class": cid, "week": w["week"], "code": w["from"], "joined": w["joined"],
+                         "title": site_topics.get(w["from"], {}).get("title") or w["title"],
+                         "title_tr": notes.get(w["from"], {}).get("tr", ""),
+                         "written": notes.get(w["from"], {}).get("written", False),
+                         "cover": coverage.get(w["from"], "?"),
+                         "hints": sum(hints.get(k, 0) for k in codes),
+                         "passages": sum(passages.get(k, 0) for k in codes)})
+    return rows

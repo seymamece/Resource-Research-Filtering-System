@@ -148,12 +148,12 @@ class SiteTopicsTest(unittest.TestCase):
                 "| 5 | The Heart and Mind Connection | good | x | y |\n", encoding="utf-8")
             with mock.patch.dict(os.environ, {"SITE_DIR": site}):
                 found = topics.load()
-                self.assertEqual(found[(18, 5)]["title"], "The Heart and Mind Connection")
-                self.assertEqual(found[(18, 13)], {"title": "Environmental Stewardship",
-                                                   "science": "ecology, conservation"})
-                self.assertEqual(found[(5, 1)]["title"], "Allah Made Everything Around Us")
-                self.assertNotIn((18, 99), found)
-                self.assertEqual(topics.coverage(), {(18, 5): "good"})
+                self.assertEqual(found["S6-5"]["title"], "The Heart and Mind Connection")
+                self.assertEqual(found["S6-13"], {"title": "Environmental Stewardship",
+                                                  "science": "ecology, conservation"})
+                self.assertEqual(found["A5-1"]["title"], "Allah Made Everything Around Us")
+                self.assertEqual(set(found), {"S6-5", "S6-13", "A5-1"})
+                self.assertEqual(topics.coverage(), {"S6-5": "good"})
 
 
 class PassageQuoteCommandTest(unittest.TestCase):

@@ -16,10 +16,10 @@ from pathlib import Path
 
 import click
 
-from . import model, storage, vocab
+from . import curriculum, model, storage, vocab
 from .names import BlockedNames
 
-LIST_FIELDS = {"languages", "strands", "lenses", "subtitles", "content"}
+LIST_FIELDS = {"languages", "classes", "strands", "lenses", "subtitles", "content"}
 INT_FIELDS = {"priority", "age", "topic"}
 PERSON_FIELDS = {"verifiedBy", "watchedBy", "acceptedBy"}
 PERSON_STATUSES = {"verified", "accepted"}
@@ -47,16 +47,20 @@ def _ages(text: str) -> dict:
         raise click.BadParameter(f"'{text}' is not an age (16) or a range (15-18)")
 
 
-def _topic(text: str) -> dict:
-    """18:5 or 18:5:story"""
-    parts = text.split(":")
+def _topic(text: str) -> str:
+    """S6-5 (or the old 18:5), or class#week for a primary class."""
     try:
-        topic = {"age": int(parts[0]), "topic": int(parts[1])}
-    except (ValueError, IndexError):
-        raise click.BadParameter(f"'{text}' is not a topic like 18:5 or 18:5:story")
-    if len(parts) > 2:
-        topic["use"] = parts[2]
-    return topic
+        return curriculum.parse(text)
+    except ValueError as e:
+        raise click.BadParameter(str(e))
+
+
+def _classes(text: str) -> list[str]:
+    found = _csv(text)
+    unknown = [c for c in found if c not in vocab.CLASS_IDS]
+    if unknown:
+        raise click.BadParameter(f"{', '.join(unknown)}: expected {', '.join(vocab.CLASS_IDS)}")
+    return found
 
 
 def _minutes(text: str):
@@ -70,7 +74,7 @@ def _parse(key: str, value: str):
     if key == "ages":
         return _ages(value)
     if key == "topics":
-        return [_topic(t) for t in _csv(value)]
+        return [curriculum.entry(_topic(t)) for t in _csv(value)]
     if key in INT_FIELDS:
         try:
             return int(value)
@@ -189,7 +193,8 @@ def add():
 @click.option("-k", "--kind", required=True, type=_vocab(vocab.RESOURCE_KINDS))
 @click.option("-u", "--url", help="Required for everything except a book.")
 @click.option("-l", "--lang", "languages", required=True, help="Comma list: en,tr,sw,lg,ar")
-@click.option("-a", "--ages", required=True, help="16 or 15-18")
+@click.option("-c", "--classes", help="Comma list of class ids; default: the classes the ages meet.")
+@click.option("-a", "--ages", help="16 or 15-18: kept as a note, and gives the classes if none are named.")
 @click.option("-s", "--strands", default="", help="Comma list: " + ",".join(vocab.STRANDS))
 @click.option("--lenses", default="", help="Comma list: " + ",".join(vocab.LENSES))
 @click.option("-r", "--role", required=True, type=_vocab(vocab.ROLES))
@@ -199,9 +204,13 @@ def add():
 @click.option("--notes", help="Our own words, no institution names.")
 @click.option("--catalogue-id", help="The site's s-... id, for a book already in its catalogue.")
 @click.option("--retrieved", help="Date last checked (default: today).")
-def add_resource(title, kind, url, languages, ages, strands, lenses, role, rights, priority,
+def add_resource(title, kind, url, languages, classes, ages, strands, lenses, role, rights, priority,
                  private_name, notes, catalogue_id, retrieved):
     """A site, channel, book, app or course."""
+    if not classes and not ages:
+        raise click.BadParameter("give --classes, or --ages to work them out from")
+    age_range = _ages(ages) if ages else None
+    chosen = _classes(classes) if classes else curriculum.classes_for_ages(age_range)
     cat = storage.load()
     if catalogue_id:
         rid = catalogue_id
@@ -214,8 +223,10 @@ def add_resource(title, kind, url, languages, ages, strands, lenses, role, right
         record["privateName"] = private_name
     if url:
         record["url"] = url.strip()
-    record.update({"languages": _csv(languages), "ages": _ages(ages), "strands": _csv(strands),
-                   "lenses": _csv(lenses), "role": role, "rights": rights})
+    record.update({"languages": _csv(languages), "classes": chosen})
+    if age_range:
+        record["ages"] = age_range
+    record.update({"strands": _csv(strands), "lenses": _csv(lenses), "role": role, "rights": rights})
     if priority:
         record["priority"] = priority
     record["status"] = "to_verify"
@@ -256,7 +267,7 @@ def add_item(resource_id, kind, title, url, languages, ages, strands, lenses, re
         record["url"] = url.strip()
     record.update({
         "languages": _csv(languages) if languages is not None else list(resource.get("languages", [])),
-        "ages": _ages(ages) if ages else dict(resource.get("ages", {})),
+        "ages": _ages(ages) if ages else curriculum.ages_of(resource),
         "strands": _csv(strands) if strands is not None else list(resource.get("strands", [])),
         "lenses": _csv(lenses) if lenses is not None else list(resource.get("lenses", [])),
         "retrieved": retrieved or _today(),
@@ -290,7 +301,8 @@ def add_passage(item_id, where, quote, topics, use, qref, href):
     cat = storage.load()
     _require(cat, item_id, "items")
     from . import records
-    record = records.make_passage(item_id, where, quote, [_topic(t) for t in topics], use, qref, href)
+    record = records.make_passage(item_id, where, quote, [curriculum.entry(_topic(t)) for t in topics],
+                                  use, qref, href)
     _new(cat, "passages", record)
 
 
@@ -351,6 +363,22 @@ def import_topics(xlsx, retrieved):
         click.echo(line)
     for line in skipped:
         click.echo(f"  skipped {line}")
+
+
+@import_group.command("plan")
+def import_plan():
+    """Take the site's classes (content/tracks): each hinted chapter gets the ages of the
+    classes its topics are taught in. Run again when the site rewrites its plan."""
+    from . import importers
+    placement = curriculum.placement()
+    if not placement:
+        _fail(f"the site's track files were not found under {storage.site_dir()}")
+    cat = storage.load()
+    changed, report = importers.adopt_plan(cat, placement)
+    _save_many(cat, changed)
+    click.echo(f"Topics placed in classes: {len(placement)}; chapters re-aged: {len(changed)}")
+    for line in report:
+        click.echo(f"  {line}")
 
 
 @import_group.command("books")
@@ -469,35 +497,49 @@ def _fetch_subtitles(cat: dict, chosen: list):
         click.echo(f"  {line}")
 
 
+def _topic_context(topic: str) -> dict:
+    """The topic's title, class, week, joined topics and ages, from the site's lists."""
+    from . import packs, topics as site
+    return packs.context(topic, site.load(), site.coverage(), curriculum.placement(),
+                         curriculum.plan_notes())
+
+
 @cli.command()
 @click.argument("topic")
 @click.option("-n", "--top", default=5, show_default=True, help="Paragraphs from each list.")
 @click.option("-w", "--words", "extra", default="", help="More words to search for.")
 @click.option("--all", "whole", is_flag=True, help="Print the hinted chapter in full.")
 def shortlist(topic, top, extra, whole):
-    """The paragraphs to read for a topic (like 18:5): from the chapter its hint names,
-    then from everything else fetched. Prints a ready `where` for each."""
-    from . import search, topics
-    t = _topic(topic)
-    key = (t["age"], t["topic"])
+    """The paragraphs to read for a topic (S6-5, or the old 18:5): from the chapter or book
+    its hint names, then from everything else that suits the topic's class. Prints a ready
+    `where` for each."""
+    from . import packs, search
+    ctx = _topic_context(_topic(topic))
     cat = storage.load()
-    info = topics.load().get(key, {"title": "(topic list not found)", "science": ""})
-    cover = topics.coverage().get(key, "?")
-    hints = [h for h in cat["topicHints"] if (h["age"], h["topic"]) == key]
     resources = {r["id"]: r for r in cat["resources"]}
-    click.echo(f"{key[0]}:{key[1]}  {info['title']}  (coverage: {cover})")
-    if info["science"]:
-        click.echo(f"  science: {info['science']}")
+    codes = set(ctx["codes"])
+    hints = [h for h in cat["topicHints"] if curriculum.key_of(h) in codes]
+    where_taught = (f"{curriculum.class_info(ctx['class'])['name']}, week {ctx['week']}"
+                    if ctx["class"] else "not in a class yet")
+    click.echo(f"{ctx['code']}  {ctx['title']}  ({where_taught}; coverage: {ctx['cover']})")
+    if len(ctx["codes"]) > 1:
+        click.echo(f"  researched with: {', '.join(ctx['codes'][1:])}")
+    if ctx["science"]:
+        click.echo(f"  science: {ctx['science']}")
     for h in hints:
         click.echo(f"  hint: {h['hint']}")
     for p in cat["passages"]:
-        if any((x["age"], x["topic"]) == key for x in p["topics"]):
+        if any(curriculum.key_of(x) in codes for x in p["topics"]):
             click.echo(f"  already: {p['id']} {p['use']} @ {p['where']}")
 
-    query = " ".join([info["title"], info["science"], extra] + [h["hint"] for h in hints])
+    def fits(item):
+        return packs.suits(item, resources.get(item["resourceId"], {}), ctx)
+
+    query = " ".join([ctx["title"], ctx["science"], extra] + list(ctx["joined_titles"].values())
+                     + [h["hint"] for h in hints])
     hinted_titles = {h["hint"].replace(" (related reading)", "") for h in hints}
     hinted_books = {h["catalogueId"] for h in hints if h.get("catalogueId")}
-    hinted = [i for i in cat["items"] if i["ages"]["min"] <= key[0] <= i["ages"]["max"] and (
+    hinted = [i for i in cat["items"] if fits(i) and (
         i["title"] in hinted_titles
         or resources.get(i["resourceId"], {}).get("catalogueId") in hinted_books)]
 
@@ -529,8 +571,7 @@ def shortlist(topic, top, extra, whole):
             _, where, _, body = rows[pos]
             show(item, where, body)
 
-    others = [i for i in cat["items"] if i not in hinted and i.get("kind") != "video"
-              and i["ages"]["min"] <= key[0] <= i["ages"]["max"]]
+    others = [i for i in cat["items"] if i not in hinted and i.get("kind") != "video" and fits(i)]
     rows = list(search.readable_units(others, resources))
     if rows:
         click.echo(f"\n=== Elsewhere ({len(rows)} paragraphs and pages searched)")
@@ -613,45 +654,58 @@ def _slug(title: str) -> str:
     return "-".join(normalise(title).split()[:6])
 
 
+def _pack_name(code: str, title: str) -> str:
+    """S6-05-the-heart-and-mind-connection.md: named by the sheet code, as the site asks."""
+    if "#" in code:
+        track, week = code.split("#")
+        return f"{track}-w{int(week):02d}-{_slug(title)}.md"
+    sheet, number = code.split("-")
+    return f"{sheet}-{int(number):02d}-{_slug(title)}.md"
+
+
 @cli.command()
-@click.option("-a", "--age", type=click.IntRange(vocab.AGE_MIN, vocab.AGE_MAX),
-              help="Every topic of this age.")
-@click.option("-T", "--topic", help="One topic, like 18:5.")
+@click.option("-c", "--class", "class_id", type=_vocab(vocab.CLASS_IDS), help="Every week of this class.")
+@click.option("-T", "--topic", help="One topic: S6-5 (or the old 18:5).")
+@click.option("--not-written", is_flag=True, help="Skip the weeks already written on the site.")
 @click.option("-o", "--out", type=click.Path(file_okay=False), help="Folder (default: exports/packs).")
-def pack(age, topic, out):
-    """Write a source pack per topic: hint, passages, video moments, what to read next."""
+def pack(class_id, topic, not_written, out):
+    """Write a source pack per topic: hint, passages, video moments, what to read next.
+    Topics joined into one week share one pack."""
     from pathlib import Path
     from . import packs, sift, topics as site
-    if (age is None) == (topic is None):
-        _fail("give --age or --topic")
-    listed = site.load()
-    if not listed:
-        _fail(f"the site's topic lists were not found under {storage.site_dir()}")
+    if (class_id is None) == (topic is None):
+        _fail("give --class or --topic")
+    listed, coverage = site.load(), site.coverage()
+    placement, notes = curriculum.placement(), curriculum.plan_notes()
     if topic:
-        t = _topic(topic)
-        keys = [(t["age"], t["topic"])]
+        codes = [_topic(topic)]
     else:
-        keys = sorted(k for k in listed if k[0] == age)
+        weeks = curriculum.tracks().get(class_id, [])
+        if not weeks:
+            _fail(f"{class_id} has no weeks listed yet in the site's track files")
+        codes = [w["from"] for w in weeks]
+    contexts = [packs.context(c, listed, coverage, placement, notes) for c in codes]
+    if not_written:
+        contexts = [ctx for ctx in contexts if not ctx["written"]]
     cat = storage.load()
     usable = sift.usable_ids(cat, storage.load_blocked(), _today())
-    coverage = site.coverage()
     click.echo("Indexing what has been read...")
     corpus = packs.Corpus(cat)
     root = Path(out) if out else storage.root() / "exports" / "packs"
     written = []
-    for key in keys:
-        if key not in listed:
-            _fail(f"{key[0]}:{key[1]} is not one of the site's topics")
-        info = listed[key]
-        path = root / str(key[0]) / f"{key[0]}-{key[1]:02d}-{_slug(info['title'])}.md"
+    for ctx in contexts:
+        path = root / (ctx["class"] or "unplaced") / _pack_name(ctx["code"], ctx["title"])
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(packs.build(cat, key, info, coverage.get(key, "?"), usable, corpus),
-                        encoding="utf-8")
-        written.append((key, info["title"], path.name))
-    if not topic:
-        index = [f"# Source packs, age {age}", ""] + [
-            f"- [{a}:{n} {title}]({name})" for (a, n), title, name in written]
-        (root / str(age) / "README.md").write_text("\n".join(index) + "\n", encoding="utf-8")
+        path.write_text(packs.build(cat, ctx, usable, corpus), encoding="utf-8")
+        written.append((ctx, path.name))
+    if class_id:
+        name = curriculum.class_info(class_id)["name"]
+        index = [f"# Source packs: {name}", ""] + [
+            f"{ctx['week']}. [{ctx['code']} {ctx['title']}]({file})"
+            + (f" + {', '.join(ctx['codes'][1:])}" if len(ctx["codes"]) > 1 else "")
+            + (" · written" if ctx["written"] else "")
+            for ctx, file in written]
+        (root / class_id / "README.md").write_text("\n".join(index) + "\n", encoding="utf-8")
     click.echo(f"Wrote {len(written)} pack(s) to {root}")
 
 
@@ -661,17 +715,17 @@ def review():
 
 
 @review.command("export")
-@click.option("-a", "--age", type=click.IntRange(vocab.AGE_MIN, vocab.AGE_MAX),
-              help="Only passages and videos for this age.")
+@click.option("-c", "--class", "class_id", type=_vocab(vocab.CLASS_IDS),
+              help="Only this class's passages, and the videos that suit it.")
 @click.option("-o", "--out", type=click.Path(dir_okay=False), help="File (default: exports/review/).")
-def review_export(age, out):
+def review_export(class_id, out):
     """Proposed passages and unwatched videos, with columns for a person's decisions."""
     from pathlib import Path
     from . import review as sheet, topics as site
     path = Path(out) if out else (storage.root() / "exports" / "review" /
-                                  f"review-{age if age else 'all'}-{_today()}.xlsx")
+                                  f"review-{class_id or 'all'}-{_today()}.xlsx")
     path.parent.mkdir(parents=True, exist_ok=True)
-    passages, videos = sheet.write(path, storage.load(), site.load(), age)
+    passages, videos = sheet.write(path, storage.load(), site.load(), class_id, curriculum.placement())
     click.echo(f"Wrote {passages} passages and {videos} videos to review: {path}")
 
 
@@ -834,7 +888,9 @@ def show(record_id):
 @click.option("-r", "--role", type=_vocab(vocab.ROLES))
 @click.option("--rights", type=_vocab(vocab.RIGHTS))
 @click.option("--status")
-@click.option("-T", "--topic", help="Reaches this topic through a passage, like 18:5.")
+@click.option("-c", "--class", "class_id", type=_vocab(vocab.CLASS_IDS),
+              help="Suits this class; for passages and hints, belongs to its topics.")
+@click.option("-T", "--topic", help="Reaches this topic through a passage: S6-5 (or 18:5).")
 @click.option("--use", type=_vocab(vocab.USES))
 @click.option("-q", "--query", help="Words that must all appear: in titles, notes, quotes, "
                                     "and the fetched text of articles and chapters.")
@@ -847,8 +903,8 @@ def show(record_id):
 @click.option("-n", "--limit", type=int, help="Show at most this many.")
 @click.option("--count", is_flag=True, help="Only say how many match.")
 @click.option("--json", "as_json", is_flag=True, help="Print the full records as JSON.")
-def filter_records(what, kind, lang, age, strand, lens, role, rights, status, topic, use, query,
-                   minutes, subtitles, without, watched, everything, limit, count, as_json):
+def filter_records(what, kind, lang, age, strand, lens, role, rights, status, class_id, topic, use,
+                   query, minutes, subtitles, without, watched, everything, limit, count, as_json):
     """List resources, items, passages or hints that meet every condition given.
 
     Only what could reach the site is shown unless --all is given. Video conditions
@@ -858,7 +914,7 @@ def filter_records(what, kind, lang, age, strand, lens, role, rights, status, to
     collection = "topicHints" if what == "hints" else what
     if collection == "topicHints" and any(v is not None for v in (
             kind, lang, strand, lens, role, rights, status, use, minutes, subtitles, without, watched)):
-        _fail("hints can only be filtered by --age, --topic and --query")
+        _fail("hints can only be filtered by --class, --topic and --query")
     if use and collection != "passages":
         _fail("--use filters passages")
     if collection == "resources" and any(v is not None for v in (minutes, subtitles, without, watched)):
@@ -867,8 +923,11 @@ def filter_records(what, kind, lang, age, strand, lens, role, rights, status, to
                   "role": role, "rights": rights, "status": status, "use": use, "query": query,
                   "subtitles": subtitles, "watched": watched}
     if topic:
-        t = _topic(topic)
-        conditions["topic"] = (t["age"], t["topic"])
+        conditions["topic"] = _topic(topic)
+    if class_id:
+        conditions["class"] = class_id
+        conditions["class_ages"] = curriculum.class_info(class_id)["ages"]
+        conditions["class_topics"] = {t for t, p in curriculum.placement().items() if p["class"] == class_id}
     if minutes:
         try:
             conditions["minutes"] = sift.parse_range(minutes)
@@ -913,40 +972,52 @@ def filter_records(what, kind, lang, age, strand, lens, role, rights, status, to
 
 
 @cli.command()
-@click.option("-a", "--age", type=click.IntRange(vocab.AGE_MIN, vocab.AGE_MAX))
+@click.option("-c", "--class", "class_id", type=_vocab(vocab.CLASS_IDS),
+              help="One class's weeks, in order. Without it: every class, one line each.")
 @click.option("--cover", type=click.Choice(["weak", "fair", "good"]),
               help="Coverage by the books, from the site's report.")
-@click.option("--no-passages", is_flag=True, help="Topics with no passage yet.")
-@click.option("--no-hint", is_flag=True, help="Topics with no source hint.")
-def topics(age, cover, no_passages, no_hint):
-    """The site's topics and what the catalogue holds for each: hints and passages."""
+@click.option("--no-passages", is_flag=True, help="Weeks with no passage yet.")
+@click.option("--not-written", is_flag=True, help="Weeks not yet written on the site.")
+def topics(class_id, cover, no_passages, not_written):
+    """The site's classes and weeks, and what the catalogue holds for each topic.
+    A week counts the topics joined into it."""
     from . import sift
     from . import topics as site
-    listed = site.load()
-    if not listed:
-        _fail(f"the site's topic lists were not found under {storage.site_dir()}")
-    rows = sift.topic_status(storage.load(), listed, site.coverage())
-    rows = [r for r in rows if (age is None or r["age"] == age)
+    rows = sift.week_status(storage.load(), curriculum.tracks(), site.load(), site.coverage(),
+                            curriculum.plan_notes())
+    if not rows:
+        _fail(f"the site's track files were not found under {storage.site_dir()}")
+    if class_id is None:
+        for cid, name, lo, hi in vocab.CLASSES:
+            mine = [r for r in rows if r["class"] == cid]
+            if not mine:
+                click.echo(f"{cid:<26} {name} ({lo}-{hi}): no weeks listed yet")
+                continue
+            click.echo(f"{cid:<26} {len(mine):>2} weeks, {sum(1 for r in mine if r['passages'])} with "
+                       f"passages, {sum(1 for r in mine if r['written'])} written, "
+                       f"{sum(1 for r in mine if r['cover'] == 'weak')} weak")
+        return
+    rows = [r for r in rows if r["class"] == class_id
             and (cover is None or r["cover"] == cover)
             and (not no_passages or r["passages"] == 0)
-            and (not no_hint or r["hints"] == 0)]
+            and (not not_written or not r["written"])]
     for r in rows:
-        click.echo(f"{r['age']}:{r['topic']:<3} {r['cover']:<5} hints {r['hints']}  "
-                   f"passages {r['passages']:<3} {r['title']}")
-    with_passages = sum(1 for r in rows if r["passages"])
-    click.echo(f"\n{len(rows)} topics, {with_passages} with passages, "
-               f"{sum(1 for r in rows if r['hints'])} with a hint")
+        joined = f" + {', '.join(r['joined'])}" if r["joined"] else ""
+        written = "  written" if r["written"] else ""
+        click.echo(f"{r['week']:>2}. {r['code']:<6} {r['cover']:<5} hints {r['hints']}  "
+                   f"passages {r['passages']:<3} {r['title']}{joined}{written}")
+    click.echo(f"\n{len(rows)} weeks, {sum(1 for r in rows if r['passages'])} with passages")
 
 
 def _line(collection, r):
     def ages(a):
         return f"{a.get('min')}-{a.get('max')}" if isinstance(a, dict) else "?"
     if collection == "passages":
-        topics = ",".join(f"{t.get('age')}:{t.get('topic')}" for t in r.get("topics", []))
+        topics = ",".join(curriculum.key_of(t) for t in r.get("topics", []))
         quote = f'  "{r["quote"]}"' if r.get("quote") else ""
         return f"{r['id']}  {r.get('status')}  {r.get('use')}  topics {topics}  @ {r.get('where')}{quote}"
     if collection == "topicHints":
-        return f"{r['id']}  {r.get('age')}:{r.get('topic')}  {r.get('hint')}"
+        return f"{r['id']}  {curriculum.key_of(r)}  {r.get('hint')}"
     status = r.get("status", "")
     return (f"{r['id']}  {r.get('kind')}  {r.get('title')}  ages {ages(r.get('ages'))}  "
             f"{','.join(r.get('languages', []))}  {status}").rstrip()
@@ -970,10 +1041,11 @@ def stats():
     per_topic = {}
     for p in cat["passages"]:
         for t in p.get("topics", []):
-            k = (t.get("age"), t.get("topic"))
+            k = curriculum.key_of(t)
             per_topic[k] = per_topic.get(k, 0) + 1
     if per_topic:
-        listed = "  ".join(f"{a}:{n} {c}" for (a, n), c in sorted(per_topic.items()))
+        listed = "  ".join(f"{k} {c}" for k, c in sorted(per_topic.items(),
+                                                          key=lambda kc: curriculum.sort_key(kc[0])))
         click.echo(f"passages per topic: {listed}")
 
 

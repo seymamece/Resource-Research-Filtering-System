@@ -7,7 +7,8 @@ from cli import sift, storage
 
 def resource(rid, **extra):
     r = {"id": rid, "kind": "channel", "title": "Talks (Turkish)", "url": f"https://example.org/{rid}",
-         "languages": ["tr"], "ages": {"min": 13, "max": 18}, "strands": [], "lenses": [],
+         "languages": ["tr"], "classes": ["lower-secondary-advanced", "upper-secondary-middle"],
+         "ages": {"min": 13, "max": 18}, "strands": [], "lenses": [],
          "role": "religious-supporting", "rights": "pending", "status": "to_verify",
          "retrieved": "2026-10-15"}
     r.update(extra)
@@ -80,12 +81,24 @@ class SiftTest(unittest.TestCase):
         self.assertEqual(self.ids(query="SABR")[0], ["c1"])        # title, any case
         self.assertEqual(self.ids(query="talk v3")[0], ["v3"])
 
-    def test_topic_status(self):
-        self.cat["topicHints"] = [{"id": "h-1", "age": 13, "topic": 1, "hint": "x", "catalogueId": None}]
-        rows = sift.topic_status(self.cat, {(13, 1): {"title": "Intro"}, (13, 2): {"title": "Love"}},
-                                 {(13, 1): "weak"})
-        self.assertEqual([(r["topic"], r["cover"], r["hints"], r["passages"]) for r in rows],
-                         [(1, "weak", 1, 0), (2, "?", 0, 0)])
+    def test_week_status_counts_joined_topics_with_their_week(self):
+        self.cat["topicHints"] = [{"id": "h-1", "age": 13, "topic": 35, "hint": "x", "catalogueId": None}]
+        self.cat["passages"] = [{"id": "p-1", "itemId": "c1", "where": "paragraph 1",
+                                 "topics": [{"from": "S1-4"}], "use": "faith", "status": "proposed"}]
+        tracks = {"lower-secondary-beginner": [
+            {"week": 12, "title": "Prayer", "from": "S1-4", "joined": ["S1-35"]},
+            {"week": 13, "title": "Cleanliness", "from": "S1-5", "joined": []}]}
+        rows = sift.week_status(self.cat, tracks, {"S1-4": {"title": "Consciousness of Worship"}},
+                                {"S1-5": "weak"}, {"S1-4": {"tr": "Namaz", "written": True}})
+        self.assertEqual([(r["week"], r["code"], r["hints"], r["passages"], r["cover"], r["written"])
+                          for r in rows], [(12, "S1-4", 1, 1, "?", True), (13, "S1-5", 0, 0, "weak", False)])
+        self.assertEqual((rows[0]["title"], rows[0]["title_tr"]), ("Consciousness of Worship", "Namaz"))
+
+    def test_a_class_keeps_what_suits_it(self):
+        c = {"class": "lower-secondary-advanced", "class_ages": {"min": 13, "max": 15}, "class_topics": set()}
+        self.assertEqual(self.ids(**c)[0], ["v1", "v2", "v3", "v4", "c1"])  # c1 is for 13: it fits
+        c["class"] = "upper-secondary-beginner"  # the resource does not list it
+        self.assertEqual(self.ids(**c)[0], [])
 
 
 if __name__ == "__main__":

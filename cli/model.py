@@ -10,7 +10,7 @@ from datetime import date
 
 from . import vocab
 
-RESOURCE_FIELDS = {"id", "kind", "title", "privateName", "url", "languages", "ages", "strands",
+RESOURCE_FIELDS = {"id", "kind", "title", "privateName", "url", "languages", "classes", "ages", "strands",
                    "lenses", "role", "rights", "priority", "status", "retrieved", "notes",
                    "catalogueId", "verifiedBy"}
 ITEM_FIELDS = {"id", "resourceId", "kind", "title", "url", "languages", "ages", "strands",
@@ -153,7 +153,9 @@ def _check_resource(c: _Checker, r: dict):
     c.url(rid, r, required=web)
     c.day(rid, r, "retrieved", required=web)
     c.choices(rid, r, "languages", vocab.LANGUAGES, nonempty=True)
-    c.ages(rid, r)
+    c.choices(rid, r, "classes", vocab.CLASS_IDS, nonempty=True)
+    if "ages" in r:  # approximate ages may stay beside the classes, as a note (section 3.1)
+        c.ages(rid, r)
     c.choices(rid, r, "strands", vocab.STRANDS)
     c.choices(rid, r, "lenses", vocab.LENSES)
     c.choice(rid, r, "role", vocab.ROLES)
@@ -223,24 +225,33 @@ def _check_item(c: _Checker, i: dict, resource: dict | None):
     c.person(rid, i, "watchedBy")
 
 
+# S6-5: the owner's sheet S6, topic 5. A5-1: the site's list for age 5, topic 1, which the
+# primary classes draw on; the requirements still name {track, week} for those, so both pass.
+_SHEET_CODE = re.compile(r"^(S[1-6]|A([5-9]|1[0-2]))-([1-9]|[12]\d|3[0-6])$")
+
+
 def _check_topics(c: _Checker, rid, topics):
+    """[{"from": "S6-5"}] for a secondary topic, [{"track", "week"}] for a primary one."""
     if not isinstance(topics, list) or not topics:
-        c.bad(rid, "'topics' needs at least one {age, topic}")
+        c.bad(rid, "'topics' needs at least one {\"from\": \"S6-5\"}")
         return
     seen = set()
     for t in topics:
-        if not isinstance(t, dict) or not {"age", "topic"} <= set(t) or not set(t) <= {"age", "topic", "use"}:
-            c.bad(rid, f"topic {t!r} must be {{age, topic}} with an optional use")
+        if isinstance(t, dict) and set(t) == {"from"}:
+            if not (isinstance(t["from"], str) and _SHEET_CODE.match(t["from"])):
+                c.bad(rid, f"topic '{t['from']}' is not a code like S6-5 or A5-1")
+                continue
+            key = t["from"]
+        elif isinstance(t, dict) and set(t) == {"track", "week"}:
+            if t["track"] not in vocab.PRIMARY_CLASSES or not (_is_int(t["week"]) and 1 <= t["week"] <= 40):
+                c.bad(rid, f"topic {t!r} must name a primary class and a week from 1 to 40")
+                continue
+            key = f"{t['track']}#{t['week']}"
+        else:
+            c.bad(rid, f"topic {t!r} must be {{\"from\": \"S6-5\"}} or {{\"track\", \"week\"}}")
             continue
-        if not (_is_int(t["age"]) and vocab.AGE_MIN <= t["age"] <= vocab.AGE_MAX):
-            c.bad(rid, f"topic age {t['age']!r} is not within {vocab.AGE_MIN}-{vocab.AGE_MAX}")
-        if not (_is_int(t["topic"]) and 1 <= t["topic"] <= vocab.TOPICS_PER_AGE):
-            c.bad(rid, f"topic number {t['topic']!r} is not within 1-{vocab.TOPICS_PER_AGE}")
-        if "use" in t and t["use"] not in vocab.USES:
-            c.bad(rid, f"topic use '{t['use']}', expected one of {', '.join(vocab.USES)}")
-        key = (t.get("age"), t.get("topic"))
         if key in seen:
-            c.bad(rid, f"topic {key[0]}:{key[1]} is listed twice")
+            c.bad(rid, f"topic {key} is listed twice")
         seen.add(key)
 
 
@@ -276,7 +287,7 @@ def _check_passage(c: _Checker, p: dict, item: dict | None, resource: dict | Non
 
     # Rule 1, the order of authority, through the resource's role (section 3.4).
     role = resource.get("role") if resource else None
-    uses = {p.get("use")} | {t.get("use") for t in p.get("topics") or [] if isinstance(t, dict)}
+    uses = {p.get("use")}
     if role == "planning":
         c.bad(rid, "a 'planning' resource may not be cited for anything")
     elif "faith" in uses and role == "method":

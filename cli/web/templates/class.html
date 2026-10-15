@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}{{ class_name(class_id) }}{% endblock %}
+{% block body %}
+<a href="{{ url_for('class_list') }}">← {{ t('classes') }}</a>
+<h1>{{ class_name(class_id) }}</h1>
+<p class="note">{{ t('about_ages', ages=ages) }}</p>
+<div class="tabs">
+  <span class="note" style="margin:0 6px 0 0">{{ t('show') }}:</span>
+  {% for key, label in (('all', 'all_topics'), ('unwritten', 'unwritten_only'), ('weak', 'weak_only'), ('empty', 'no_passage_only')) %}
+    <a href="{{ url_for('class_weeks', class_id=class_id, show=key) }}" class="{{ 'on' if show == key }}">{{ t(label) }}</a>
+  {% endfor %}
+</div>
+<p class="note">{{ t('weeks_summary', n=rows|length, total=total, p=with_passages) }}</p>
+<table>
+  <thead><tr>
+    <th>{{ t('col_week') }}</th><th class="hide">{{ t('col_code') }}</th><th>{{ t('col_topic') }}</th>
+    <th>{{ t('col_cover') }}</th><th class="hide">{{ t('col_hints') }}</th><th>{{ t('col_passages') }}</th>
+  </tr></thead>
+  <tbody>
+  {% for r in rows %}
+    <tr>
+      <td class="n">{{ r.week }}</td>
+      <td class="hide"><code>{{ r.code }}</code>{% for j in r.joined %}<br><code>{{ j }}</code>{% endfor %}</td>
+      <td>
+        <a href="{{ url_for('topic', code=r.code) }}">{{ r.title_tr if lang == 'tr' and r.title_tr else r.title }}</a>
+        {% if r.written %} <span class="badge good">{{ t('written') }}</span>{% endif %}
+      </td>
+      <td><span class="badge {{ r.cover }}">{{ t('cover_' ~ r.cover) }}</span></td>
+      <td class="n hide">{{ r.hints }}</td>
+      <td class="n">{{ r.passages }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

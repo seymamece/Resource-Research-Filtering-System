@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ age }}:{{ number }} {{ g.info.title }}{% endblock %}
+{% block title %}{{ g.ctx.code }} {{ g.ctx.title_tr if lang == 'tr' and g.ctx.title_tr else g.ctx.title }}{% endblock %}
 
 {% macro source_line(s, where) %}
   <div class="meta">
@@ -22,7 +22,7 @@
         <div class="note">{{ t('rules_note') }}</div>
       </div>
     {% endif %}
-    <form method="post" action="{{ url_for('add', age=age, number=number) }}">
+    <form method="post" action="{{ url_for('add', code=code) }}">
       <input type="hidden" name="item" value="{{ item_id }}">
       <div class="grid">
         <label class="full">{{ t('quote') }}
@@ -41,12 +41,22 @@
 {% endmacro %}
 
 {% block body %}
-<a href="{{ url_for('topic_list', age=age) }}">← {{ t('back') }}</a>
-<h1>{{ age }}:{{ number }} {{ g.info.title }}</h1>
+{% set ctx = g.ctx %}
+{% if ctx.class %}
+  <a href="{{ url_for('class_weeks', class_id=ctx.class) }}">← {{ class_name(ctx.class) }}</a>
+{% else %}
+  <a href="{{ url_for('class_list') }}">← {{ t('classes') }}</a>
+{% endif %}
+<h1><code>{{ ctx.code }}</code> {{ ctx.title_tr if lang == 'tr' and ctx.title_tr else ctx.title }}</h1>
+{% if lang == 'tr' and ctx.title_tr %}<p class="note">{{ ctx.title }}</p>
+{% elif lang != 'tr' and ctx.title_tr %}<p class="note">{{ ctx.title_tr }}</p>{% endif %}
 <div class="meta">
-  <span>{{ t('coverage') }}: <span class="badge {{ g.cover }}">{{ t('cover_' ~ g.cover) }}</span></span>
-  {% if g.info.science %}<span>{{ t('science') }}: {{ g.info.science }}</span>{% endif %}
+  <span>{{ t('week_of', name=class_name(ctx.class), week=ctx.week) if ctx.class else t('unplaced') }}</span>
+  <span>{{ t('coverage') }}: <span class="badge {{ ctx.cover }}">{{ t('cover_' ~ ctx.cover) }}</span></span>
+  {% if ctx.science %}<span>{{ t('science') }}: {{ ctx.science }}</span>{% endif %}
+  {% if ctx.codes|length > 1 %}<span>{{ t('researched_with') }}: {% for c in ctx.codes[1:] %}<code>{{ c }}</code> {% endfor %}</span>{% endif %}
 </div>
+{% if ctx.written %}<p class="flash ok">{{ t('written_note') }}</p>{% endif %}
 
 <h2>{{ t('hints') }}</h2>
 {% for h in g.hints %}
@@ -72,7 +82,7 @@
     </div>
     {% if p.quote %}<blockquote>{{ p.quote }}</blockquote>{% endif %}
     {{ source_line(s, p.where) }}
-    <form class="row" method="post" action="{{ url_for('decide', age=age, number=number) }}">
+    <form class="row" method="post" action="{{ url_for('decide', code=code) }}">
       <input type="hidden" name="passage" value="{{ p.id }}">
       {% if p.status == 'accepted' %}
         <span class="good">✓ {{ t('accepted_by', by=p.acceptedBy.by, on=p.acceptedBy.on) }}</span>

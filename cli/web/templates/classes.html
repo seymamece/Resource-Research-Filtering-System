@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ t('classes') }}{% endblock %}
+{% block body %}
+<h1>{{ t('classes') }}</h1>
+<p class="note">{{ t('levels_note') }}</p>
+{% for c in classes %}
+  <div class="card">
+    {% if c.weeks %}
+      <a href="{{ url_for('class_weeks', class_id=c.id) }}"><strong>{{ class_name(c.id) }}</strong></a>
+    {% else %}
+      <strong>{{ class_name(c.id) }}</strong>
+    {% endif %}
+    <div class="meta">
+      <span>{{ t('about_ages', ages=c.ages) }}</span>
+      {% if c.weeks %}
+        <span>{{ t('class_card', weeks=c.weeks, p=c.with_passages, w=c.written, k=c.weak) }}</span>
+      {% else %}
+        <span>{{ t('no_weeks') }}</span>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+<p class="note">{{ t('first_load') }}</p>
+{% endblock %}

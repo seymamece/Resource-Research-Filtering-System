@@ -45,7 +45,8 @@ def sources_dir() -> Path:
 
 
 def empty() -> dict:
-    return {"version": 1, **{c: [] for c in COLLECTIONS}}
+    from .migrate import VERSION
+    return {"version": VERSION, **{c: [] for c in COLLECTIONS}}
 
 
 def load() -> dict:
@@ -55,6 +56,8 @@ def load() -> dict:
     cat = json.loads(path.read_text(encoding="utf-8"))
     for c in COLLECTIONS:
         cat.setdefault(c, [])
+    from .migrate import upgrade
+    upgrade(cat)  # an older catalogue is read in today's shape and saved that way
     return cat
 
 

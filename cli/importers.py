@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 
 from openpyxl import load_workbook
 
-from . import model, storage
+from . import curriculum, model, storage, vocab
 
 # The owner's series and the site's ages (requirements section 3.1). S4 is labelled 17-18
 # but is the site's age 16.
@@ -144,6 +144,44 @@ def import_topics(cat: dict, rows, today: str) -> tuple[list[str], list[str], li
     return list(dict.fromkeys(changed)), notes, skipped
 
 
+# --- the site's classes ----------------------------------------------------------------------
+
+def adopt_plan(cat: dict, placement: dict) -> tuple[list, list]:
+    """The chapter a topic's hint names was given the topic's old sheet age when the sheet was
+    imported. Now that topics are taught in classes, it takes the ages of the classes its
+    topics are taught in - within what its site allows - so it is found for those classes.
+    Run again whenever the site rewrites its plan."""
+    resources = {r["id"]: r for r in cat["resources"]}
+    wanted = {}  # item id -> [class ids]
+    for h in cat["topicHints"]:
+        place = placement.get(curriculum.key_of(h))
+        if not place:
+            continue
+        title = h["hint"].replace(" (related reading)", "")
+        for item in cat["items"]:
+            if item["title"] == title and item.get("kind") != "video":
+                wanted.setdefault(item["id"], set()).add(place["class"])
+    changed, report = [], []
+    for item in cat["items"]:
+        classes = wanted.get(item["id"])
+        if not classes:
+            continue
+        spans = [curriculum.class_info(c)["ages"] for c in classes]
+        ages = {"min": min(a["min"] for a in spans), "max": max(a["max"] for a in spans)}
+        resource = resources.get(item["resourceId"], {})
+        bound = resource.get("ages")
+        if bound:
+            ages = {"min": max(ages["min"], bound["min"]), "max": min(ages["max"], bound["max"])}
+        missing = [c for c in classes if c not in resource.get("classes", [])]
+        if missing:
+            report.append(f"{item['id']}: its resource {resource.get('id')} does not list "
+                          f"{', '.join(sorted(missing))}; add it there if it suits")
+        if ages["min"] <= ages["max"] and ages != item["ages"]:
+            item["ages"] = ages
+            changed.append(item["id"])
+    return changed, report
+
+
 # --- the site's catalogue of books -----------------------------------------------------------
 
 def import_books(cat: dict, catalogue: dict, today: str, blocked=None):
@@ -171,7 +209,7 @@ def import_books(cat: dict, catalogue: dict, today: str, blocked=None):
         record = {
             "id": cid, "kind": "book", "title": entry["title"], "languages": languages,
             # The site's catalogue says nothing about age; narrow it with `set` once known.
-            "ages": {"min": 5, "max": 18}, "strands": [], "lenses": [],
+            "classes": list(vocab.CLASS_IDS), "ages": {"min": 5, "max": 18}, "strands": [], "lenses": [],
             "role": entry["role"], "rights": entry.get("rights", "pending"), "status": "to_verify",
             "notes": "Text read from the site's own extraction. The age range is still to set.",
             "catalogueId": cid,
@@ -215,7 +253,7 @@ def discover(cat: dict, resource: dict, entries: list, words: list, today: str, 
             continue
         item = {"id": iid, "resourceId": resource["id"], "kind": entry["kind"], "title": title,
                 "url": entry["url"], "languages": list(resource["languages"]),
-                "ages": dict(resource["ages"]), "strands": [], "lenses": [], "retrieved": today}
+                "ages": curriculum.ages_of(resource), "strands": [], "lenses": [], "retrieved": today}
         if entry.get("youtubeId"):
             item["youtubeId"] = entry["youtubeId"]
         if entry.get("minutes"):
@@ -285,7 +323,7 @@ def import_videos(cat: dict, rows, found: dict, today: str, blocked=None):
         item = {
             "id": iid, "resourceId": resource["id"], "kind": "video", "title": row["title"],
             "url": watch_url(vid), "languages": list(resource["languages"]),
-            "ages": dict(resource["ages"]), "strands": [], "lenses": [], "retrieved": today,
+            "ages": curriculum.ages_of(resource), "strands": [], "lenses": [], "retrieved": today,
             "youtubeId": vid, "channelPrivate": seen["channel"],
             # The sheet lists videos with English subtitles; what else is in them is for
             # whoever watches each one to record.

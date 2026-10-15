@@ -5,6 +5,9 @@ passages chosen so far with where they are, the moments in subtitled videos that
 the topic, and the paragraphs most worth reading next. Everything in it is made from the
 catalogue and can be made again at any time, so packs are not kept in git.
 
+A topic is researched with the topics folded into its week ("joined"), and for the class it
+is taught in: a source counts if it lists that class and its ages meet the class's.
+
 gather() collects it as data; build() writes it as Markdown, and the web screen draws the
 same data, so the two never disagree about what a topic has.
 
@@ -12,7 +15,7 @@ Titles are the neutral ones. A source that cannot reach the site is still listed
 writer may read it - but marked, so nothing from it is carried into a lesson by mistake.
 """
 
-from . import search
+from . import curriculum, search
 
 
 def excerpt(body: str, size: int = 280) -> str:
@@ -30,6 +33,36 @@ def link(item: dict, where: str | None = None) -> str | None:
     return url
 
 
+def context(topic: str, site_topics: dict, coverage: dict, placement: dict, notes: dict) -> dict:
+    """Everything about a topic that is not in the catalogue: its title, class, week, the
+    topics joined with it, and the ages the sources must suit."""
+    place = placement.get(topic)
+    main = place["main"] if place else topic
+    codes = [main] + sorted((t for t, p in placement.items() if p["main"] == main and t != main),
+                            key=curriculum.sort_key)
+    info = site_topics.get(main, {})
+    if place:
+        ages = curriculum.class_info(place["class"])["ages"]
+    else:
+        age = curriculum.sheet_age(main)
+        ages = {"min": age, "max": age} if age else {"min": 5, "max": 18}
+    return {"code": main, "codes": codes, "class": place["class"] if place else None,
+            "week": place["week"] if place else None, "ages": ages,
+            "title": info.get("title") or (place or {}).get("title") or main,
+            "title_tr": notes.get(main, {}).get("tr", ""),
+            "written": notes.get(main, {}).get("written", False),
+            "science": info.get("science", ""), "cover": coverage.get(main, "?"),
+            "joined_titles": {c: site_topics.get(c, {}).get("title", "") for c in codes[1:]}}
+
+
+def suits(item: dict, resource: dict, ctx: dict) -> bool:
+    """A source suits a topic's class if it lists the class and its ages meet the class's."""
+    if ctx["class"] and ctx["class"] not in resource.get("classes", [ctx["class"]]):
+        return False
+    ages = item.get("ages") or resource.get("ages")
+    return not ages or (ages["min"] <= ctx["ages"]["max"] and ctx["ages"]["min"] <= ages["max"])
+
+
 class Corpus:
     """Everything readable, indexed once for all the packs of a run."""
 
@@ -43,35 +76,36 @@ class Corpus:
         self.text_index = search.Index([(n, u[3]) for n, u in enumerate(self.text_units)])
 
 
-def gather(cat: dict, key: tuple, info: dict, cover: str, usable: set, corpus: Corpus,
-           videos: int = 6, reading: int = 4) -> dict:
-    age, _ = key
+def gather(cat: dict, ctx: dict, usable: set, corpus: Corpus, videos: int = 6, reading: int = 4) -> dict:
     resources = {r["id"]: r for r in cat["resources"]}
     items = {i["id"]: i for i in cat["items"]}
+    codes = set(ctx["codes"])
 
     def fits(item):
-        return item["ages"]["min"] <= age <= item["ages"]["max"]
+        return suits(item, resources.get(item["resourceId"], {}), ctx)
 
     def source(item):
         return {"item": item, "role": resources.get(item.get("resourceId"), {}).get("role", "?"),
                 "usable": item.get("id") in usable}
 
     hints, hinted = [], []
-    for h in (h for h in cat["topicHints"] if (h["age"], h["topic"]) == key):
+    for h in (h for h in cat["topicHints"] if curriculum.key_of(h) in codes):
         title = h["hint"].replace(" (related reading)", "")
         match = [i for i in cat["items"] if fits(i) and (
             i["title"] == title or (h.get("catalogueId")
                                     and resources.get(i["resourceId"], {}).get("catalogueId") == h["catalogueId"]))]
         hinted += match
-        hints.append({"hint": h, "item": match[0] if match else None})
+        hints.append({"hint": h, "code": curriculum.key_of(h), "item": match[0] if match else None})
 
-    passages = sorted((p for p in cat["passages"] if any((t["age"], t["topic"]) == key for t in p["topics"])),
+    passages = sorted((p for p in cat["passages"] if any(curriculum.key_of(t) in codes for t in p["topics"])),
                       key=lambda p: (p["status"] != "accepted", p["use"]))
     passages = [dict(source(items.get(p["itemId"], {})), passage=p) for p in passages]
 
     # Talks are searched for the topic itself. The hint's book title would pull in any talk
     # that happens to say "word" or "third"; it helps only inside the reading.
-    topic_words = " ".join([info["title"], info.get("science", "")])
+    titles = [ctx["title"]] + [extra for extra in (ctx["science"],) if extra]
+    titles += [t for code in ctx["codes"][1:] for t in [ctx.get("joined_titles", {}).get(code, "")] if t]
+    topic_words = " ".join(titles)
     query = " ".join([topic_words] + [h["hint"]["hint"] for h in hints])
 
     moments, seen = [], set()
@@ -95,14 +129,11 @@ def gather(cat: dict, key: tuple, info: dict, cover: str, usable: set, corpus: C
               + [n for n in ranked if units[n][0]["id"] not in hinted_ids][:reading])
     to_read = [dict(source(units[n][0]), where=units[n][1], text=units[n][3]) for n in ranked]
 
-    return {"key": key, "info": info, "cover": cover, "hints": hints, "passages": passages,
-            "moments": moments, "reading": to_read}
+    return {"ctx": ctx, "hints": hints, "passages": passages, "moments": moments, "reading": to_read}
 
 
-def build(cat: dict, key: tuple, info: dict, cover: str, usable: set, corpus: Corpus,
-          videos: int = 6, reading: int = 4) -> str:
-    g = gather(cat, key, info, cover, usable, corpus, videos, reading)
-    age, number = key
+def build(cat: dict, ctx: dict, usable: set, corpus: Corpus, videos: int = 6, reading: int = 4) -> str:
+    g = gather(cat, ctx, usable, corpus, videos, reading)
 
     def md_link(item, where=None):
         url = link(item, where)
@@ -112,12 +143,22 @@ def build(cat: dict, key: tuple, info: dict, cover: str, usable: set, corpus: Co
         mark = "" if s["usable"] else " — *not for the site*"
         return f"{s['item'].get('title', '?')} ({s['role']}){mark}"
 
-    lines = [f"# {age}:{number} {info['title']}", "",
-             f"Coverage by the books: **{cover}**" + (f" · science: {info['science']}" if info.get("science") else ""),
-             "", "## From the owner's sheet", ""]
+    lines = [f"# {ctx['code']} {ctx['title']}", ""]
+    if ctx["title_tr"]:
+        lines += [f"*{ctx['title_tr']}*", ""]
+    if ctx["class"]:
+        name = curriculum.class_info(ctx["class"])["name"]
+        lines.append(f"Class: **{name}** (`{ctx['class']}`), week {ctx['week']}")
+    if len(ctx["codes"]) > 1:
+        lines.append(f"Researched with: {', '.join(ctx['codes'][1:])} (joined in the same week)")
+    lines.append(f"Coverage by the books: **{ctx['cover']}**"
+                 + (f" · science: {ctx['science']}" if ctx["science"] else "")
+                 + (" · **already written on the site**" if ctx["written"] else ""))
+    lines += ["", "## From the owner's sheet", ""]
     for h in g["hints"]:
         book = f" · in the site's catalogue as `{h['hint']['catalogueId']}`" if h["hint"].get("catalogueId") else ""
-        lines.append(f"- {h['hint']['hint']}{md_link(h['item']) if h['item'] else ''}{book}")
+        joined = f" ({h['code']})" if h["code"] != ctx["code"] else ""
+        lines.append(f"- {h['hint']['hint']}{joined}{md_link(h['item']) if h['item'] else ''}{book}")
     if not g["hints"]:
         lines.append("- (no hint for this topic)")
 

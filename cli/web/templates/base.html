@@ -73,7 +73,7 @@
 <header class="bar"><div class="in">
   <strong>{{ t('app_title') }}</strong>
   <nav>
-    <a href="{{ url_for('topic_list', age=18) }}">{{ t('topics') }}</a>
+    <a href="{{ url_for('class_list') }}">{{ t('classes') }}</a>
     <a href="{{ url_for('set_lang', code='en' if lang == 'tr' else 'tr') }}">{{ t('language') }}</a>
   </nav>
 </div></header>

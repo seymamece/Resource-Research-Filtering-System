@@ -13,7 +13,8 @@ from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.worksheet.datavalidation import DataValidation
 
-from . import vocab
+from . import curriculum, vocab
+from .packs import suits
 
 FILL_IN = PatternFill(fill_type="solid", fgColor="FFF2CC")
 HEADER = Font(bold=True)
@@ -43,28 +44,37 @@ def _sheet(wb, title, columns, rows, fill_in, widths):
     return ws
 
 
-def write(path, cat: dict, site_topics: dict, age: int | None = None):
-    """Proposed passages (for the age, if given) and unwatched videos of that age."""
+def write(path, cat: dict, site_topics: dict, class_id: str | None = None,
+          placement: dict | None = None):
+    """Proposed passages (for the class's topics, if a class is given) in week order, and the
+    unwatched videos that suit the class."""
+    placement = placement or {}
     items = {i["id"]: i for i in cat["items"]}
     resources = {r["id"]: r for r in cat["resources"]}
     wb = Workbook()
     wb.remove(wb.active)
 
+    def in_class(topic):
+        return class_id is None or placement.get(topic, {}).get("class") == class_id
+
+    def order(topic):
+        week = placement.get(topic, {}).get("week", 99)
+        return (placement.get(topic, {}).get("class", "~"), week, curriculum.sort_key(topic))
+
     rows = []
     for p in cat["passages"]:
         if p["status"] != "proposed":
             continue
-        topics = [t for t in p["topics"] if age is None or t["age"] == age]
-        if not topics:
+        topics = [curriculum.key_of(t) for t in p["topics"]]
+        mine = [t for t in topics if in_class(t)]
+        if not mine:
             continue
         item = items.get(p["itemId"], {})
         resource = resources.get(item.get("resourceId"), {})
-        first = topics[0]
-        rows.append([p["id"], ", ".join(f"{t['age']}:{t['topic']}" for t in p["topics"]),
-                     site_topics.get((first["age"], first["topic"]), {}).get("title", ""),
+        rows.append([p["id"], ", ".join(topics), site_topics.get(mine[0], {}).get("title", ""),
                      p["use"], p.get("quote", ""), p["where"], item.get("title", ""),
                      resource.get("role", ""), item.get("url", ""), None, None, None])
-    rows.sort(key=lambda r: [int(x) for x in r[1].split(", ")[0].split(":")])
+    rows.sort(key=lambda r: order(r[1].split(", ")[0]))
     ws = _sheet(wb, "Passages", PASSAGE_COLUMNS, rows, {"Decision", "Reviewed by", "Note"},
                 {"A": 12, "B": 8, "C": 30, "D": 10, "E": 60, "F": 22, "G": 34, "H": 14, "I": 30,
                  "J": 11, "K": 16, "L": 30})
@@ -76,7 +86,8 @@ def write(path, cat: dict, site_topics: dict, age: int | None = None):
     for i in cat["items"]:
         if i.get("kind") != "video" or "watchedBy" in i:
             continue
-        if age is not None and not i["ages"]["min"] <= age <= i["ages"]["max"]:
+        if class_id and not suits(i, resources.get(i["resourceId"], {}),
+                                  {"class": class_id, "ages": curriculum.class_info(class_id)["ages"]}):
             continue
         videos.append([i["id"], i["title"], i.get("minutes"), ", ".join(i.get("subtitles", [])),
                        i.get("channelPrivate", ""), i["url"], None, None, None])
