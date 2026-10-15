@@ -72,25 +72,43 @@ These come from the site's PLAN.md, section 0. The site rejects any export that 
 
 ## 3. Shared vocabulary: use the site's ids exactly
 
-### 3.1 Ages
-The site has **one track per year of age, 5 to 18**, each with 36 numbered topics
-(504 topics). It does not use K-2, 3-5, 5-11, 11-18 or series S1 to S6.
+### 3.1 Classes (changed 2026-10-15)
+The site no longer has one track per year of age. It has **eight classes**:
 
-- Store ages as integers: `"ages": { "min": 13, "max": 18 }`.
-- Refer to a topic as `{ "age": 18, "topic": 5 }`.
-- The topic lists are the site's `curriculum/scope-and-sequence.md` (ages 13 to 18) and
-  `curriculum/lists-age-5-12.md` (ages 5 to 12). `tools/topics.ts` reads both.
-
-How the owner's spreadsheet series map to ages:
-
-| Sheet | Labelled | Site age |
+| Class id | Name | About ages |
 |---|---|---|
-| S1 | 13–14 | 13 |
-| S2 | 14–15 | 14 |
-| S3 | 15–16 | 15 |
-| S4 | 17–18 | **16** |
-| S5 | 17–18 | 17 |
-| S6 | 18–19 | 18 |
+| `lower-primary` | Lower Primary | 5–8 |
+| `upper-primary` | Upper Primary | 9–12 |
+| `lower-secondary-beginner` | Lower Secondary · Beginner | 13–15 |
+| `lower-secondary-middle` | Lower Secondary · Middle | 13–15 |
+| `lower-secondary-advanced` | Lower Secondary · Advanced | 13–15 |
+| `upper-secondary-beginner` | Upper Secondary · Beginner | 16–18 |
+| `upper-secondary-middle` | Upper Secondary · Middle | 16–18 |
+| `upper-secondary-advanced` | Upper Secondary · Advanced | 16–18 |
+
+The leader picks the secondary level that fits the group, not its age, so a level is not an age. Each class has
+35 to 37 weekly topics and some topics for reading camps. The lists are the site's
+`content/tracks/<class>/track.json`.
+
+**How to refer to a topic.** For ages 13 to 18, use the topic's place in the owner's spreadsheet, which does not
+change when the classes are rearranged: `"S6-5"` is sheet S6, topic 5 (the old "age 18, topic 5"). Every weekly topic
+in `track.json` names its `from` code, so the site finds the week from it. The sheets map to the old ages like this:
+
+| Sheet | Old site age | Your packs today |
+|---|---|---|
+| S1 | 13 | `13:n` |
+| S2 | 14 | `14:n` |
+| S3 | 15 | `15:n` |
+| S4 | 16 | `16:n` |
+| S5 | 17 | `17:n` |
+| S6 | 18 | `18:n` → `S6-n` |
+
+So the age-18 packs already made (`exports/packs/18/18-05-…`) stay valid: `18:5` is `S6-5`, which is now Upper
+Secondary · Middle, week 28. Please name new packs by the sheet code (`S6-05-…`), and add the class and week from
+`track.json` as extra fields. For the primary classes, whose lists are still being made, use `{ "track", "week" }`.
+
+- Store a resource's suitable classes as a list of class ids: `"classes": ["lower-secondary-middle", "upper-secondary-beginner"]`.
+  Approximate ages may stay as a note (`"ages": { "min": 13, "max": 18 }`).
 
 ### 3.2 Strands (what a topic is about)
 Use these string ids from the site's `content/strands.json`, not the numbers 1 to 6:
@@ -159,7 +177,7 @@ look and *for which topic*, not only that a website exists.
 | `privateName` | no | The real name. Kept private; the site never shows it. |
 | `url` | yes for web | A working URL. An entry without one stays in this system and is not exported. |
 | `languages` | yes | Section 3.6 |
-| `ages` | yes | `{ "min", "max" }` |
+| `classes` | yes | Section 3.1; `ages` `{ "min", "max" }` may stay as a note |
 | `strands`, `lenses` | yes | Sections 3.2 and 3.3 (may be empty lists) |
 | `role` | yes | Section 3.4 |
 | `rights` | yes | Section 3.5 |
@@ -199,7 +217,7 @@ look and *for which topic*, not only that a website exists.
 | `quote` | yes for text | 5 to 40 words, **exactly** as in the source, so the site's quote check can find it |
 | `qref` | no | A Qur'an reference it quotes, for example `"2:286"` |
 | `href` | no | A hadith reference it quotes, for example `"Bukhari 6094"` |
-| `topics` | yes | `[{ "age": 18, "topic": 5, "use": "story" }]` |
+| `topics` | yes | `[{ "from": "S6-5" }]` (section 3.1) |
 | `use` | yes | `faith`, `story`, `example`, `activity`, `science`, `definition` |
 | `status` | yes | `proposed` until a person accepts it |
 
@@ -247,7 +265,7 @@ look and *for which topic*, not only that a website exists.
       "itemId": "i-7b21",
       "where": "section 'Two systems'",
       "quote": "(5 to 40 words copied exactly from the article)",
-      "topics": [{ "age": 18, "topic": 5 }],
+      "topics": [{ "from": "S6-5" }],
       "use": "science",
       "status": "proposed"
     }
