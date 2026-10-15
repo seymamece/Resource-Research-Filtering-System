@@ -187,6 +187,45 @@ def import_books(cat: dict, catalogue: dict, today: str, blocked=None):
     return changed, skipped
 
 
+# --- what is inside a website or a channel ---------------------------------------------------
+
+def discover(cat: dict, resource: dict, entries: list, words: list, today: str, blocked=None,
+             limit: int | None = None):
+    """Adds a resource's pages or videos as its items: those whose title holds every word
+    given, or all of them when no words are given. The sifting happens here, at the door,
+    so the catalogue holds what was looked for rather than everything a site has ever posted.
+
+    entries: [{"url", "title", "kind", "youtubeId"?, "minutes"?}]
+    """
+    from .names import normalise
+    have = {i["id"] for i in cat["items"]}
+    changed, skipped = [], 0
+    for entry in entries:
+        if limit is not None and len(changed) >= limit:
+            break
+        title = " ".join(entry["title"].split())[:200]
+        haystack = " " + normalise(f"{title} {entry['url']}") + " "
+        if words and not all(" " + w in haystack for w in words):
+            continue
+        if not title or (blocked and blocked.found_in(title)):
+            skipped += 1
+            continue
+        iid = storage.make_id("items", entry["url"])
+        if iid in have:
+            continue
+        item = {"id": iid, "resourceId": resource["id"], "kind": entry["kind"], "title": title,
+                "url": entry["url"], "languages": list(resource["languages"]),
+                "ages": dict(resource["ages"]), "strands": [], "lenses": [], "retrieved": today}
+        if entry.get("youtubeId"):
+            item["youtubeId"] = entry["youtubeId"]
+        if entry.get("minutes"):
+            item["minutes"] = entry["minutes"]
+        cat["items"].append(item)
+        have.add(iid)
+        changed.append(iid)
+    return changed, skipped
+
+
 # --- the subtitled-videos sheet --------------------------------------------------------------
 
 def video_rows(path: str):

@@ -152,5 +152,39 @@ class VideoSheetTest(unittest.TestCase):
         self.assertEqual(again, [])
 
 
+class DiscoverTest(unittest.TestCase):
+    def test_titles_from_addresses(self):
+        from cli.text import title_from_url
+        self.assertEqual(title_from_url("https://x.org/nebevi-bir-yol-genis-tabanli-hareket-2/"),
+                         "Nebevi bir yol genis tabanli hareket 2")
+        self.assertEqual(title_from_url("https://x.org/75-words/3663-03-the-third-word.html"),
+                         "03 the third word")
+
+    def test_only_what_holds_the_words_comes_in_once(self):
+        from tests.test_catalogue import BLOCKED_NAME, fingerprint
+        from cli.names import BlockedNames
+        blocked = BlockedNames({"version": 1, "names": [fingerprint(BLOCKED_NAME)]})
+        cat = storage.empty()
+        channel = site("r-ch", "https://www.youtube.com/@x")
+        channel.update(kind="channel", languages=["tr"])
+        cat["resources"] = [channel]
+        entries = [
+            {"url": "https://www.youtube.com/watch?v=AAAAAAAAAAA", "title": "Arkadaş seçimi",
+             "kind": "video", "youtubeId": "AAAAAAAAAAA", "minutes": 12},
+            {"url": "https://www.youtube.com/watch?v=BBBBBBBBBBB", "title": "Ramazan",
+             "kind": "video", "youtubeId": "BBBBBBBBBBB", "minutes": 8},
+            {"url": "https://www.youtube.com/watch?v=CCCCCCCCCCC", "title": "Example Academy arkadas gunu",
+             "kind": "video", "youtubeId": "CCCCCCCCCCC", "minutes": 3},
+        ]
+        words = ["arkadas"]  # as normalise() writes it: accents and case aside
+        matching = [e for e in entries if "arkadas" in __import__("cli.names").names.normalise(e["title"])]
+        added, skipped = importers.discover(cat, channel, matching, words, "2026-10-15", blocked)
+        self.assertEqual([i["title"] for i in cat["items"]], ["Arkadaş seçimi"])
+        self.assertEqual(skipped, 1)
+        self.assertEqual((cat["items"][0]["minutes"], cat["items"][0]["languages"]), (12, ["tr"]))
+        self.assertEqual(model.check(cat), [])
+        self.assertEqual(importers.discover(cat, channel, matching, words, "2026-10-15", blocked)[0], [])
+
+
 if __name__ == "__main__":
     unittest.main()

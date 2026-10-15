@@ -299,6 +299,45 @@ def quote_found(item: dict, resource: dict | None, quote: str, where: str | None
     return _contains(" ".join(body for _, _, body in found), quote)
 
 
+_LOC = re.compile(r"<loc>\s*([^<\s]+)\s*</loc>")
+_NOT_A_PAGE = re.compile(r"\.(jpe?g|png|gif|webp|pdf|mp3|mp4|zip)$|/(tag|category|author|page|feed|wp-json)/", re.I)
+
+
+def sitemap(url: str) -> list[str]:
+    """The pages a site lists in its sitemap (robots.txt first, then the usual places),
+    following a sitemap index two levels down. Empty if it has none."""
+    from urllib.parse import urlsplit
+    parts = urlsplit(url)
+    root = f"{parts.scheme}://{parts.netloc}"
+
+    def locs(address, depth=0):
+        status, body = fetch(address, attempts=1)
+        if status != 200:
+            return []
+        found = _LOC.findall(body)
+        if "<sitemapindex" in body and depth < 2:
+            return [page for sub in found[:80] for page in locs(sub, depth + 1)]
+        return found
+
+    _, robots = fetch(root + "/robots.txt", attempts=1)
+    listed = re.findall(r"(?im)^sitemap:\s*(\S+)", robots)
+    for address in listed or [root + "/sitemap.xml", root + "/sitemap_index.xml", root + "/wp-sitemap.xml"]:
+        pages = [p for p in locs(address) if not _NOT_A_PAGE.search(p)]
+        if pages:
+            return list(dict.fromkeys(pages))
+    return []
+
+
+def title_from_url(url: str) -> str:
+    """A readable title from a page's address, until the page itself is fetched."""
+    from urllib.parse import unquote, urlsplit
+    slug = unquote(urlsplit(url).path.rstrip("/").rsplit("/", 1)[-1])
+    slug = re.sub(r"\.(html?|php|aspx?)$", "", slug)
+    slug = re.sub(r"^\d+-", "", slug)  # Joomla's leading article number
+    words = re.sub(r"[-_+]+", " ", slug).strip()
+    return words[:1].upper() + words[1:] if words else url
+
+
 def fetch(url: str, attempts: int = 3) -> tuple[int, str]:
     """(status, html); status 0 when the site could not be reached."""
     request = urllib.request.Request(url, headers={

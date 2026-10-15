@@ -476,6 +476,8 @@ def _fetch_subtitles(cat: dict, chosen: list):
             if result["status"] == "ok":
                 text.write_subtitles(item, result["events"], _today())
                 item["retrieved"] = _today()
+                if "en" not in item.get("subtitles", []):
+                    item["subtitles"] = item.get("subtitles", []) + ["en"]
                 got += 1
             elif result["status"] == "none":
                 missing.append(f"{item['id']}: {result['reason']}")
@@ -559,6 +561,72 @@ def shortlist(topic, top, extra, whole):
         for _, pos in index.rank(query)[:top]:
             item, where, _, body = rows[pos]
             show(item, where, body)
+
+
+_YOUTUBE_LIST = ("youtube.com/@", "youtube.com/channel/", "youtube.com/c/", "youtube.com/user/",
+                 "youtube.com/playlist")
+_CANNOT_LIST = ("instagram.com", "facebook.com", "tiktok.com", "spotify.com", "apple.com",
+                "soundcloud.com", "spreaker.com")
+WHOLE_LIMIT = 200
+
+
+@cli.command()
+@click.argument("resource_ids", nargs=-1)
+@click.option("--to-verify", "every", is_flag=True,
+              help="Every website and channel still to verify, instead of naming them.")
+@click.option("-q", "--query", help="Words that must all be in a page's or video's title.")
+@click.option("-n", "--limit", type=int, help="Add at most this many per resource.")
+@click.option("--count", is_flag=True, help="Only say how many there are and how many match.")
+def discover(resource_ids, every, query, limit, count):
+    """Add what is inside a website (from its sitemap) or a channel (its video list) as
+    items, keeping only titles that hold the --query words. A source with more than
+    200 entries needs --query or --limit, so the catalogue holds what was looked for."""
+    from . import importers, text, youtube
+    from .names import normalise
+    cat = storage.load()
+    if every:
+        chosen = [r for r in cat["resources"] if r["status"] == "to_verify" and r.get("url")
+                  and r["kind"] in ("website", "channel", "course", "app") and not r.get("catalogueId")]
+    else:
+        chosen = [_require(cat, rid, "resources") for rid in resource_ids]
+    if not chosen:
+        _fail("name resources, or give --to-verify")
+    words = normalise(query).split() if query else []
+    blocked = storage.load_blocked()
+    changed = []
+    for r in chosen:
+        url = r["url"]
+        if any(host in url for host in _CANNOT_LIST):
+            click.echo(f"{r['id']}: this platform cannot be listed; add its items by hand")
+            continue
+        if any(marker in url for marker in _YOUTUBE_LIST):
+            found = youtube.channel_videos(url)
+            if found["status"] != "ok":
+                click.echo(f"{r['id']}: could not list the channel: {found['reason']}")
+                continue
+            entries = [{"url": youtube.watch_url(v["id"]), "title": v["title"], "kind": "video",
+                        "youtubeId": v["id"], "minutes": v["minutes"]} for v in found["videos"]]
+        else:
+            entries = [{"url": page, "title": text.title_from_url(page), "kind": "article"}
+                       for page in text.sitemap(url)]
+            if not entries:
+                click.echo(f"{r['id']}: no sitemap; add its items by hand")
+                continue
+        matching = [e for e in entries if not words or all(
+            " " + w in " " + normalise(f"{e['title']} {e['url']}") + " " for w in words)]
+        if count:
+            click.echo(f"{r['id']}: {len(entries)} listed, {len(matching)} match  {r['title']}")
+            continue
+        if not words and len(entries) > WHOLE_LIMIT and limit is None:
+            click.echo(f"{r['id']}: {len(entries)} listed; give --query or --limit  {r['title']}")
+            continue
+        added, skipped = importers.discover(cat, r, matching, [], _today(), blocked, limit)
+        changed += added
+        click.echo(f"{r['id']}: {len(added)} added of {len(matching)} matching"
+                   + (f", {skipped} skipped for their titles" if skipped else "") + f"  {r['title']}")
+    if changed:
+        _save_many(cat, changed)
+        click.echo(f"Items added: {len(changed)}. Next: fetch, or fetch --videos.")
 
 
 # --- what comes out for people ---------------------------------------------------------------

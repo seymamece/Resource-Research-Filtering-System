@@ -74,6 +74,28 @@ def subtitles(video_id: str, lang: str = "en") -> dict:
     return {"status": "ok", "events": events}
 
 
+def channel_videos(url: str) -> dict:
+    """{"status": "ok", "videos": [{"id", "title", "minutes"}]} for a channel or playlist,
+    from its list alone: nothing is opened or downloaded per video."""
+    import yt_dlp
+    target = url.split("?")[0].rstrip("/") if "playlist" not in url else url
+    if "/playlist" not in target and not target.endswith(("/videos", "/streams")):
+        target += "/videos"
+    options = {"extract_flat": "in_playlist", "quiet": True, "no_warnings": True, "skip_download": True}
+    try:
+        with yt_dlp.YoutubeDL(options) as ydl:
+            info = ydl.extract_info(target, download=False)
+    except Exception as e:
+        return {"status": "error", "reason": str(e).splitlines()[0][:200]}
+    videos = []
+    for entry in info.get("entries") or []:
+        if entry and entry.get("id") and len(entry["id"]) == 11:
+            seconds = entry.get("duration")
+            videos.append({"id": entry["id"], "title": (entry.get("title") or "").strip(),
+                           "minutes": round(seconds / 60) if seconds else None})
+    return {"status": "ok", "videos": videos}
+
+
 def lookup_many(video_ids, workers: int = 4) -> dict:
     """Four at a time: more than that and YouTube starts dropping connections."""
     ids = list(dict.fromkeys(video_ids))
