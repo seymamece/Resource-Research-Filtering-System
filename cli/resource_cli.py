@@ -621,28 +621,11 @@ def show(record_id):
     click.echo(json.dumps(record, indent=2, ensure_ascii=False))
 
 
-def _context(cat):
-    resources = {r["id"]: r for r in cat["resources"]}
-    items = {i["id"]: i for i in cat["items"]}
-    return resources, items
-
-
-def _topics_of(cat, items, record, collection):
-    """The topics a record reaches through its passages."""
-    if collection == "passages":
-        passages = [record]
-    elif collection == "items":
-        passages = [p for p in cat["passages"] if p.get("itemId") == record["id"]]
-    else:
-        mine = {i for i, it in items.items() if it.get("resourceId") == record["id"]}
-        passages = [p for p in cat["passages"] if p.get("itemId") in mine]
-    return {(t.get("age"), t.get("topic")) for p in passages for t in p.get("topics", [])}
-
-
 @cli.command("filter")
 @click.argument("what", type=click.Choice(WHAT), default="resources")
 @click.option("-k", "--kind")
-@click.option("-l", "--lang", type=_vocab(vocab.LANGUAGES))
+@click.option("-l", "--lang", type=_vocab(vocab.LANGUAGES),
+              help="Spoken or written in it, or subtitled in it.")
 @click.option("-a", "--age", type=click.IntRange(vocab.AGE_MIN, vocab.AGE_MAX),
               help="Records whose age range includes this age.")
 @click.option("-s", "--strand", type=_vocab(vocab.STRANDS))
@@ -652,74 +635,102 @@ def _topics_of(cat, items, record, collection):
 @click.option("--status")
 @click.option("-T", "--topic", help="Reaches this topic through a passage, like 18:5.")
 @click.option("--use", type=_vocab(vocab.USES))
+@click.option("-q", "--query", help="Words that must all appear: in titles, notes, quotes, "
+                                    "and the fetched text of articles and chapters.")
+@click.option("--minutes", help="Video length, like 5-20, 5- or -20.")
+@click.option("--subtitles", type=_vocab(vocab.LANGUAGES), help="Videos subtitled in it.")
+@click.option("--without", help="Videos recorded as free of these: " + ",".join(vocab.VIDEO_CONTENT))
+@click.option("--watched/--unwatched", default=None, help="Videos a person has, or has not, watched.")
+@click.option("--all", "everything", is_flag=True,
+              help="Also show what cannot reach the site: archived, restricted, named in the URL.")
+@click.option("-n", "--limit", type=int, help="Show at most this many.")
+@click.option("--count", is_flag=True, help="Only say how many match.")
 @click.option("--json", "as_json", is_flag=True, help="Print the full records as JSON.")
-def filter_records(what, kind, lang, age, strand, lens, role, rights, status, topic, use, as_json):
-    """List resources, items, passages or hints that meet every condition given."""
-    cat = storage.load()
-    resources, items = _context(cat)
+def filter_records(what, kind, lang, age, strand, lens, role, rights, status, topic, use, query,
+                   minutes, subtitles, without, watched, everything, limit, count, as_json):
+    """List resources, items, passages or hints that meet every condition given.
+
+    Only what could reach the site is shown unless --all is given. Video conditions
+    (--minutes, --subtitles, --without, --watched) apply to items and passages.
+    """
+    from . import sift, text
     collection = "topicHints" if what == "hints" else what
-    wanted_topic = None
+    if collection == "topicHints" and any(v is not None for v in (
+            kind, lang, strand, lens, role, rights, status, use, minutes, subtitles, without, watched)):
+        _fail("hints can only be filtered by --age, --topic and --query")
+    if use and collection != "passages":
+        _fail("--use filters passages")
+    if collection == "resources" and any(v is not None for v in (minutes, subtitles, without, watched)):
+        _fail("video conditions filter items and passages: filter items -k video ...")
+    conditions = {"kind": kind, "lang": lang, "age": age, "strand": strand, "lens": lens,
+                  "role": role, "rights": rights, "status": status, "use": use, "query": query,
+                  "subtitles": subtitles, "watched": watched}
     if topic:
         t = _topic(topic)
-        wanted_topic = (t["age"], t["topic"])
+        conditions["topic"] = (t["age"], t["topic"])
+    if minutes:
+        try:
+            conditions["minutes"] = sift.parse_range(minutes)
+        except ValueError as e:
+            raise click.BadParameter(str(e))
+    if without:
+        conditions["without"] = _csv(without)
+        unknown = [v for v in conditions["without"] if v not in vocab.VIDEO_CONTENT]
+        if unknown:
+            raise click.BadParameter(f"{', '.join(unknown)}: expected {', '.join(vocab.VIDEO_CONTENT)}")
 
-    results = []
-    for record in cat[collection]:
-        item = record if collection == "items" else items.get(record.get("itemId"))
-        resource = (record if collection == "resources"
-                    else resources.get((item or {}).get("resourceId")))
-        # A passage is described by its item, an item by itself, and role and rights belong
-        # to the resource either way.
-        described = record if collection in ("resources", "items") else (item or {})
-        if collection == "topicHints":
-            if age is not None and record.get("age") != age:
-                continue
-            if wanted_topic and (record.get("age"), record.get("topic")) != wanted_topic:
-                continue
-            if any(v is not None for v in (kind, lang, strand, lens, role, rights, status, use)):
-                _fail("hints can only be filtered by --age and --topic")
-            results.append(record)
-            continue
-        if kind and described.get("kind") != kind:
-            continue
-        if lang and lang not in described.get("languages", []):
-            continue
-        if strand and strand not in described.get("strands", []):
-            continue
-        if lens and lens not in described.get("lenses", []):
-            continue
-        if role and (resource or {}).get("role") != role:
-            continue
-        if rights and (resource or {}).get("rights") != rights:
-            continue
-        if status and (record.get("status") or (resource or {}).get("status")) != status:
-            continue
-        if age is not None:
-            if collection == "passages":
-                if age not in {t.get("age") for t in record.get("topics", [])}:
-                    continue
-            else:
-                a = described.get("ages", {})
-                if not a.get("min", 99) <= age <= a.get("max", -1):
-                    continue
-        if wanted_topic and wanted_topic not in _topics_of(cat, items, record, collection):
-            continue
-        if use:
-            if collection != "passages":
-                _fail("--use filters passages")
-            if use != record.get("use") and use not in {t.get("use") for t in record.get("topics", [])}:
-                continue
-        results.append(record)
+    cat = storage.load()
+    # Asking for archived records is asking to see them.
+    show_all = everything or status == "archived"
+    usable = None if show_all else sift.usable_ids(cat, storage.load_blocked(), _today())
 
-    if as_json:
-        click.echo(json.dumps(results, indent=2, ensure_ascii=False))
-        return
-    if not results:
+    def read_text(item_id):
+        blocks = text.read_cache(item_id)
+        return [body for kind_, body in blocks if kind_ == "p"] if blocks else None
+
+    results, notes = sift.sift(cat, collection, conditions, usable, read_text)
+    total = len(results)
+    if count:
+        click.echo(f"{total} {what}")
+    elif as_json:
+        click.echo(json.dumps([r for r, _ in results[:limit]], indent=2, ensure_ascii=False))
+    elif not results:
         click.echo(f"No {what} match.")
-        return
-    for r in results:
-        click.echo(_line(collection, r))
-    click.echo(f"\n{len(results)} {what}")
+    else:
+        for record, snippet in results[:limit]:
+            click.echo(_line(collection, record))
+            if snippet:
+                click.echo(f"      in the text: {snippet}")
+        shown = f"{min(limit, total)} of {total}" if limit and limit < total else str(total)
+        click.echo(f"\n{shown} {what}")
+    for note in notes:
+        click.echo(note, err=True)
+
+
+@cli.command()
+@click.option("-a", "--age", type=click.IntRange(vocab.AGE_MIN, vocab.AGE_MAX))
+@click.option("--cover", type=click.Choice(["weak", "fair", "good"]),
+              help="Coverage by the books, from the site's report.")
+@click.option("--no-passages", is_flag=True, help="Topics with no passage yet.")
+@click.option("--no-hint", is_flag=True, help="Topics with no source hint.")
+def topics(age, cover, no_passages, no_hint):
+    """The site's topics and what the catalogue holds for each: hints and passages."""
+    from . import sift
+    from . import topics as site
+    listed = site.load()
+    if not listed:
+        _fail(f"the site's topic lists were not found under {storage.site_dir()}")
+    rows = sift.topic_status(storage.load(), listed, site.coverage())
+    rows = [r for r in rows if (age is None or r["age"] == age)
+            and (cover is None or r["cover"] == cover)
+            and (not no_passages or r["passages"] == 0)
+            and (not no_hint or r["hints"] == 0)]
+    for r in rows:
+        click.echo(f"{r['age']}:{r['topic']:<3} {r['cover']:<5} hints {r['hints']}  "
+                   f"passages {r['passages']:<3} {r['title']}")
+    with_passages = sum(1 for r in rows if r["passages"])
+    click.echo(f"\n{len(rows)} topics, {with_passages} with passages, "
+               f"{sum(1 for r in rows if r['hints'])} with a hint")
 
 
 def _line(collection, r):
