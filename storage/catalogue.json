@@ -3471,6 +3471,1317 @@
       "status": "archived",
       "retrieved": "2026-10-13",
       "notes": "Archived: social media account; the YouTube channel is catalogued."
+    },
+    {
+      "id": "s-be7ad93574",
+      "kind": "book",
+      "title": "Du'a Using the 99 Names of Allah, booklet",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-be7ad93574"
+    },
+    {
+      "id": "s-1dc2e328d5",
+      "kind": "book",
+      "title": "The Night of Power (Laylat al-Qadr), booklet",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-1dc2e328d5"
+    },
+    {
+      "id": "s-2303836886",
+      "kind": "book",
+      "title": "The Qur'an with Annotated Interpretation in Modern English",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-2303836886"
+    },
+    {
+      "id": "s-91e7501a27",
+      "kind": "book",
+      "title": "Sahaba: Stars of the Prophet",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-91e7501a27"
+    },
+    {
+      "id": "s-2e0a14f9a4",
+      "kind": "book",
+      "title": "Peygamberimiz Gençlere Nasıl Davranırdı?",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-2e0a14f9a4"
+    },
+    {
+      "id": "s-6446328fb5",
+      "kind": "book",
+      "title": "365 Stories, part 1",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-6446328fb5"
+    },
+    {
+      "id": "s-ecc4632c01",
+      "kind": "book",
+      "title": "40 Short Du'as (Rabbanas) from the Qur'an",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-ecc4632c01"
+    },
+    {
+      "id": "s-5f5d0384c5",
+      "kind": "book",
+      "title": "I Wonder About the Prophet",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-5f5d0384c5"
+    },
+    {
+      "id": "s-deb34b2dc6",
+      "kind": "book",
+      "title": "50 Du'as for Arafah",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-deb34b2dc6"
+    },
+    {
+      "id": "s-76219bf3e0",
+      "kind": "book",
+      "title": "Prophet Muhammad: The Beloved Messenger of Allah (The Age of Bliss 1)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-76219bf3e0"
+    },
+    {
+      "id": "s-96a21f64f1",
+      "kind": "book",
+      "title": "Prophet Muhammad: The Seal of All Prophets",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-96a21f64f1"
+    },
+    {
+      "id": "s-4e7221047a",
+      "kind": "book",
+      "title": "The Essentials of the Islamic Faith",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-4e7221047a"
+    },
+    {
+      "id": "s-cca299644d",
+      "kind": "book",
+      "title": "The Messenger of God: Muhammad (e-book edition)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-cca299644d"
+    },
+    {
+      "id": "s-5a47013e44",
+      "kind": "book",
+      "title": "The Messenger of God: Muhammad",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-5a47013e44"
+    },
+    {
+      "id": "s-cadf532a0b",
+      "kind": "book",
+      "title": "The Infinite Light",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-cadf532a0b"
+    },
+    {
+      "id": "s-9919456c1e",
+      "kind": "book",
+      "title": "Journey to Noble Ideals (The Broken Jug series 13)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-9919456c1e"
+    },
+    {
+      "id": "s-6b15280cee",
+      "kind": "book",
+      "title": "Key Concepts in the Practice of Sufism, vol. 1",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-6b15280cee"
+    },
+    {
+      "id": "s-ba7122c27c",
+      "kind": "book",
+      "title": "Khadija: The First Muslim and the Wife of the Prophet Muhammad",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-ba7122c27c"
+    },
+    {
+      "id": "s-883c846622",
+      "kind": "book",
+      "title": "Reflections on the Qur'an",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-883c846622"
+    },
+    {
+      "id": "s-af011ed542",
+      "kind": "book",
+      "title": "Stories of the Sahaabah",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-af011ed542"
+    },
+    {
+      "id": "s-cbe01a25c3",
+      "kind": "book",
+      "title": "Prophet Muhammad: The Sultan of Hearts, vols 1–2",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-cbe01a25c3"
+    },
+    {
+      "id": "s-42206d93e4",
+      "kind": "book",
+      "title": "The Essence of Wisdom: Parables from the Prophet and His Companions",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-42206d93e4"
+    },
+    {
+      "id": "s-6fbb6e2460",
+      "kind": "book",
+      "title": "The Luminous Life of Our Prophet",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-6fbb6e2460"
+    },
+    {
+      "id": "s-cbb75fc07a",
+      "kind": "book",
+      "title": "The Messenger: Prophet Muhammad and His Life",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-cbb75fc07a"
+    },
+    {
+      "id": "s-8f451733d6",
+      "kind": "book",
+      "title": "The Staff of Moses",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-8f451733d6"
+    },
+    {
+      "id": "s-c49398d82d",
+      "kind": "book",
+      "title": "Time Management",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "restricted",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-c49398d82d"
+    },
+    {
+      "id": "s-0b2a1b118a",
+      "kind": "book",
+      "title": "Umar ibn al-Khattab: Exemplar of Truth and Justice",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-0b2a1b118a"
+    },
+    {
+      "id": "s-db66eab4de",
+      "kind": "book",
+      "title": "Zayd: The Rose That Bloomed in Captivity",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-db66eab4de"
+    },
+    {
+      "id": "s-612825c991",
+      "kind": "book",
+      "title": "Discussion notes: Ders 08 (İngilizce) Dua Kulluğun Özü, Lesson 08 Prayer the Essence of Servanthood",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-612825c991"
+    },
+    {
+      "id": "s-e50fbe2490",
+      "kind": "book",
+      "title": "Discussion notes: Ders 09 (İngilizce)  Sünnetin Tesbitine Tesir Eden Amiller, Lesson 09, Following The Noble Sunna",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-e50fbe2490"
+    },
+    {
+      "id": "s-c52d36f827",
+      "kind": "book",
+      "title": "Discussion notes, week 1: I do not own myself",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-c52d36f827"
+    },
+    {
+      "id": "s-2aa4d2469d",
+      "kind": "book",
+      "title": "Discussion notes: Lesson 02- The Companions",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-2aa4d2469d"
+    },
+    {
+      "id": "s-8c91ddf80d",
+      "kind": "book",
+      "title": "Discussion notes: Lesson 03 - Do not say _My honour was hurt_",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-8c91ddf80d"
+    },
+    {
+      "id": "s-9198c71f40",
+      "kind": "book",
+      "title": "Discussion notes: Lesson 04 - Balance",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-9198c71f40"
+    },
+    {
+      "id": "s-3212393d79",
+      "kind": "book",
+      "title": "Discussion notes: LESSON 05 – COMPASSIONATE SLAPS",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-3212393d79"
+    },
+    {
+      "id": "s-b73d459030",
+      "kind": "book",
+      "title": "Discussion notes: Lesson 06 - Point of Reliance",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-b73d459030"
+    },
+    {
+      "id": "s-5dadf1a3c7",
+      "kind": "book",
+      "title": "Discussion notes: LESSON 10 - AL-KULUBU’D-DARIA - The pleading hearts.",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-5dadf1a3c7"
+    },
+    {
+      "id": "s-27d3c455ff",
+      "kind": "book",
+      "title": "Discussion notes: LESSON 11 - OBEDIENCE",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-27d3c455ff"
+    },
+    {
+      "id": "s-db1a4f8dfe",
+      "kind": "book",
+      "title": "Discussion notes: LESSON 12 - JAWSHAN AL-KABIR AS A PROPHETIC WIRD",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-db1a4f8dfe"
+    },
+    {
+      "id": "s-6bf04b53ec",
+      "kind": "book",
+      "title": "Discussion notes: Çeşitli İç Hastalıkları İçin Okunabilecek Bir Şifa Duası, HE",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-6bf04b53ec"
+    },
+    {
+      "id": "s-f275aad44a",
+      "kind": "book",
+      "title": "Discussion notes: Ders 02 (Türkçe) Sahabeler 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-f275aad44a"
+    },
+    {
+      "id": "s-5bef879e33",
+      "kind": "book",
+      "title": "Discussion notes: Ders 03 (Türkçe) Haysiyetime Dokundu Deme 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-5bef879e33"
+    },
+    {
+      "id": "s-cc412f2850",
+      "kind": "book",
+      "title": "Discussion notes: Ders 04 (Türkçe) Denge 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-cc412f2850"
+    },
+    {
+      "id": "s-9917b60783",
+      "kind": "book",
+      "title": "Discussion notes: Ders 05 (Türkçe) Şefkat Tokatları 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-9917b60783"
+    },
+    {
+      "id": "s-f10fef288e",
+      "kind": "book",
+      "title": "Discussion notes: Ders 06 (Türkçe) Nokta-i İstinad 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-f10fef288e"
+    },
+    {
+      "id": "s-75141c13a7",
+      "kind": "book",
+      "title": "Discussion notes: Ders 07 (Türkçe) Heyecan Yorgunluğu ve Diriliş Hamleleri 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-75141c13a7"
+    },
+    {
+      "id": "s-97583548c0",
+      "kind": "book",
+      "title": "Discussion notes: Ders 08 (Türkçe) Dua Kulluğun Özü 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-97583548c0"
+    },
+    {
+      "id": "s-7a5cfdb929",
+      "kind": "book",
+      "title": "Discussion notes: Ders 09 (Türkçe) Sünnetin Tesbitine Tesir Eden Âmiller 2",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-7a5cfdb929"
+    },
+    {
+      "id": "s-54d59860c0",
+      "kind": "book",
+      "title": "Discussion notes: Ders 10 (Türkçe) El-Kulûbu’d-Dâria Okumaları Bidat mı 3",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-54d59860c0"
+    },
+    {
+      "id": "s-321d73c0f4",
+      "kind": "book",
+      "title": "Discussion notes: Ders 11 (Türkçe) İtaat nedir Kime Neden İtaat Edilir",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-321d73c0f4"
+    },
+    {
+      "id": "s-996a88e0b9",
+      "kind": "book",
+      "title": "Discussion notes: Ders 12 (Türkçe) Cevşen, Tesbihat Kulubuddaria Tevhidname",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-996a88e0b9"
+    },
+    {
+      "id": "s-a2be21ca1c",
+      "kind": "book",
+      "title": "Discussion notes: Ders 13 (Türkçe) Varlığı Yorumlamada Anahtar Kavramlardan Nazar Bahsi 4",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-a2be21ca1c"
+    },
+    {
+      "id": "s-73ab4a62e1",
+      "kind": "book",
+      "title": "Discussion notes: Ders 14 (Türkçe) Sünnetin Nuru Âdâttan İbadete 3",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-73ab4a62e1"
+    },
+    {
+      "id": "s-59b6fdc6d6",
+      "kind": "book",
+      "title": "Discussion notes: Ders 15 (Türkçe) Muhasebe",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-59b6fdc6d6"
+    },
+    {
+      "id": "s-ff7420d9dc",
+      "kind": "book",
+      "title": "Discussion notes: Ders 16 (Türkçe) Rabıta-i Mevt",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-ff7420d9dc"
+    },
+    {
+      "id": "s-0f25d9faa4",
+      "kind": "book",
+      "title": "Discussion notes: Ders 17 (Türkçe) Dünyevileşme",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-0f25d9faa4"
+    },
+    {
+      "id": "s-cf85e3a10c",
+      "kind": "book",
+      "title": "Discussion notes: Ders 18 (Türkçe) Tenkit ve Eleştiri 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-cf85e3a10c"
+    },
+    {
+      "id": "s-06a95c0d20",
+      "kind": "book",
+      "title": "Discussion notes: Ders 20 (Türkçe) Asıl Meseleyi Kaçırmak (Dördüncü Mesele 01) 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-06a95c0d20"
+    },
+    {
+      "id": "s-4fe7dd6e83",
+      "kind": "book",
+      "title": "Discussion notes: Ders 21 (Türkçe) Seni Kim Yönetiyor Gündem mi Kalbin mi (Dördüncü Mesela 02)",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-4fe7dd6e83"
+    },
+    {
+      "id": "s-fdeaa98da7",
+      "kind": "book",
+      "title": "Discussion notes: Ders 22 (Türkçe) Dil beyt-i Hudâdır ânı pâk eyle sivâdan (Dördüncü Mesela 03)",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-fdeaa98da7"
+    },
+    {
+      "id": "s-384853f9f3",
+      "kind": "book",
+      "title": "Discussion notes: Ders 23 (Türkçe) Kurbiyetin Yolu Kurban ve Adanmışlığın Metafiziği",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-384853f9f3"
+    },
+    {
+      "id": "s-dad59afee7",
+      "kind": "book",
+      "title": "Discussion notes: Ders 24 (Türkçe) Havf son",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-dad59afee7"
+    },
+    {
+      "id": "s-35535e6f7e",
+      "kind": "book",
+      "title": "Discussion notes: Ders 24 (Türkçe) Terk Ettiklerin Kadar Varsın, Hicretin Ontolojisi",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-35535e6f7e"
+    },
+    {
+      "id": "s-0b57a57173",
+      "kind": "book",
+      "title": "Discussion notes: ramazan",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "religious-supporting",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-0b57a57173"
+    },
+    {
+      "id": "s-125cfc072b",
+      "kind": "book",
+      "title": "The Character Compass, page 1 (transcribed)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-125cfc072b"
+    },
+    {
+      "id": "s-58825e5651",
+      "kind": "book",
+      "title": "The Character Compass, page 2 (transcribed)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-58825e5651"
+    },
+    {
+      "id": "s-1f4efb884d",
+      "kind": "book",
+      "title": "The Character Compass, page 3 (transcribed)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-1f4efb884d"
+    },
+    {
+      "id": "s-ea1712772d",
+      "kind": "book",
+      "title": "The Character Compass, page 5 (transcribed)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-ea1712772d"
+    },
+    {
+      "id": "s-683351ba41",
+      "kind": "book",
+      "title": "The Character Compass: A Guide for Young Minds (morality book, edit in progress)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "role": "method",
+      "rights": "pending",
+      "status": "to_verify",
+      "notes": "Text read from the site's own extraction. The age range is still to set.",
+      "catalogueId": "s-683351ba41"
     }
   ],
   "items": [
@@ -17734,6 +19045,1110 @@
         "en"
       ],
       "minutes": 21
+    },
+    {
+      "id": "i-902f5039",
+      "resourceId": "s-be7ad93574",
+      "kind": "chapter",
+      "title": "Du'a Using the 99 Names of Allah, booklet",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-a845de5c",
+      "resourceId": "s-1dc2e328d5",
+      "kind": "chapter",
+      "title": "The Night of Power (Laylat al-Qadr), booklet",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-cea61912",
+      "resourceId": "s-2303836886",
+      "kind": "chapter",
+      "title": "The Qur'an with Annotated Interpretation in Modern English",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-660be77f",
+      "resourceId": "s-91e7501a27",
+      "kind": "chapter",
+      "title": "Sahaba: Stars of the Prophet",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-aebf56bc",
+      "resourceId": "s-2e0a14f9a4",
+      "kind": "chapter",
+      "title": "Peygamberimiz Gençlere Nasıl Davranırdı?",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-35484d99",
+      "resourceId": "s-6446328fb5",
+      "kind": "chapter",
+      "title": "365 Stories, part 1",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-94d49082",
+      "resourceId": "s-ecc4632c01",
+      "kind": "chapter",
+      "title": "40 Short Du'as (Rabbanas) from the Qur'an",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-023268a6",
+      "resourceId": "s-5f5d0384c5",
+      "kind": "chapter",
+      "title": "I Wonder About the Prophet",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-9b15f7a6",
+      "resourceId": "s-deb34b2dc6",
+      "kind": "chapter",
+      "title": "50 Du'as for Arafah",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-9b95ad17",
+      "resourceId": "s-76219bf3e0",
+      "kind": "chapter",
+      "title": "Prophet Muhammad: The Beloved Messenger of Allah (The Age of Bliss 1)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-4a12d21e",
+      "resourceId": "s-96a21f64f1",
+      "kind": "chapter",
+      "title": "Prophet Muhammad: The Seal of All Prophets",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-44f59279",
+      "resourceId": "s-4e7221047a",
+      "kind": "chapter",
+      "title": "The Essentials of the Islamic Faith",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-e4996c04",
+      "resourceId": "s-cca299644d",
+      "kind": "chapter",
+      "title": "The Messenger of God: Muhammad (e-book edition)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-3212bd23",
+      "resourceId": "s-5a47013e44",
+      "kind": "chapter",
+      "title": "The Messenger of God: Muhammad",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-eb96a5db",
+      "resourceId": "s-cadf532a0b",
+      "kind": "chapter",
+      "title": "The Infinite Light",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-b1573b8b",
+      "resourceId": "s-9919456c1e",
+      "kind": "chapter",
+      "title": "Journey to Noble Ideals (The Broken Jug series 13)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-64165450",
+      "resourceId": "s-6b15280cee",
+      "kind": "chapter",
+      "title": "Key Concepts in the Practice of Sufism, vol. 1",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-dc093bbe",
+      "resourceId": "s-ba7122c27c",
+      "kind": "chapter",
+      "title": "Khadija: The First Muslim and the Wife of the Prophet Muhammad",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-84b6b923",
+      "resourceId": "s-883c846622",
+      "kind": "chapter",
+      "title": "Reflections on the Qur'an",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-da33b93a",
+      "resourceId": "s-af011ed542",
+      "kind": "chapter",
+      "title": "Stories of the Sahaabah",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-41459d07",
+      "resourceId": "s-cbe01a25c3",
+      "kind": "chapter",
+      "title": "Prophet Muhammad: The Sultan of Hearts, vols 1–2",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-ac36a1fa",
+      "resourceId": "s-42206d93e4",
+      "kind": "chapter",
+      "title": "The Essence of Wisdom: Parables from the Prophet and His Companions",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-94b424cc",
+      "resourceId": "s-6fbb6e2460",
+      "kind": "chapter",
+      "title": "The Luminous Life of Our Prophet",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-9b295545",
+      "resourceId": "s-cbb75fc07a",
+      "kind": "chapter",
+      "title": "The Messenger: Prophet Muhammad and His Life",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-91524317",
+      "resourceId": "s-8f451733d6",
+      "kind": "chapter",
+      "title": "The Staff of Moses",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-f8affb2b",
+      "resourceId": "s-c49398d82d",
+      "kind": "chapter",
+      "title": "Time Management",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-2f6725be",
+      "resourceId": "s-0b2a1b118a",
+      "kind": "chapter",
+      "title": "Umar ibn al-Khattab: Exemplar of Truth and Justice",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-62e724b9",
+      "resourceId": "s-db66eab4de",
+      "kind": "chapter",
+      "title": "Zayd: The Rose That Bloomed in Captivity",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-2781772d",
+      "resourceId": "s-612825c991",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 08 (İngilizce) Dua Kulluğun Özü, Lesson 08 Prayer the Essence of Servanthood",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-ce707b5e",
+      "resourceId": "s-e50fbe2490",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 09 (İngilizce)  Sünnetin Tesbitine Tesir Eden Amiller, Lesson 09, Following The Noble Sunna",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-d75dc865",
+      "resourceId": "s-c52d36f827",
+      "kind": "chapter",
+      "title": "Discussion notes, week 1: I do not own myself",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-c866f363",
+      "resourceId": "s-2aa4d2469d",
+      "kind": "chapter",
+      "title": "Discussion notes: Lesson 02- The Companions",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-2413f959",
+      "resourceId": "s-8c91ddf80d",
+      "kind": "chapter",
+      "title": "Discussion notes: Lesson 03 - Do not say _My honour was hurt_",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-583dd674",
+      "resourceId": "s-9198c71f40",
+      "kind": "chapter",
+      "title": "Discussion notes: Lesson 04 - Balance",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-f2843cd5",
+      "resourceId": "s-3212393d79",
+      "kind": "chapter",
+      "title": "Discussion notes: LESSON 05 – COMPASSIONATE SLAPS",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-b22b62eb",
+      "resourceId": "s-b73d459030",
+      "kind": "chapter",
+      "title": "Discussion notes: Lesson 06 - Point of Reliance",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-879fb67e",
+      "resourceId": "s-5dadf1a3c7",
+      "kind": "chapter",
+      "title": "Discussion notes: LESSON 10 - AL-KULUBU’D-DARIA - The pleading hearts.",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-f229ee36",
+      "resourceId": "s-27d3c455ff",
+      "kind": "chapter",
+      "title": "Discussion notes: LESSON 11 - OBEDIENCE",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-ea38b263",
+      "resourceId": "s-db1a4f8dfe",
+      "kind": "chapter",
+      "title": "Discussion notes: LESSON 12 - JAWSHAN AL-KABIR AS A PROPHETIC WIRD",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-040ec7ef",
+      "resourceId": "s-6bf04b53ec",
+      "kind": "chapter",
+      "title": "Discussion notes: Çeşitli İç Hastalıkları İçin Okunabilecek Bir Şifa Duası, HE",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-2a46055b",
+      "resourceId": "s-f275aad44a",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 02 (Türkçe) Sahabeler 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-9cfc63b3",
+      "resourceId": "s-5bef879e33",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 03 (Türkçe) Haysiyetime Dokundu Deme 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-9ea493ed",
+      "resourceId": "s-cc412f2850",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 04 (Türkçe) Denge 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-69544826",
+      "resourceId": "s-9917b60783",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 05 (Türkçe) Şefkat Tokatları 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-1fa159a2",
+      "resourceId": "s-f10fef288e",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 06 (Türkçe) Nokta-i İstinad 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-9f51c7d5",
+      "resourceId": "s-75141c13a7",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 07 (Türkçe) Heyecan Yorgunluğu ve Diriliş Hamleleri 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-b2d9fff3",
+      "resourceId": "s-97583548c0",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 08 (Türkçe) Dua Kulluğun Özü 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-4a0ea630",
+      "resourceId": "s-7a5cfdb929",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 09 (Türkçe) Sünnetin Tesbitine Tesir Eden Âmiller 2",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-374025e4",
+      "resourceId": "s-54d59860c0",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 10 (Türkçe) El-Kulûbu’d-Dâria Okumaları Bidat mı 3",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-0ec8b379",
+      "resourceId": "s-321d73c0f4",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 11 (Türkçe) İtaat nedir Kime Neden İtaat Edilir",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-c25c92d3",
+      "resourceId": "s-996a88e0b9",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 12 (Türkçe) Cevşen, Tesbihat Kulubuddaria Tevhidname",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-98d0b246",
+      "resourceId": "s-a2be21ca1c",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 13 (Türkçe) Varlığı Yorumlamada Anahtar Kavramlardan Nazar Bahsi 4",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-66946286",
+      "resourceId": "s-73ab4a62e1",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 14 (Türkçe) Sünnetin Nuru Âdâttan İbadete 3",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-29d654d7",
+      "resourceId": "s-59b6fdc6d6",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 15 (Türkçe) Muhasebe",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-4221edd0",
+      "resourceId": "s-ff7420d9dc",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 16 (Türkçe) Rabıta-i Mevt",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-c811f824",
+      "resourceId": "s-0f25d9faa4",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 17 (Türkçe) Dünyevileşme",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-e618b67c",
+      "resourceId": "s-cf85e3a10c",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 18 (Türkçe) Tenkit ve Eleştiri 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-2812c2b1",
+      "resourceId": "s-06a95c0d20",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 20 (Türkçe) Asıl Meseleyi Kaçırmak (Dördüncü Mesele 01) 1",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-7f3cb507",
+      "resourceId": "s-4fe7dd6e83",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 21 (Türkçe) Seni Kim Yönetiyor Gündem mi Kalbin mi (Dördüncü Mesela 02)",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-357ff900",
+      "resourceId": "s-fdeaa98da7",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 22 (Türkçe) Dil beyt-i Hudâdır ânı pâk eyle sivâdan (Dördüncü Mesela 03)",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-3c167925",
+      "resourceId": "s-384853f9f3",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 23 (Türkçe) Kurbiyetin Yolu Kurban ve Adanmışlığın Metafiziği",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-dbd7b71d",
+      "resourceId": "s-dad59afee7",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 24 (Türkçe) Havf son",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-6b959e73",
+      "resourceId": "s-35535e6f7e",
+      "kind": "chapter",
+      "title": "Discussion notes: Ders 24 (Türkçe) Terk Ettiklerin Kadar Varsın, Hicretin Ontolojisi",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-288008e7",
+      "resourceId": "s-0b57a57173",
+      "kind": "chapter",
+      "title": "Discussion notes: ramazan",
+      "languages": [
+        "tr"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-6c9f5d9a",
+      "resourceId": "s-125cfc072b",
+      "kind": "chapter",
+      "title": "The Character Compass, page 1 (transcribed)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-95f040ab",
+      "resourceId": "s-58825e5651",
+      "kind": "chapter",
+      "title": "The Character Compass, page 2 (transcribed)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-64033784",
+      "resourceId": "s-1f4efb884d",
+      "kind": "chapter",
+      "title": "The Character Compass, page 3 (transcribed)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-fa0105d4",
+      "resourceId": "s-ea1712772d",
+      "kind": "chapter",
+      "title": "The Character Compass, page 5 (transcribed)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "i-6e631056",
+      "resourceId": "s-683351ba41",
+      "kind": "chapter",
+      "title": "The Character Compass: A Guide for Young Minds (morality book, edit in progress)",
+      "languages": [
+        "en"
+      ],
+      "ages": {
+        "min": 5,
+        "max": 18
+      },
+      "strands": [],
+      "lenses": [],
+      "retrieved": "2026-10-15"
     }
   ],
   "passages": [
