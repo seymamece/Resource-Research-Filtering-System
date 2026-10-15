@@ -418,22 +418,29 @@ def import_videos(xlsx):
               help="Items whose ages include this age.")
 @click.option("-R", "--resource", "resource_id", help="Items of this resource.")
 @click.option("--refresh", is_flag=True, help="Fetch again even if already cached.")
-def fetch(item_ids, age, resource_id, refresh):
-    """Download the text of articles and chapters into cache/text, once each."""
+@click.option("--videos", is_flag=True,
+              help="Fetch the English subtitles of videos instead (needs yt-dlp; slow).")
+def fetch(item_ids, age, resource_id, refresh, videos):
+    """Download the text of articles and chapters into cache/text, once each.
+    With --videos, the subtitles of videos into cache/subtitles."""
     from concurrent.futures import ThreadPoolExecutor
     from . import text
     cat = storage.load()
-    chosen = [i for i in cat["items"] if i.get("kind") != "video" and i.get("url")]
+    chosen = [i for i in cat["items"] if (i.get("kind") == "video") == videos and i.get("url")]
     if item_ids:
         chosen = [i for i in chosen if i["id"] in item_ids]
     if age is not None:
         chosen = [i for i in chosen if i["ages"]["min"] <= age <= i["ages"]["max"]]
     if resource_id:
         chosen = [i for i in chosen if i["resourceId"] == resource_id]
+    cached = text.subtitles_path if videos else text.cache_path
     if not refresh:
-        chosen = [i for i in chosen if not text.cache_path(i["id"]).exists()]
+        chosen = [i for i in chosen if not cached(i["id"]).exists()]
     if not chosen:
         click.echo("Nothing to fetch.")
+        return
+    if videos:
+        _fetch_subtitles(cat, chosen)
         return
     click.echo(f"Fetching {len(chosen)} item(s)...")
     with ThreadPoolExecutor(4) as pool:
@@ -455,6 +462,32 @@ def fetch(item_ids, age, resource_id, refresh):
     click.echo(f"Fetched {fetched}")
     for line in failed:
         click.echo(f"  not fetched {line}")
+
+
+def _fetch_subtitles(cat: dict, chosen: list):
+    """Two at a time, each saved as it arrives, so a run cut short keeps what it got."""
+    from concurrent.futures import ThreadPoolExecutor
+    from . import text, youtube
+    click.echo(f"Fetching subtitles for {len(chosen)} video(s)...")
+    got, missing, failed = 0, [], []
+    with ThreadPoolExecutor(2) as pool:
+        for n, (item, result) in enumerate(zip(chosen, pool.map(
+                lambda i: youtube.subtitles(i["youtubeId"]), chosen)), 1):
+            if result["status"] == "ok":
+                text.write_subtitles(item, result["events"], _today())
+                item["retrieved"] = _today()
+                got += 1
+            elif result["status"] == "none":
+                missing.append(f"{item['id']}: {result['reason']}")
+            else:
+                failed.append(f"{item['id']}: {result['reason']}")
+            if n % 25 == 0:
+                click.echo(f"  {n}/{len(chosen)}")
+    storage.save(cat)
+    click.echo(f"Subtitles fetched: {got}; without English subtitles: {len(missing)}; "
+               f"failed, try again: {len(failed)}")
+    for line in missing + failed:
+        click.echo(f"  {line}")
 
 
 @cli.command()
@@ -526,6 +559,92 @@ def shortlist(topic, top, extra, whole):
         for _, pos in index.rank(query)[:top]:
             item, where, _, body = rows[pos]
             show(item, where, body)
+
+
+# --- what comes out for people ---------------------------------------------------------------
+
+def _slug(title: str) -> str:
+    from .names import normalise
+    return "-".join(normalise(title).split()[:6])
+
+
+@cli.command()
+@click.option("-a", "--age", type=click.IntRange(vocab.AGE_MIN, vocab.AGE_MAX),
+              help="Every topic of this age.")
+@click.option("-T", "--topic", help="One topic, like 18:5.")
+@click.option("-o", "--out", type=click.Path(file_okay=False), help="Folder (default: exports/packs).")
+def pack(age, topic, out):
+    """Write a source pack per topic: hint, passages, video moments, what to read next."""
+    from pathlib import Path
+    from . import packs, sift, topics as site
+    if (age is None) == (topic is None):
+        _fail("give --age or --topic")
+    listed = site.load()
+    if not listed:
+        _fail(f"the site's topic lists were not found under {storage.site_dir()}")
+    if topic:
+        t = _topic(topic)
+        keys = [(t["age"], t["topic"])]
+    else:
+        keys = sorted(k for k in listed if k[0] == age)
+    cat = storage.load()
+    usable = sift.usable_ids(cat, storage.load_blocked(), _today())
+    coverage = site.coverage()
+    click.echo("Indexing what has been read...")
+    corpus = packs.Corpus(cat)
+    root = Path(out) if out else storage.root() / "exports" / "packs"
+    written = []
+    for key in keys:
+        if key not in listed:
+            _fail(f"{key[0]}:{key[1]} is not one of the site's topics")
+        info = listed[key]
+        path = root / str(key[0]) / f"{key[0]}-{key[1]:02d}-{_slug(info['title'])}.md"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(packs.build(cat, key, info, coverage.get(key, "?"), usable, corpus),
+                        encoding="utf-8")
+        written.append((key, info["title"], path.name))
+    if not topic:
+        index = [f"# Source packs, age {age}", ""] + [
+            f"- [{a}:{n} {title}]({name})" for (a, n), title, name in written]
+        (root / str(age) / "README.md").write_text("\n".join(index) + "\n", encoding="utf-8")
+    click.echo(f"Wrote {len(written)} pack(s) to {root}")
+
+
+@cli.group()
+def review():
+    """The owner's review sheet in Excel: export it, then read the decisions back."""
+
+
+@review.command("export")
+@click.option("-a", "--age", type=click.IntRange(vocab.AGE_MIN, vocab.AGE_MAX),
+              help="Only passages and videos for this age.")
+@click.option("-o", "--out", type=click.Path(dir_okay=False), help="File (default: exports/review/).")
+def review_export(age, out):
+    """Proposed passages and unwatched videos, with columns for a person's decisions."""
+    from pathlib import Path
+    from . import review as sheet, topics as site
+    path = Path(out) if out else (storage.root() / "exports" / "review" /
+                                  f"review-{age if age else 'all'}-{_today()}.xlsx")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    passages, videos = sheet.write(path, storage.load(), site.load(), age)
+    click.echo(f"Wrote {passages} passages and {videos} videos to review: {path}")
+
+
+@review.command("import")
+@click.argument("xlsx", type=click.Path(exists=True, dir_okay=False))
+def review_import(xlsx):
+    """Read a filled-in review sheet: accepted and rejected passages, watched videos.
+    Only rows that name the person are applied."""
+    from . import review as sheet
+    cat = storage.load()
+    try:
+        changed, report = sheet.read(xlsx, cat, _today())
+    except ValueError as e:
+        _fail(str(e))
+    _save_many(cat, changed)
+    click.echo(f"Applied {len(changed)} decision(s)")
+    for line in report:
+        click.echo(f"  {line}")
 
 
 # --- correcting and removing -----------------------------------------------------------------

@@ -217,6 +217,39 @@ def paragraphs(blocks):
             yield n, heading, text
 
 
+def subtitles_path(item_id: str):
+    return storage.root() / "cache" / "subtitles" / f"{item_id}.json"
+
+
+def write_subtitles(item: dict, events: list, fetched: str):
+    path = subtitles_path(item["id"])
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"item": item["id"], "url": item["url"], "fetched": fetched,
+                                "events": events}, ensure_ascii=False), encoding="utf-8")
+
+
+def _clock(seconds: int) -> str:
+    return f"{seconds // 60:02d}:{seconds % 60:02d}"
+
+
+def video_units(item_id: str, size: int = 45):
+    """The subtitles in runs of about `size` words, each placed as mm:ss-mm:ss."""
+    path = subtitles_path(item_id)
+    if not path.exists():
+        return None
+    events = json.loads(path.read_text(encoding="utf-8"))["events"]
+    found, run, words = [], [], 0
+    for i, event in enumerate(events):
+        run.append(event)
+        words += len(event["text"].split())
+        if words >= size or i == len(events) - 1:
+            end = events[i + 1]["t"] if i + 1 < len(events) else event["t"]
+            found.append((f"{_clock(run[0]['t'])}-{_clock(max(end, run[0]['t']))}", None,
+                          " ".join(e["text"] for e in run)))
+            run, words = [], 0
+    return found
+
+
 def site_pages(catalogue_id: str) -> list[tuple[str, str]] | None:
     """(label, text) per page of a book in the site's catalogue, from the text the site has
     already extracted (SOURCES_DIR/_text). Read only: the site owns these files."""
@@ -233,6 +266,8 @@ def units(item: dict, resource: dict | None) -> list[tuple[str, str | None, str]
     catalogued is read from the site's extracted pages, a page at a time, labelled the way
     the site cites them ("p. 77", "p. s6").
     """
+    if item.get("kind") == "video":
+        return video_units(item["id"])
     cid = (resource or {}).get("catalogueId")
     if cid:
         pages = site_pages(cid)

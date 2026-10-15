@@ -37,3 +37,7 @@ exports/online-curriculum/*.json
 
 # Fetched texts of other people's work (rule 5): read here, never committed
 cache/
+
+# Made from the catalogue, made again any time; they carry quotes and links
+exports/packs/
+exports/review/

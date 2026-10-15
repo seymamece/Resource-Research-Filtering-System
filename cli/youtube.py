@@ -43,6 +43,37 @@ def lookup(video_id: str, attempts: int = 4) -> dict:
     return {"status": 0}
 
 
+def subtitles(video_id: str, lang: str = "en") -> dict:
+    """{"status": "ok", "events": [{"t": seconds, "text"}]} from the subtitles a person wrote
+    in `lang`, or {"status": "none" | "error", "reason"}.
+
+    Only subtitles somebody wrote are taken. YouTube's own automatic captions are machine
+    output: a quote copied from them would be a quote of the machine, not of the speaker.
+    Needs yt-dlp, which reads YouTube the way its own player does; nothing is downloaded but
+    the subtitle text.
+    """
+    import yt_dlp
+    options = {"skip_download": True, "quiet": True, "no_warnings": True}
+    try:
+        with yt_dlp.YoutubeDL(options) as ydl:
+            info = ydl.extract_info(watch_url(video_id), download=False)
+            tracks = (info.get("subtitles") or {}).get(lang) or []
+            track = next((t for t in tracks if t.get("ext") == "json3"), None)
+            if track is None:
+                return {"status": "none", "reason": f"no {lang} subtitles written by a person"}
+            data = json.loads(ydl.urlopen(track["url"]).read().decode("utf-8"))
+    except Exception as e:  # yt-dlp raises many kinds; any of them means "not this time"
+        return {"status": "error", "reason": str(e).splitlines()[0][:200]}
+    events = []
+    for event in data.get("events", []):
+        line = "".join(seg.get("utf8", "") for seg in event.get("segs") or []).replace("\n", " ").strip()
+        if line:
+            events.append({"t": event.get("tStartMs", 0) // 1000, "text": line})
+    if not events:
+        return {"status": "none", "reason": "the subtitle track is empty"}
+    return {"status": "ok", "events": events}
+
+
 def lookup_many(video_ids, workers: int = 4) -> dict:
     """Four at a time: more than that and YouTube starts dropping connections."""
     ids = list(dict.fromkeys(video_ids))
