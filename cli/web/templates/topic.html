@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block title %}{{ age }}:{{ number }} {{ g.info.title }}{% endblock %}
+
+{% macro source_line(s, where) %}
+  <div class="meta">
+    <span>{{ s.item.title }}</span>
+    <span>{{ t('role_' ~ s.role) }}</span>
+    {% if where %}<span>{{ where }}</span>{% endif %}
+    {% if not s.usable %}<span class="warn">⚠ {{ t('not_for_site') }}</span>{% endif %}
+    {% set url = link(s.item, where) %}
+    {% if url %}<a href="{{ url }}" target="_blank" rel="noopener">{{ t('open') }} ↗</a>{% endif %}
+  </div>
+{% endmacro %}
+
+{% macro add_form(item_id, where, quote_required, draft) %}
+  {% set mine = draft and draft.item == item_id and draft.where == where %}
+  <details {{ 'open' if mine }} {{ 'id=draft' if mine }}>
+    <summary>{{ t('add_passage') }}</summary>
+    {% if mine %}
+      <div class="flash error"><strong>{{ t('not_saved') }}</strong>
+        <ul>{% for line in draft.problems %}<li>{{ line }}</li>{% endfor %}</ul>
+        <div class="note">{{ t('rules_note') }}</div>
+      </div>
+    {% endif %}
+    <form method="post" action="{{ url_for('add', age=age, number=number) }}">
+      <input type="hidden" name="item" value="{{ item_id }}">
+      <div class="grid">
+        <label class="full">{{ t('quote') }}
+          <textarea name="quote" {{ 'required' if quote_required }} placeholder="{{ t('quote_hint') }}">{{ draft.quote if mine }}</textarea>
+        </label>
+        <label>{{ t('where') }} <input name="where" value="{{ where }}" required></label>
+        <label>{{ t('use') }}
+          <select name="use" required>{% for u in uses %}<option value="{{ u }}" {{ 'selected' if mine and draft.use == u }}>{{ t('use_' ~ u) }}</option>{% endfor %}</select>
+        </label>
+        <label>{{ t('qref') }} <input name="qref" value="{{ draft.qref if mine }}" pattern="\d{1,3}:\d{1,3}(-\d{1,3})?"></label>
+        <label>{{ t('href') }} <input name="href" value="{{ draft.href if mine }}"></label>
+      </div>
+      <div class="row" style="display:flex;margin-top:10px"><button class="primary">{{ t('save') }}</button></div>
+    </form>
+  </details>
+{% endmacro %}
+
+{% block body %}
+<a href="{{ url_for('topic_list', age=age) }}">← {{ t('back') }}</a>
+<h1>{{ age }}:{{ number }} {{ g.info.title }}</h1>
+<div class="meta">
+  <span>{{ t('coverage') }}: <span class="badge {{ g.cover }}">{{ t('cover_' ~ g.cover) }}</span></span>
+  {% if g.info.science %}<span>{{ t('science') }}: {{ g.info.science }}</span>{% endif %}
+</div>
+
+<h2>{{ t('hints') }}</h2>
+{% for h in g.hints %}
+  <div class="card">
+    {{ h.hint.hint }}
+    <div class="meta">
+      {% if h.hint.catalogueId %}<span>{{ t('in_catalogue') }}: <code>{{ h.hint.catalogueId }}</code></span>{% endif %}
+      {% if h.item and h.item.url %}<a href="{{ h.item.url }}" target="_blank" rel="noopener">{{ t('open') }} ↗</a>{% endif %}
+    </div>
+  </div>
+{% else %}<p class="note">{{ t('no_hint') }}</p>{% endfor %}
+
+<h2 id="passages">{{ t('passages') }} ({{ g.passages|length }})</h2>
+<p class="note">{{ t('reviewer_hint') }}</p>
+{% for s in g.passages %}{% set p = s.passage %}
+  <div class="card">
+    <div class="meta">
+      <span class="badge">{{ t('use_' ~ p.use) }}</span>
+      <span class="{{ 'good' if p.status == 'accepted' }}">{{ t('status_' ~ p.status) }}</span>
+      {% if p.qref %}<span>Qur'an {{ p.qref }}</span>{% endif %}
+      {% if p.href %}<span>{{ p.href }}</span>{% endif %}
+      <code>{{ p.id }}</code>
+    </div>
+    {% if p.quote %}<blockquote>{{ p.quote }}</blockquote>{% endif %}
+    {{ source_line(s, p.where) }}
+    <form class="row" method="post" action="{{ url_for('decide', age=age, number=number) }}">
+      <input type="hidden" name="passage" value="{{ p.id }}">
+      {% if p.status == 'accepted' %}
+        <span class="good">✓ {{ t('accepted_by', by=p.acceptedBy.by, on=p.acceptedBy.on) }}</span>
+        <input name="who" value="{{ reviewer }}" placeholder="{{ t('reviewer') }}" required aria-label="{{ t('reviewer') }}">
+        <button name="decision" value="undo">{{ t('undo') }}</button>
+      {% else %}
+        <input name="who" value="{{ reviewer }}" placeholder="{{ t('reviewer') }}" required aria-label="{{ t('reviewer') }}">
+        <button class="primary" name="decision" value="accept">{{ t('accept') }}</button>
+        <button name="decision" value="reject" onclick='return confirm({{ t("reject_confirm")|tojson }})'>{{ t('reject') }}</button>
+      {% endif %}
+    </form>
+  </div>
+{% else %}<p class="note">{{ t('none_yet') }}</p>{% endfor %}
+
+<h2>{{ t('moments') }}</h2>
+<p class="note">{{ t('moments_note') }}</p>
+{% for m in g.moments %}
+  <div class="card">
+    <strong>{{ m.item.title }}</strong>
+    <div class="meta">
+      <span>{{ m.where }}</span>
+      {% if m.item.minutes %}<span>{{ t('minutes', n=m.item.minutes) }}</span>{% endif %}
+      <span>{{ t('watched') if m.item.watchedBy else t('not_watched') }}</span>
+      {% if not m.usable %}<span class="warn">⚠ {{ t('not_for_site') }}</span>{% endif %}
+      <a href="{{ link(m.item, m.where) }}" target="_blank" rel="noopener">{{ t('watch_from', at=m.where.split('-')[0]) }} ↗</a>
+    </div>
+    <blockquote>{{ m.text }}</blockquote>
+    {{ add_form(m.item.id, m.where, false, draft) }}
+  </div>
+{% else %}<p class="note">{{ t('no_moments') }}</p>{% endfor %}
+
+<h2>{{ t('reading') }}</h2>
+<p class="note">{{ t('reading_note') }}</p>
+{% for r in g.reading %}
+  <div class="card">
+    {{ source_line(r, r.where) }}
+    <blockquote>{{ excerpt(r.text, 420) }}</blockquote>
+    {% if r.text|length > 420 %}
+      <details><summary>{{ t('full_text') }}</summary><div class="full-text">{{ r.text }}</div></details>
+    {% endif %}
+    {{ add_form(r.item.id, r.where, true, draft) }}
+  </div>
+{% else %}<p class="note">{{ t('nothing_read') }}</p>{% endfor %}
+{% if draft %}<script>document.getElementById("draft").scrollIntoView({block: "center"});</script>{% endif %}
+{% endblock %}

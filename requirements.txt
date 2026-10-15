@@ -1,2 +1,4 @@
 click==8.1.7
 openpyxl==3.1.5
+yt-dlp==2026.8.19
+flask==3.1.3

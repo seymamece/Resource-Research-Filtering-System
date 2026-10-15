@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}{{ t('topics') }} · {{ t('age') }} {{ age }}{% endblock %}
+{% block body %}
+<h1>{{ t('topics') }} · {{ t('age') }} {{ age }}</h1>
+<div class="tabs">
+  {% for a in ages %}<a href="{{ url_for('topic_list', age=a, show=show) }}" class="{{ 'on' if a == age }}">{{ a }}</a>{% endfor %}
+</div>
+<div class="tabs">
+  <span class="note" style="margin:0 6px 0 0">{{ t('show') }}:</span>
+  <a href="{{ url_for('topic_list', age=age) }}" class="{{ 'on' if show == 'all' }}">{{ t('all_topics') }}</a>
+  <a href="{{ url_for('topic_list', age=age, show='weak') }}" class="{{ 'on' if show == 'weak' }}">{{ t('weak_only') }}</a>
+  <a href="{{ url_for('topic_list', age=age, show='empty') }}" class="{{ 'on' if show == 'empty' }}">{{ t('no_passage_only') }}</a>
+</div>
+<p class="note">{{ t('summary', n=rows|length, p=with_passages, a=accepted) }}</p>
+<table>
+  <thead><tr>
+    <th>#</th><th>{{ t('col_topic') }}</th><th>{{ t('col_cover') }}</th>
+    <th class="hide">{{ t('col_hints') }}</th><th>{{ t('col_passages') }}</th>
+  </tr></thead>
+  <tbody>
+  {% for r in rows %}
+    <tr>
+      <td class="n">{{ r.topic }}</td>
+      <td><a href="{{ url_for('topic', age=r.age, number=r.topic) }}">{{ r.title }}</a></td>
+      <td><span class="badge {{ r.cover }}">{{ t('cover_' ~ r.cover) }}</span></td>
+      <td class="n hide">{{ r.hints }}</td>
+      <td class="n">{{ r.passages }}{% if r.accepted %} · <span class="good">✓ {{ r.accepted }}</span>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p class="note">{{ t('first_load') }}</p>
+{% endblock %}

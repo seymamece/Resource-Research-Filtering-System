@@ -85,24 +85,8 @@ def _parse(key: str, value: str):
 
 
 def _quote_checks(cat: dict, only=None) -> tuple[list, list]:
-    """(problems, unchecked) for passage quotes against their item's text."""
-    from . import text
-    items = {i["id"]: i for i in cat["items"]}
-    resources = {r["id"]: r for r in cat["resources"]}
-    problems, unchecked = [], []
-    for p in cat["passages"]:
-        if not p.get("quote") or (only is not None and p["id"] not in only):
-            continue
-        item = items.get(p.get("itemId"))
-        if item is None:
-            continue  # reported by the record checks
-        found = text.quote_found(item, resources.get(item["resourceId"]), p["quote"], p.get("where"))
-        if found is False:
-            problems.append((p["id"], "the quote is not in the item's text where it says; "
-                                      "copy it exactly"))
-        elif found is None:
-            unchecked.append(p["id"])
-    return problems, unchecked
+    from . import records
+    return records.quote_checks(cat, only)
 
 
 def _save(cat: dict, record_id: str, done: str):
@@ -305,15 +289,8 @@ def add_passage(item_id, where, quote, topics, use, qref, href):
     """One place in an item that fits one or more topics."""
     cat = storage.load()
     _require(cat, item_id, "items")
-    record = {"id": storage.make_id("passages", item_id, where, quote or ""),
-              "itemId": item_id, "where": where}
-    if quote:
-        record["quote"] = quote
-    if qref:
-        record["qref"] = qref
-    if href:
-        record["href"] = href
-    record.update({"topics": [_topic(t) for t in topics], "use": use, "status": "proposed"})
+    from . import records
+    record = records.make_passage(item_id, where, quote, [_topic(t) for t in topics], use, qref, href)
     _new(cat, "passages", record)
 
 
@@ -713,6 +690,15 @@ def review_import(xlsx):
     click.echo(f"Applied {len(changed)} decision(s)")
     for line in report:
         click.echo(f"  {line}")
+
+
+@cli.command()
+@click.option("--port", default=8000, show_default=True)
+def ui(port):
+    """Open the screens in a browser: http://127.0.0.1:PORT (this machine only)."""
+    from .web import serve
+    click.echo(f"http://127.0.0.1:{port}  (Ctrl+C to stop)")
+    serve(port)
 
 
 # --- correcting and removing -----------------------------------------------------------------

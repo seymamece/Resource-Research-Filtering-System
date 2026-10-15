@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ t('app_title') }}{% endblock %}</title>
+<style>
+  :root {
+    --bg: #f7f6f2; --card: #ffffff; --ink: #1d1d1b; --muted: #5d5b55; --line: #dedbd2;
+    --accent: #2f5d50; --accent-ink: #ffffff; --quote: #f1efe8;
+    --weak: #a8431f; --fair: #8a6a12; --good: #2f6b3a; --warn: #8a2a1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161614; --card: #1f1f1c; --ink: #ecebe6; --muted: #a9a69c; --line: #34332f;
+      --accent: #7fb8a6; --accent-ink: #10201b; --quote: #26261f;
+      --weak: #f0926c; --fair: #e2c060; --good: #8fd19e; --warn: #f0968a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  a { color: var(--accent); }
+  header.bar { position: sticky; top: 0; z-index: 2; background: var(--card);
+               border-bottom: 1px solid var(--line); }
+  header.bar .in { max-width: 980px; margin: 0 auto; padding: 10px 16px;
+                   display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  header.bar strong { font-size: 17px; }
+  header.bar nav { margin-left: auto; display: flex; gap: 14px; }
+  main { max-width: 980px; margin: 0 auto; padding: 20px 16px 60px; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 4px 0 8px; }
+  h2 { font-size: 19px; margin: 32px 0 6px; padding-top: 8px; }
+  .note { color: var(--muted); font-size: 14px; margin: 0 0 12px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+          padding: 14px 16px; margin: 10px 0; }
+  blockquote { margin: 8px 0; padding: 10px 14px; background: var(--quote);
+               border-left: 3px solid var(--accent); border-radius: 4px; }
+  .meta { color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 12px; }
+  .badge { display: inline-block; font-size: 13px; padding: 1px 8px; border-radius: 999px;
+           border: 1px solid currentColor; white-space: nowrap; }
+  .weak { color: var(--weak); } .fair { color: var(--fair); } .good { color: var(--good); }
+  .warn { color: var(--warn); }
+  .flash { padding: 10px 14px; border-radius: 6px; margin: 0 0 14px; border: 1px solid; }
+  .flash.ok { color: var(--good); } .flash.error { color: var(--warn); }
+  .flash ul { margin: 4px 0 0; padding-left: 20px; }
+  form.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+  input, select, textarea, button { font: inherit; color: var(--ink); background: var(--bg);
+           border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; min-height: 36px; }
+  textarea { width: 100%; min-height: 80px; }
+  button { cursor: pointer; background: var(--card); }
+  button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  details > summary { cursor: pointer; color: var(--accent); margin-top: 8px; }
+  details .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
+  details .grid .full { grid-column: 1 / -1; }
+  details label { display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; background: var(--card);
+          border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 13px; color: var(--muted); font-weight: 600; }
+  td.n { text-align: right; white-space: nowrap; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 14px; }
+  .tabs a { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px;
+            text-decoration: none; min-width: 36px; text-align: center; }
+  .tabs a.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .full-text { white-space: pre-wrap; }
+  @media (max-width: 640px) {
+    details .grid { grid-template-columns: 1fr; }
+    th.hide, td.hide { display: none; }
+  }
+</style>
+</head>
+<body>
+<header class="bar"><div class="in">
+  <strong>{{ t('app_title') }}</strong>
+  <nav>
+    <a href="{{ url_for('topic_list', age=18) }}">{{ t('topics') }}</a>
+    <a href="{{ url_for('set_lang', code='en' if lang == 'tr' else 'tr') }}">{{ t('language') }}</a>
+  </nav>
+</div></header>
+<main>
+  {% with notices = get_flashed_messages() %}
+    {% for kind, lines in notices %}
+      <div class="flash {{ kind }}">
+        {% if kind == 'error' %}<strong>{{ t('not_saved') }}</strong>
+          <ul>{% for line in lines %}<li>{{ line }}</li>{% endfor %}</ul>
+          <div class="note">{{ t('rules_note') }}</div>
+        {% else %}{{ lines|join(' ') }}{% endif %}
+      </div>
+    {% endfor %}
+  {% endwith %}
+  {% block body %}{% endblock %}
+</main>
+</body>
+</html>
