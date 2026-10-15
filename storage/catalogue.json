@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "resources": [
     {
       "id": "r-67a85b09",
@@ -21,7 +21,17 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Courses for weekend school teachers: pedagogy, classroom management, working with parents."
+      "notes": "Courses for weekend school teachers: pedagogy, classroom management, working with parents.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-d0d317c9",
@@ -46,7 +56,11 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "One character quality at a time, with stories, crafts, colouring pages and videos."
+      "notes": "One character quality at a time, with stories, crafts, colouring pages and videos.",
+      "classes": [
+        "lower-primary",
+        "upper-primary"
+      ]
     },
     {
       "id": "r-d6f88e27",
@@ -67,7 +81,17 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "A shared page of links. It needs JavaScript to read, so its contents are still to check."
+      "notes": "A shared page of links. It needs JavaScript to read, so its contents are still to check.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-7acbf1ed",
@@ -89,7 +113,14 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Books with reading tests and rewards. Only parents can register."
+      "notes": "Books with reading tests and rewards. Only parents can register.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced"
+      ]
     },
     {
       "id": "r-36b14a10",
@@ -111,7 +142,11 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary"
+      ]
     },
     {
       "id": "r-9e834bce",
@@ -136,7 +171,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Programmes for several ages; which of them are open to use is still to check."
+      "notes": "Programmes for several ages; which of them are open to use is still to check.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-fbd8fb43",
@@ -160,7 +203,15 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-4d811e1f",
@@ -185,7 +236,16 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "A guidance book for each grade, quizzes and multimedia."
+      "notes": "A guidance book for each grade, quizzes and multimedia.",
+      "classes": [
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-9610ddc0",
@@ -211,7 +271,11 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Lessons by school year on manners, kindness, bullying and caring for the environment, and a page of more than 80 guidance videos on the same site. The age range is still to check."
+      "notes": "Lessons by school year on manners, kindness, bullying and caring for the environment, and a page of more than 80 guidance videos on the same site. The age range is still to check.",
+      "classes": [
+        "lower-primary",
+        "upper-primary"
+      ]
     },
     {
       "id": "r-316a8bd7",
@@ -232,7 +296,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "On 2026-10-13 the home page showed unrelated general content, not talk topics."
+      "notes": "On 2026-10-13 the home page showed unrelated general content, not talk topics.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-1a55f20b",
@@ -254,7 +326,11 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary"
+      ]
     },
     {
       "id": "r-079c0168",
@@ -277,7 +353,11 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary"
+      ]
     },
     {
       "id": "r-3ae636fd",
@@ -300,7 +380,15 @@
       "role": "religious",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-4fdf6d22",
@@ -324,7 +412,15 @@
       "role": "religious",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-4e785c00",
@@ -349,7 +445,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-c958ee03",
@@ -377,7 +481,16 @@
       "priority": 1,
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "More than 50 lesson plans with presentations, worksheets and assessments."
+      "notes": "More than 50 lesson plans with presentations, worksheets and assessments.",
+      "classes": [
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-89f6aff0",
@@ -406,7 +519,17 @@
       "priority": 1,
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "A full school-age programme: Islamic studies, Arabic and the Qur'an."
+      "notes": "A full school-age programme: Islamic studies, Arabic and the Qur'an.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-140f81c4",
@@ -429,7 +552,15 @@
       "rights": "pending",
       "priority": 1,
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-e860d473",
@@ -454,7 +585,17 @@
       "priority": 2,
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "More than 50 units with worksheets and activities, including Ramadan material."
+      "notes": "More than 50 units with worksheets and activities, including Ramadan material.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-a9d09ee6",
@@ -480,7 +621,11 @@
       "priority": 2,
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "A monthly magazine with stories, puzzles and comics, and an app."
+      "notes": "A monthly magazine with stories, puzzles and comics, and an app.",
+      "classes": [
+        "lower-primary",
+        "upper-primary"
+      ]
     },
     {
       "id": "r-acc52353",
@@ -503,7 +648,17 @@
       "rights": "pending",
       "priority": 2,
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-abee7109",
@@ -527,7 +682,17 @@
       "rights": "pending",
       "priority": 2,
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-502c47e3",
@@ -550,7 +715,17 @@
       "rights": "pending",
       "priority": 2,
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-d0c99907",
@@ -574,7 +749,17 @@
       "rights": "pending",
       "priority": 3,
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-2fff1a7d",
@@ -605,7 +790,17 @@
       "rights": "pending",
       "priority": 3,
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-6f10099e",
@@ -633,7 +828,17 @@
       "rights": "pending",
       "priority": 3,
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-557ce0ee",
@@ -655,7 +860,17 @@
       "priority": 3,
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "The age range on the owner's sheet is school-age; still to check."
+      "notes": "The age range on the owner's sheet is school-age; still to check.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-debaa716",
@@ -677,7 +892,17 @@
       "priority": 3,
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Lesson plans and classroom material shared by one teacher."
+      "notes": "Lesson plans and classroom material shared by one teacher.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-b86fbabd",
@@ -703,7 +928,17 @@
       "rights": "pending",
       "priority": 3,
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-ce97d79d",
@@ -726,7 +961,17 @@
       "rights": "pending",
       "priority": 3,
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-d54064cb",
@@ -747,7 +992,17 @@
       "rights": "pending",
       "priority": 3,
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-3bbd86c2",
@@ -769,7 +1024,15 @@
       "role": "religious",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-aaf36254",
@@ -793,7 +1056,15 @@
       "role": "religious",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-a664c3b2",
@@ -814,7 +1085,10 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Background on early childhood religious education in East Africa."
+      "notes": "Background on early childhood religious education in East Africa.",
+      "classes": [
+        "lower-primary"
+      ]
     },
     {
       "id": "r-cc658937",
@@ -841,7 +1115,17 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Short stories of the Prophet and the Companions, written for children and young people."
+      "notes": "Short stories of the Prophet and the Companions, written for children and young people.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-81ce0a9b",
@@ -862,7 +1146,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-867cce81",
@@ -883,7 +1175,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-d88b2e23",
@@ -904,7 +1204,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-fee8e7c7",
@@ -925,7 +1233,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-192529de",
@@ -946,7 +1262,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles. The channel's name says there is no music; each video is still to be watched."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles. The channel's name says there is no music; each video is still to be watched.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-0897073b",
@@ -967,7 +1291,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-93654586",
@@ -988,7 +1320,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes. Spoken Turkish; the listed videos have English subtitles.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-727199d9",
@@ -1012,7 +1352,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-678605e7",
@@ -1033,7 +1381,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: news about the movement's work, not lesson material."
+      "notes": "Archived: news about the movement's work, not lesson material.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-ae627919",
@@ -1057,7 +1413,16 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Mixed content; some of it is about the movement."
+      "notes": "Mixed content; some of it is about the movement.",
+      "classes": [
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-0f921a29",
@@ -1083,7 +1448,15 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-90cefc86",
@@ -1104,7 +1477,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: an organisation's education and dialogue activities."
+      "notes": "Archived: an organisation's education and dialogue activities.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-cf0e74e1",
@@ -1126,7 +1507,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-de496148",
@@ -1149,7 +1538,15 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-40df5d0c",
@@ -1173,7 +1570,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-e91cb4f3",
@@ -1196,7 +1601,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "The audio side of the magazine channel."
+      "notes": "The audio side of the magazine channel.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-1465c989",
@@ -1217,7 +1630,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: social media page; the same account's YouTube channel is catalogued."
+      "notes": "Archived: social media page; the same account's YouTube channel is catalogued.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-6aa6ee46",
@@ -1239,7 +1660,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a festival's official channel."
+      "notes": "Archived: a festival's official channel.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-88d45705",
@@ -1260,7 +1689,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: recordings of events."
+      "notes": "Archived: recordings of events.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-b1d50e88",
@@ -1281,7 +1718,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a dialogue organisation."
+      "notes": "Archived: a dialogue organisation.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-6adaf58e",
@@ -1302,7 +1747,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a language course."
+      "notes": "Archived: a language course.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-422ff6b9",
@@ -1327,7 +1780,17 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-cced3fe4",
@@ -1347,7 +1810,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-4a19c798",
@@ -1368,7 +1839,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks mixed with event recordings."
+      "notes": "Talks mixed with event recordings.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-74ec8c3b",
@@ -1392,7 +1871,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-33502cde",
@@ -1418,7 +1905,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "A playlist."
+      "notes": "A playlist.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-a738f054",
@@ -1442,7 +1937,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-e469d7bb",
@@ -1466,7 +1969,16 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-f499eb84",
@@ -1488,7 +2000,15 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-52714c24",
@@ -1509,7 +2029,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: about the movement, not lesson material."
+      "notes": "Archived: about the movement, not lesson material.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-d073e5db",
@@ -1531,7 +2059,17 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-632cf4d9",
@@ -1551,7 +2089,15 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-cf8ff5e3",
@@ -1572,7 +2118,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: social media account."
+      "notes": "Archived: social media account.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-35d44051",
@@ -1597,7 +2151,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-6cc6a825",
@@ -1620,7 +2182,11 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: the link returned 404 on 2026-10-13."
+      "notes": "Archived: the link returned 404 on 2026-10-13.",
+      "classes": [
+        "lower-primary",
+        "upper-primary"
+      ]
     },
     {
       "id": "r-b2c70b1b",
@@ -1644,7 +2210,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-79a10e5c",
@@ -1666,7 +2240,17 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-7393d939",
@@ -1687,7 +2271,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: social media account."
+      "notes": "Archived: social media account.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-d166b499",
@@ -1711,7 +2303,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-9b1e79a1",
@@ -1735,7 +2335,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-69423f2b",
@@ -1756,7 +2364,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a dialogue organisation."
+      "notes": "Archived: a dialogue organisation.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-17df3025",
@@ -1777,7 +2393,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a dialogue organisation."
+      "notes": "Archived: a dialogue organisation.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-2b318bc6",
@@ -1798,7 +2422,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a dialogue project."
+      "notes": "Archived: a dialogue project.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-004ca31d",
@@ -1820,7 +2452,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: an association of tradespeople."
+      "notes": "Archived: an association of tradespeople.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-bb6e7b68",
@@ -1842,7 +2482,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: an association of tradespeople."
+      "notes": "Archived: an association of tradespeople.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-9a91b1ff",
@@ -1863,7 +2511,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a business association."
+      "notes": "Archived: a business association.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-a799c9cf",
@@ -1884,7 +2540,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a charity."
+      "notes": "Archived: a charity.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-4b234eb3",
@@ -1905,7 +2569,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a charity."
+      "notes": "Archived: a charity.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-00f74d66",
@@ -1926,7 +2598,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a human rights group."
+      "notes": "Archived: a human rights group.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-46805f90",
@@ -1947,7 +2627,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a human rights group."
+      "notes": "Archived: a human rights group.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-2bd209fa",
@@ -1968,7 +2656,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks mixed with dialogue events."
+      "notes": "Talks mixed with dialogue events.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-3dee907c",
@@ -1989,7 +2685,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: an institution's activities."
+      "notes": "Archived: an institution's activities.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-466013b7",
@@ -2013,7 +2717,16 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-02c71f63",
@@ -2037,7 +2750,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-ecb9d55e",
@@ -2058,7 +2779,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a local community centre."
+      "notes": "Archived: a local community centre.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-5033312c",
@@ -2080,7 +2809,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-f34909a7",
@@ -2101,7 +2838,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a local community centre."
+      "notes": "Archived: a local community centre.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-0cc06bc5",
@@ -2123,7 +2868,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: about the movement, not lesson material."
+      "notes": "Archived: about the movement, not lesson material.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-6c63c32c",
@@ -2143,7 +2896,15 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-7dbfcc60",
@@ -2163,7 +2924,17 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-e50c1fa3",
@@ -2186,7 +2957,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-05c4e511",
@@ -2206,7 +2985,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-9280d0fb",
@@ -2227,7 +3014,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a language course."
+      "notes": "Archived: a language course.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-8bf40d23",
@@ -2248,7 +3043,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived as about the movement; if it is Hocaefendi's own talks, set to_verify."
+      "notes": "Archived as about the movement; if it is Hocaefendi's own talks, set to_verify.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-5f84812a",
@@ -2269,7 +3072,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived as about the movement; if it is Hocaefendi's own words, set to_verify."
+      "notes": "Archived as about the movement; if it is Hocaefendi's own words, set to_verify.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-06c89abd",
@@ -2292,7 +3103,15 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-6d1c1c57",
@@ -2317,7 +3136,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-3eaded9b",
@@ -2339,7 +3166,12 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-3ac2b3bc",
@@ -2360,7 +3192,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived as about the movement; if it is Hocaefendi's own words, set to_verify."
+      "notes": "Archived as about the movement; if it is Hocaefendi's own words, set to_verify.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-36db75fa",
@@ -2383,7 +3223,15 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-c678618c",
@@ -2408,7 +3256,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-00a77ab6",
@@ -2432,7 +3288,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-39c58148",
@@ -2454,7 +3318,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-f07f251d",
@@ -2479,7 +3351,17 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Drama: a story from it is not a source for what the Prophet said."
+      "notes": "Drama: a story from it is not a source for what the Prophet said.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-41c7184d",
@@ -2500,7 +3382,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: news about the movement's work."
+      "notes": "Archived: news about the movement's work.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-68282795",
@@ -2521,7 +3411,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: organisational history, which the owner keeps out of lessons."
+      "notes": "Archived: organisational history, which the owner keeps out of lessons.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-f17a3297",
@@ -2543,7 +3441,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: about the movement, not lesson material."
+      "notes": "Archived: about the movement, not lesson material.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-4cb95d2d",
@@ -2567,7 +3473,17 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Recitation of the Qur'an itself."
+      "notes": "Recitation of the Qur'an itself.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-7ad4cbce",
@@ -2588,7 +3504,17 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Music: check each video before use."
+      "notes": "Music: check each video before use.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-b59fc402",
@@ -2612,7 +3538,11 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary"
+      ]
     },
     {
       "id": "r-a3cfa15a",
@@ -2634,7 +3564,11 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary"
+      ]
     },
     {
       "id": "r-14bd86b9",
@@ -2654,7 +3588,11 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary"
+      ]
     },
     {
       "id": "r-d0e5dc8e",
@@ -2676,7 +3614,17 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a shop."
+      "notes": "Archived: a shop.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-42d28a1e",
@@ -2699,7 +3647,15 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-766c0aa2",
@@ -2723,7 +3679,17 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Recitation of the Qur'an itself. The sheet linked a login page; this is the home page."
+      "notes": "Recitation of the Qur'an itself. The sheet linked a login page; this is the home page.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-26effd82",
@@ -2747,7 +3713,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-fbeaa67b",
@@ -2771,7 +3745,17 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-0fea4dea",
@@ -2796,7 +3780,17 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Written for parents."
+      "notes": "Written for parents.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-d32a2f41",
@@ -2819,7 +3813,15 @@
       "role": "religious",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-b7b7621f",
@@ -2841,7 +3843,15 @@
       "role": "religious",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-1174a7c4",
@@ -2863,7 +3873,17 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-c50e5af7",
@@ -2884,7 +3904,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: the same reading is catalogued on YouTube."
+      "notes": "Archived: the same reading is catalogued on YouTube.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-9629949b",
@@ -2907,7 +3935,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "A playlist."
+      "notes": "A playlist.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-7e6f28cc",
@@ -2928,7 +3964,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: the same reading is catalogued on YouTube."
+      "notes": "Archived: the same reading is catalogued on YouTube.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-816afdb6",
@@ -2953,7 +3997,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "A playlist."
+      "notes": "A playlist.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-88adad3b",
@@ -2978,7 +4030,16 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-f84f3c09",
@@ -3000,7 +4061,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-6f97144d",
@@ -3023,7 +4092,17 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Written for parents."
+      "notes": "Written for parents.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-ad19e2e6",
@@ -3044,7 +4123,17 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a publisher's shop."
+      "notes": "Archived: a publisher's shop.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-3e53375b",
@@ -3065,7 +4154,17 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: a publisher's shop."
+      "notes": "Archived: a publisher's shop.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-e67d8910",
@@ -3089,7 +4188,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-d0615e49",
@@ -3109,7 +4216,11 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-primary",
+        "upper-primary"
+      ]
     },
     {
       "id": "r-0c95325e",
@@ -3130,7 +4241,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: about the movement, not lesson material."
+      "notes": "Archived: about the movement, not lesson material.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-f7a43464",
@@ -3155,7 +4274,11 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: the link returned 404 on 2026-10-13."
+      "notes": "Archived: the link returned 404 on 2026-10-13.",
+      "classes": [
+        "lower-primary",
+        "upper-primary"
+      ]
     },
     {
       "id": "r-25ef6d69",
@@ -3176,7 +4299,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: travel."
+      "notes": "Archived: travel.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-0206c9d9",
@@ -3198,7 +4329,15 @@
       "role": "religious-supporting",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-a208f56c",
@@ -3223,7 +4362,14 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: the link returned 404 on 2026-10-13. Animated: check every video for a drawn prophet, which is never usable."
+      "notes": "Archived: the link returned 404 on 2026-10-13. Animated: check every video for a drawn prophet, which is never usable.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced"
+      ]
     },
     {
       "id": "r-29b535fd",
@@ -3244,7 +4390,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: the same podcast is catalogued on YouTube."
+      "notes": "Archived: the same podcast is catalogued on YouTube.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-fd4df2f1",
@@ -3268,7 +4422,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-9c735580",
@@ -3289,7 +4451,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: the same podcast is catalogued on YouTube."
+      "notes": "Archived: the same podcast is catalogued on YouTube.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-32e60b9b",
@@ -3313,7 +4483,15 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes."
+      "notes": "Talks, not books: a faith statement from them carries the Qur'an or hadith it quotes.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-1c296d97",
@@ -3337,7 +4515,17 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Recitation of the Qur'an itself."
+      "notes": "Recitation of the Qur'an itself.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-7ed35dda",
@@ -3360,7 +4548,15 @@
       "role": "religious",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-8dcc52a5",
@@ -3381,7 +4577,17 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: social media account; the YouTube channel is catalogued."
+      "notes": "Archived: social media account; the YouTube channel is catalogued.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-cb5b263d",
@@ -3402,7 +4608,17 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: social media account; the YouTube channel is catalogued."
+      "notes": "Archived: social media account; the YouTube channel is catalogued.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-09f17ea7",
@@ -3425,7 +4641,17 @@
       "rights": "pending",
       "status": "to_verify",
       "retrieved": "2026-10-13",
-      "notes": "Student activities may show children's faces."
+      "notes": "Student activities may show children's faces.",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-940c62f7",
@@ -3449,7 +4675,15 @@
       "role": "method",
       "rights": "pending",
       "status": "to_verify",
-      "retrieved": "2026-10-13"
+      "retrieved": "2026-10-13",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "r-611df146",
@@ -3470,7 +4704,15 @@
       "rights": "pending",
       "status": "archived",
       "retrieved": "2026-10-13",
-      "notes": "Archived: social media account; the YouTube channel is catalogued."
+      "notes": "Archived: social media account; the YouTube channel is catalogued.",
+      "classes": [
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-be7ad93574",
@@ -3489,7 +4731,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-be7ad93574"
+      "catalogueId": "s-be7ad93574",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-1dc2e328d5",
@@ -3508,7 +4760,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-1dc2e328d5"
+      "catalogueId": "s-1dc2e328d5",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-2303836886",
@@ -3527,7 +4789,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-2303836886"
+      "catalogueId": "s-2303836886",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-91e7501a27",
@@ -3546,7 +4818,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-91e7501a27"
+      "catalogueId": "s-91e7501a27",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-2e0a14f9a4",
@@ -3565,7 +4847,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-2e0a14f9a4"
+      "catalogueId": "s-2e0a14f9a4",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-6446328fb5",
@@ -3584,7 +4876,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-6446328fb5"
+      "catalogueId": "s-6446328fb5",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-ecc4632c01",
@@ -3603,7 +4905,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-ecc4632c01"
+      "catalogueId": "s-ecc4632c01",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-5f5d0384c5",
@@ -3622,7 +4934,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-5f5d0384c5"
+      "catalogueId": "s-5f5d0384c5",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-deb34b2dc6",
@@ -3641,7 +4963,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-deb34b2dc6"
+      "catalogueId": "s-deb34b2dc6",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-76219bf3e0",
@@ -3660,7 +4992,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-76219bf3e0"
+      "catalogueId": "s-76219bf3e0",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-96a21f64f1",
@@ -3679,7 +5021,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-96a21f64f1"
+      "catalogueId": "s-96a21f64f1",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-4e7221047a",
@@ -3698,7 +5050,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-4e7221047a"
+      "catalogueId": "s-4e7221047a",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-cca299644d",
@@ -3717,7 +5079,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-cca299644d"
+      "catalogueId": "s-cca299644d",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-5a47013e44",
@@ -3736,7 +5108,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-5a47013e44"
+      "catalogueId": "s-5a47013e44",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-cadf532a0b",
@@ -3755,7 +5137,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-cadf532a0b"
+      "catalogueId": "s-cadf532a0b",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-9919456c1e",
@@ -3774,7 +5166,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-9919456c1e"
+      "catalogueId": "s-9919456c1e",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-6b15280cee",
@@ -3793,7 +5195,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-6b15280cee"
+      "catalogueId": "s-6b15280cee",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-ba7122c27c",
@@ -3812,7 +5224,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-ba7122c27c"
+      "catalogueId": "s-ba7122c27c",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-883c846622",
@@ -3831,7 +5253,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-883c846622"
+      "catalogueId": "s-883c846622",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-af011ed542",
@@ -3850,7 +5282,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-af011ed542"
+      "catalogueId": "s-af011ed542",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-cbe01a25c3",
@@ -3869,7 +5311,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-cbe01a25c3"
+      "catalogueId": "s-cbe01a25c3",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-42206d93e4",
@@ -3888,7 +5340,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-42206d93e4"
+      "catalogueId": "s-42206d93e4",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-6fbb6e2460",
@@ -3907,7 +5369,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-6fbb6e2460"
+      "catalogueId": "s-6fbb6e2460",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-cbb75fc07a",
@@ -3926,7 +5398,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-cbb75fc07a"
+      "catalogueId": "s-cbb75fc07a",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-8f451733d6",
@@ -3945,7 +5427,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-8f451733d6"
+      "catalogueId": "s-8f451733d6",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-c49398d82d",
@@ -3964,7 +5456,17 @@
       "rights": "restricted",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-c49398d82d"
+      "catalogueId": "s-c49398d82d",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-0b2a1b118a",
@@ -3983,7 +5485,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-0b2a1b118a"
+      "catalogueId": "s-0b2a1b118a",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-db66eab4de",
@@ -4002,7 +5514,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-db66eab4de"
+      "catalogueId": "s-db66eab4de",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-612825c991",
@@ -4021,7 +5543,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-612825c991"
+      "catalogueId": "s-612825c991",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-e50fbe2490",
@@ -4040,7 +5572,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-e50fbe2490"
+      "catalogueId": "s-e50fbe2490",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-c52d36f827",
@@ -4059,7 +5601,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-c52d36f827"
+      "catalogueId": "s-c52d36f827",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-2aa4d2469d",
@@ -4078,7 +5630,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-2aa4d2469d"
+      "catalogueId": "s-2aa4d2469d",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-8c91ddf80d",
@@ -4097,7 +5659,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-8c91ddf80d"
+      "catalogueId": "s-8c91ddf80d",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-9198c71f40",
@@ -4116,7 +5688,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-9198c71f40"
+      "catalogueId": "s-9198c71f40",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-3212393d79",
@@ -4135,7 +5717,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-3212393d79"
+      "catalogueId": "s-3212393d79",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-b73d459030",
@@ -4154,7 +5746,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-b73d459030"
+      "catalogueId": "s-b73d459030",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-5dadf1a3c7",
@@ -4173,7 +5775,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-5dadf1a3c7"
+      "catalogueId": "s-5dadf1a3c7",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-27d3c455ff",
@@ -4192,7 +5804,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-27d3c455ff"
+      "catalogueId": "s-27d3c455ff",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-db1a4f8dfe",
@@ -4211,7 +5833,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-db1a4f8dfe"
+      "catalogueId": "s-db1a4f8dfe",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-6bf04b53ec",
@@ -4230,7 +5862,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-6bf04b53ec"
+      "catalogueId": "s-6bf04b53ec",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-f275aad44a",
@@ -4249,7 +5891,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-f275aad44a"
+      "catalogueId": "s-f275aad44a",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-5bef879e33",
@@ -4268,7 +5920,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-5bef879e33"
+      "catalogueId": "s-5bef879e33",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-cc412f2850",
@@ -4287,7 +5949,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-cc412f2850"
+      "catalogueId": "s-cc412f2850",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-9917b60783",
@@ -4306,7 +5978,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-9917b60783"
+      "catalogueId": "s-9917b60783",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-f10fef288e",
@@ -4325,7 +6007,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-f10fef288e"
+      "catalogueId": "s-f10fef288e",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-75141c13a7",
@@ -4344,7 +6036,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-75141c13a7"
+      "catalogueId": "s-75141c13a7",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-97583548c0",
@@ -4363,7 +6065,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-97583548c0"
+      "catalogueId": "s-97583548c0",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-7a5cfdb929",
@@ -4382,7 +6094,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-7a5cfdb929"
+      "catalogueId": "s-7a5cfdb929",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-54d59860c0",
@@ -4401,7 +6123,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-54d59860c0"
+      "catalogueId": "s-54d59860c0",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-321d73c0f4",
@@ -4420,7 +6152,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-321d73c0f4"
+      "catalogueId": "s-321d73c0f4",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-996a88e0b9",
@@ -4439,7 +6181,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-996a88e0b9"
+      "catalogueId": "s-996a88e0b9",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-a2be21ca1c",
@@ -4458,7 +6210,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-a2be21ca1c"
+      "catalogueId": "s-a2be21ca1c",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-73ab4a62e1",
@@ -4477,7 +6239,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-73ab4a62e1"
+      "catalogueId": "s-73ab4a62e1",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-59b6fdc6d6",
@@ -4496,7 +6268,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-59b6fdc6d6"
+      "catalogueId": "s-59b6fdc6d6",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-ff7420d9dc",
@@ -4515,7 +6297,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-ff7420d9dc"
+      "catalogueId": "s-ff7420d9dc",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-0f25d9faa4",
@@ -4534,7 +6326,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-0f25d9faa4"
+      "catalogueId": "s-0f25d9faa4",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-cf85e3a10c",
@@ -4553,7 +6355,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-cf85e3a10c"
+      "catalogueId": "s-cf85e3a10c",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-06a95c0d20",
@@ -4572,7 +6384,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-06a95c0d20"
+      "catalogueId": "s-06a95c0d20",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-4fe7dd6e83",
@@ -4591,7 +6413,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-4fe7dd6e83"
+      "catalogueId": "s-4fe7dd6e83",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-fdeaa98da7",
@@ -4610,7 +6442,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-fdeaa98da7"
+      "catalogueId": "s-fdeaa98da7",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-384853f9f3",
@@ -4629,7 +6471,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-384853f9f3"
+      "catalogueId": "s-384853f9f3",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-dad59afee7",
@@ -4648,7 +6500,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-dad59afee7"
+      "catalogueId": "s-dad59afee7",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-35535e6f7e",
@@ -4667,7 +6529,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-35535e6f7e"
+      "catalogueId": "s-35535e6f7e",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-0b57a57173",
@@ -4686,7 +6558,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-0b57a57173"
+      "catalogueId": "s-0b57a57173",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-125cfc072b",
@@ -4705,7 +6587,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-125cfc072b"
+      "catalogueId": "s-125cfc072b",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-58825e5651",
@@ -4724,7 +6616,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-58825e5651"
+      "catalogueId": "s-58825e5651",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-1f4efb884d",
@@ -4743,7 +6645,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-1f4efb884d"
+      "catalogueId": "s-1f4efb884d",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-ea1712772d",
@@ -4762,7 +6674,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-ea1712772d"
+      "catalogueId": "s-ea1712772d",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     },
     {
       "id": "s-683351ba41",
@@ -4781,7 +6703,17 @@
       "rights": "pending",
       "status": "to_verify",
       "notes": "Text read from the site's own extraction. The age range is still to set.",
-      "catalogueId": "s-683351ba41"
+      "catalogueId": "s-683351ba41",
+      "classes": [
+        "lower-primary",
+        "upper-primary",
+        "lower-secondary-beginner",
+        "lower-secondary-middle",
+        "lower-secondary-advanced",
+        "upper-secondary-beginner",
+        "upper-secondary-middle",
+        "upper-secondary-advanced"
+      ]
     }
   ],
   "items": [
@@ -4817,7 +6749,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -4834,7 +6766,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -4851,7 +6783,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -4868,7 +6800,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -4902,7 +6834,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 17
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -4919,7 +6851,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 18
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -4936,7 +6868,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -4970,7 +6902,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -4987,7 +6919,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -5004,7 +6936,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 17
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -5021,7 +6953,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5038,7 +6970,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5055,7 +6987,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5072,7 +7004,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5089,7 +7021,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5123,7 +7055,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5140,7 +7072,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -5174,7 +7106,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 17
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5191,7 +7123,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5225,7 +7157,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5242,7 +7174,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 17
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -5259,7 +7191,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 17
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -5276,7 +7208,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5293,7 +7225,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5310,7 +7242,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5327,7 +7259,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5344,7 +7276,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5361,7 +7293,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5378,7 +7310,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5395,7 +7327,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 13
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5412,7 +7344,7 @@
       ],
       "ages": {
         "min": 13,
-        "max": 17
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -5428,8 +7360,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5445,8 +7377,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5462,8 +7394,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5479,8 +7411,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5496,8 +7428,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 17
+        "min": 13,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -5513,8 +7445,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5530,8 +7462,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5547,8 +7479,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5564,8 +7496,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5581,8 +7513,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5598,8 +7530,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5615,8 +7547,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5632,7 +7564,7 @@
         "en"
       ],
       "ages": {
-        "min": 14,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -5649,8 +7581,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 17
+        "min": 13,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -5666,8 +7598,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5683,8 +7615,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5700,7 +7632,7 @@
         "en"
       ],
       "ages": {
-        "min": 14,
+        "min": 13,
         "max": 18
       },
       "strands": [],
@@ -5717,8 +7649,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5734,8 +7666,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5751,8 +7683,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5768,8 +7700,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5785,7 +7717,7 @@
         "en"
       ],
       "ages": {
-        "min": 14,
+        "min": 13,
         "max": 18
       },
       "strands": [],
@@ -5802,8 +7734,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5819,8 +7751,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5836,7 +7768,7 @@
         "en"
       ],
       "ages": {
-        "min": 14,
+        "min": 13,
         "max": 18
       },
       "strands": [],
@@ -5853,8 +7785,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5870,8 +7802,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 16
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5887,8 +7819,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 16
+        "min": 13,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -5904,8 +7836,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5921,8 +7853,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 17
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5938,8 +7870,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5955,8 +7887,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 16
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5972,8 +7904,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -5989,8 +7921,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -6006,8 +7938,8 @@
         "en"
       ],
       "ages": {
-        "min": 14,
-        "max": 14
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -6023,7 +7955,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6040,7 +7972,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6057,7 +7989,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6074,7 +8006,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6091,7 +8023,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6108,7 +8040,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 18
       },
       "strands": [],
@@ -6125,7 +8057,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6142,8 +8074,8 @@
         "en"
       ],
       "ages": {
-        "min": 15,
-        "max": 17
+        "min": 13,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6159,7 +8091,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6176,7 +8108,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 18
       },
       "strands": [],
@@ -6193,7 +8125,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6210,7 +8142,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6227,7 +8159,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6244,7 +8176,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6261,7 +8193,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6278,8 +8210,8 @@
         "en"
       ],
       "ages": {
-        "min": 15,
-        "max": 17
+        "min": 13,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6295,7 +8227,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6312,7 +8244,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6329,7 +8261,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6346,7 +8278,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6363,7 +8295,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6380,7 +8312,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6397,7 +8329,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6414,7 +8346,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6431,7 +8363,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6448,7 +8380,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6465,7 +8397,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6482,7 +8414,7 @@
         "en"
       ],
       "ages": {
-        "min": 15,
+        "min": 13,
         "max": 15
       },
       "strands": [],
@@ -6500,7 +8432,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6517,7 +8449,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6551,7 +8483,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6568,7 +8500,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6585,7 +8517,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6602,7 +8534,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6619,7 +8551,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6636,7 +8568,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 17
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6652,7 +8584,7 @@
         "en"
       ],
       "ages": {
-        "min": 16,
+        "min": 13,
         "max": 18
       },
       "strands": [],
@@ -6670,7 +8602,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6687,7 +8619,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6704,7 +8636,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6721,7 +8653,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6755,7 +8687,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6772,7 +8704,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6788,8 +8720,8 @@
         "en"
       ],
       "ages": {
-        "min": 16,
-        "max": 16
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -6806,7 +8738,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6823,7 +8755,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6840,7 +8772,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6857,7 +8789,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 17
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6874,7 +8806,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6891,7 +8823,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 17
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6908,7 +8840,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6925,7 +8857,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6942,7 +8874,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6959,7 +8891,7 @@
       ],
       "ages": {
         "min": 16,
-        "max": 16
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6975,8 +8907,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -6992,8 +8924,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7009,8 +8941,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7026,8 +8958,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7043,8 +8975,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7060,8 +8992,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -7077,8 +9009,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7094,8 +9026,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7111,8 +9043,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7128,8 +9060,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7145,8 +9077,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7162,8 +9094,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7179,8 +9111,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -7196,8 +9128,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7213,8 +9145,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7230,7 +9162,7 @@
         "en"
       ],
       "ages": {
-        "min": 17,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7247,8 +9179,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7264,8 +9196,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7281,8 +9213,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -7298,8 +9230,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7315,8 +9247,8 @@
         "en"
       ],
       "ages": {
-        "min": 17,
-        "max": 17
+        "min": 16,
+        "max": 18
       },
       "strands": [],
       "lenses": [],
@@ -7332,7 +9264,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7349,7 +9281,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7366,7 +9298,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7383,7 +9315,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7400,7 +9332,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7417,7 +9349,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7434,7 +9366,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7451,7 +9383,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7468,7 +9400,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7485,7 +9417,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7502,8 +9434,8 @@
         "en"
       ],
       "ages": {
-        "min": 18,
-        "max": 18
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -7519,7 +9451,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7536,7 +9468,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7553,8 +9485,8 @@
         "en"
       ],
       "ages": {
-        "min": 18,
-        "max": 18
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -7570,7 +9502,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7587,8 +9519,8 @@
         "en"
       ],
       "ages": {
-        "min": 18,
-        "max": 18
+        "min": 13,
+        "max": 15
       },
       "strands": [],
       "lenses": [],
@@ -7604,7 +9536,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7621,7 +9553,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7638,7 +9570,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7655,7 +9587,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7672,7 +9604,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7689,7 +9621,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7706,7 +9638,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -7723,7 +9655,7 @@
         "en"
       ],
       "ages": {
-        "min": 18,
+        "min": 16,
         "max": 18
       },
       "strands": [],
@@ -87009,8 +88941,7 @@
       "quote": "for the heroes of spirit, spiritual reality and vision who aspire to the same orbit as the Companions of God's Messenger, the stars ornamenting the sky of prophethood",
       "topics": [
         {
-          "age": 18,
-          "topic": 1
+          "from": "S6-1"
         }
       ],
       "use": "definition",
@@ -87023,8 +88954,7 @@
       "quote": "who are aware of the era they are living in; who are wellequipped with science and knowledge; who always keep and observe the balance between this world and the next",
       "topics": [
         {
-          "age": 18,
-          "topic": 1
+          "from": "S6-1"
         }
       ],
       "use": "definition",
@@ -87038,8 +88968,7 @@
       "qref": "13:11",
       "topics": [
         {
-          "age": 18,
-          "topic": 1
+          "from": "S6-1"
         }
       ],
       "use": "faith",
@@ -87052,8 +88981,7 @@
       "quote": "Good morals and sound conscience, and good manners and virtues, are like a currency universally acceptable and which is not affected by changes in the values of other means of exchange.",
       "topics": [
         {
-          "age": 18,
-          "topic": 2
+          "from": "S6-2"
         }
       ],
       "use": "example",
@@ -87066,8 +88994,7 @@
       "quote": "Life blossoms during childhood. During youth it grows through inward tension and spiritual struggle on the way of truth.",
       "topics": [
         {
-          "age": 18,
-          "topic": 2
+          "from": "S6-2"
         }
       ],
       "use": "example",
@@ -87080,8 +89007,7 @@
       "quote": "Worship seems to be a strenuous demand, but in reality gives indescribable peace and comfort.",
       "topics": [
         {
-          "age": 18,
-          "topic": 4
+          "from": "S6-4"
         }
       ],
       "use": "faith",
@@ -87094,8 +89020,7 @@
       "quote": "Having belief, the believing soldier sees in every event a door to the wealth of God’s Mercy and knocks on it via prayer and supplication.",
       "topics": [
         {
-          "age": 18,
-          "topic": 4
+          "from": "S6-4"
         }
       ],
       "use": "faith",
@@ -87108,8 +89033,7 @@
       "quote": "One soldier takes the right fork. Shouldering his heavy load, his heart and soul are simultaneously freed of any burdensome debt and fear.",
       "topics": [
         {
-          "age": 18,
-          "topic": 4
+          "from": "S6-4"
         }
       ],
       "use": "story",
@@ -87122,8 +89046,7 @@
       "quote": "Every writer should be well-mannered in words and behavior, refined in language and writing. Otherwise, much damage can be done for the sake of an illusory good.",
       "topics": [
         {
-          "age": 18,
-          "topic": 6
+          "from": "S6-6"
         }
       ],
       "use": "example",
@@ -87136,8 +89059,7 @@
       "quote": "The media should avoid serving individual fancies and interests, for their main purpose is to enlighten and serve the nation as a whole.",
       "topics": [
         {
-          "age": 18,
-          "topic": 6
+          "from": "S6-6"
         }
       ],
       "use": "definition",
@@ -87150,8 +89072,7 @@
       "quote": "if you help bring others to life, you also help yourself to stay alive in spirit. It is unthinkable for a person who resurrects others to personally remain dead.",
       "topics": [
         {
-          "age": 18,
-          "topic": 7
+          "from": "S6-7"
         }
       ],
       "use": "example",
@@ -87164,8 +89085,7 @@
       "quote": "knowing the essential value of time and blowing life into every moment with good deeds and positive action is an indispensable essential",
       "topics": [
         {
-          "age": 18,
-          "topic": 7
+          "from": "S6-7"
         }
       ],
       "use": "definition",
@@ -87179,8 +89099,7 @@
       "qref": "96:1",
       "topics": [
         {
-          "age": 18,
-          "topic": 9
+          "from": "S6-9"
         }
       ],
       "use": "faith",
@@ -87193,8 +89112,7 @@
       "quote": "only humanity can read what is written. That is why the Qur'an tells us to \"read\" instead of to \"behold\"",
       "topics": [
         {
-          "age": 18,
-          "topic": 9
+          "from": "S6-9"
         }
       ],
       "use": "faith",
@@ -87207,8 +89125,7 @@
       "quote": "Respect of parents is a primary and sacred obligation. If you do not respect your parents properly, you are disobeying God Almighty.",
       "topics": [
         {
-          "age": 18,
-          "topic": 10
+          "from": "S6-10"
         }
       ],
       "use": "faith",
@@ -87221,8 +89138,7 @@
       "quote": "respecting parents is a debt of human gratitude as well as a religious obligation",
       "topics": [
         {
-          "age": 18,
-          "topic": 10
+          "from": "S6-10"
         }
       ],
       "use": "faith",
@@ -87235,8 +89151,7 @@
       "quote": "Religion is not only an assemblage of rituals and worship, its goals include giving meaning to humanity and the universe",
       "topics": [
         {
-          "age": 18,
-          "topic": 14
+          "from": "S6-14"
         }
       ],
       "use": "faith",
@@ -87249,8 +89164,7 @@
       "quote": "Khulla means sincere friendship. It can also denote brother/sisterhood, or loyal friendship. Some have interpreted khulla as penetrating into the depth of something to change its nature, or enveloping it from all sides so that it gains a second nature.",
       "topics": [
         {
-          "age": 18,
-          "topic": 17
+          "from": "S6-17"
         }
       ],
       "use": "definition",
@@ -87263,8 +89177,7 @@
       "quote": "One day several bright young people came to me. They were seeking an effective deterrent to the dangers arising from modern worldly life, youth, and animal desires.",
       "topics": [
         {
-          "age": 18,
-          "topic": 20
+          "from": "S6-20"
         }
       ],
       "use": "story",
@@ -87277,8 +89190,7 @@
       "quote": "the dissolute, religiously forbidden pleasures of youth are like poisonous sweets",
       "topics": [
         {
-          "age": 18,
-          "topic": 20
+          "from": "S6-20"
         }
       ],
       "use": "example",
@@ -87291,8 +89203,7 @@
       "quote": "In short, youth passes. Wasting it results in infinite misfortune and pain in both worlds.",
       "topics": [
         {
-          "age": 18,
-          "topic": 20
+          "from": "S6-20"
         }
       ],
       "use": "faith",
@@ -87306,8 +89217,7 @@
       "qref": "41:30",
       "topics": [
         {
-          "age": 18,
-          "topic": 22
+          "from": "S6-22"
         }
       ],
       "use": "faith",
@@ -87321,8 +89231,7 @@
       "href": "Muslim 38",
       "topics": [
         {
-          "age": 18,
-          "topic": 22
+          "from": "S6-22"
         }
       ],
       "use": "faith",
@@ -87335,8 +89244,7 @@
       "quote": "The first step is consistency, where a traveler strives to embody Islam's theoretical and practical dimensions. Success in this continuous effort brings one's carnal self under control.",
       "topics": [
         {
-          "age": 18,
-          "topic": 22
+          "from": "S6-22"
         }
       ],
       "use": "definition",
@@ -87349,8 +89257,7 @@
       "quote": "Putting knowledge into practice or practicing the religious commandments in daily life after learning them is an essential of Islam.",
       "topics": [
         {
-          "age": 18,
-          "topic": 14
+          "from": "S6-14"
         }
       ],
       "use": "faith",
@@ -87363,8 +89270,7 @@
       "quote": "True knowledge shows itself through art. If one has never produced anything in the name of art, how can we say that he or she knows very much?",
       "topics": [
         {
-          "age": 18,
-          "topic": 25
+          "from": "S6-25"
         }
       ],
       "use": "example",
@@ -87377,8 +89283,7 @@
       "quote": "diverse kinds of calligraphy, brilliant gildings; and embroideries as beautiful and fine as butterfly wings, that this once magnificent world of Islam became a gallery of invaluable beauty.",
       "topics": [
         {
-          "age": 18,
-          "topic": 25
+          "from": "S6-25"
         }
       ],
       "use": "example",
@@ -87391,8 +89296,7 @@
       "quote": "wisdom begins with reflection, curiosity, wonder, and the zeal to study and search, and continues with obedience and worship, ending in spiritual pleasures and eternal happiness.",
       "topics": [
         {
-          "age": 18,
-          "topic": 27
+          "from": "S6-27"
         }
       ],
       "use": "definition",
@@ -87405,8 +89309,7 @@
       "quote": "Righteous deeds are the willed outcome of knowledge applied, and the beginning of new Divine gifts.",
       "topics": [
         {
-          "age": 18,
-          "topic": 27
+          "from": "S6-27"
         }
       ],
       "use": "faith",
@@ -87419,8 +89322,7 @@
       "quote": "Since one may acquire a second nature through education and habituation, moralists divide nature into good and bad.",
       "topics": [
         {
-          "age": 18,
-          "topic": 28
+          "from": "S6-28"
         }
       ],
       "use": "definition",
@@ -87433,8 +89335,7 @@
       "quote": "A heart open to good nature is like a very broad space in which one can bury one's anger and rage.",
       "topics": [
         {
-          "age": 18,
-          "topic": 28
+          "from": "S6-28"
         }
       ],
       "use": "example",
@@ -87447,8 +89348,7 @@
       "quote": "Absolute justice does not permit the violation of the rights of even a single innocent person, regardless of the public benefit that may be at stake.",
       "topics": [
         {
-          "age": 18,
-          "topic": 29
+          "from": "S6-29"
         }
       ],
       "use": "definition",
@@ -87461,8 +89361,7 @@
       "quote": "Those entrusted with positions of leadership and governance are obliged, as far as possible, to uphold absolute justice, for it represents the highest ideal.",
       "topics": [
         {
-          "age": 18,
-          "topic": 29
+          "from": "S6-29"
         }
       ],
       "use": "definition",
@@ -87476,8 +89375,7 @@
       "qref": "23:51",
       "topics": [
         {
-          "age": 18,
-          "topic": 32
+          "from": "S6-32"
         }
       ],
       "use": "faith",
@@ -87490,8 +89388,7 @@
       "quote": "Do not take a person’s prayers and fasting as basis; you should see whether a given person speaks truth, remains faithful about something entrusted to him, and observes what is lawful and forbidden while carrying out worldly affairs.",
       "topics": [
         {
-          "age": 18,
-          "topic": 32
+          "from": "S6-32"
         }
       ],
       "use": "story",
@@ -87504,8 +89401,7 @@
       "quote": "when one pursues the lawful and shows due effort, it will form a “virtuous circle” leading to further good, righteous deeds over time",
       "topics": [
         {
-          "age": 18,
-          "topic": 32
+          "from": "S6-32"
         }
       ],
       "use": "example",
@@ -87518,8 +89414,7 @@
       "quote": "Ask someone who knows; two lots of knowledge are better than one.",
       "topics": [
         {
-          "age": 18,
-          "topic": 34
+          "from": "S6-34"
         }
       ],
       "use": "example",
@@ -87532,8 +89427,7 @@
       "quote": "Consultation is the first requirement to reach the right decision. Decisions reached without due reflection or proper consultation usually come to nothing.",
       "topics": [
         {
-          "age": 18,
-          "topic": 34
+          "from": "S6-34"
         }
       ],
       "use": "definition",
