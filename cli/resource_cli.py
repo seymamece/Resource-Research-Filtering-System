@@ -85,15 +85,21 @@ def _parse(key: str, value: str):
 
 
 def _quote_checks(cat: dict, only=None) -> tuple[list, list]:
-    """(problems, unchecked) for passage quotes against their item's cached text."""
+    """(problems, unchecked) for passage quotes against their item's text."""
     from . import text
+    items = {i["id"]: i for i in cat["items"]}
+    resources = {r["id"]: r for r in cat["resources"]}
     problems, unchecked = [], []
     for p in cat["passages"]:
         if not p.get("quote") or (only is not None and p["id"] not in only):
             continue
-        found = text.quote_found(p.get("itemId", ""), p["quote"])
+        item = items.get(p.get("itemId"))
+        if item is None:
+            continue  # reported by the record checks
+        found = text.quote_found(item, resources.get(item["resourceId"]), p["quote"], p.get("where"))
         if found is False:
-            problems.append((p["id"], "the quote is not in the item's text; copy it exactly"))
+            problems.append((p["id"], "the quote is not in the item's text where it says; "
+                                      "copy it exactly"))
         elif found is None:
             unchecked.append(p["id"])
     return problems, unchecked
@@ -370,6 +376,23 @@ def import_topics(xlsx, retrieved):
         click.echo(f"  skipped {line}")
 
 
+@import_group.command("books")
+def import_books():
+    """Every book and set of notes in the site's catalogue (SOURCES_DIR), by catalogue id.
+    The text is read from the site's extraction, never copied here."""
+    from . import importers
+    path = storage.sources_dir() / "_private" / "source-catalog.json"
+    if not path.exists():
+        _fail(f"{path} not found; set SOURCES_DIR to the site's sources folder")
+    cat = storage.load()
+    changed, skipped = importers.import_books(cat, json.loads(path.read_text(encoding="utf-8")),
+                                              _today(), storage.load_blocked())
+    _save_many(cat, changed)
+    click.echo(f"Books and notes added: {sum(1 for c in changed if c.startswith('s-'))}")
+    for line in skipped:
+        click.echo(f"  skipped {line}")
+
+
 @import_group.command("videos")
 @click.argument("xlsx", type=click.Path(exists=True, dir_okay=False))
 def import_videos(xlsx):
@@ -461,43 +484,48 @@ def shortlist(topic, top, extra, whole):
 
     query = " ".join([info["title"], info["science"], extra] + [h["hint"] for h in hints])
     hinted_titles = {h["hint"].replace(" (related reading)", "") for h in hints}
-    hinted = [i for i in cat["items"] if i["title"] in hinted_titles
-              and i["ages"]["min"] <= key[0] <= i["ages"]["max"]]
+    hinted_books = {h["catalogueId"] for h in hints if h.get("catalogueId")}
+    hinted = [i for i in cat["items"] if i["ages"]["min"] <= key[0] <= i["ages"]["max"] and (
+        i["title"] in hinted_titles
+        or resources.get(i["resourceId"], {}).get("catalogueId") in hinted_books)]
 
-    def show(item, n, heading, body):
+    def show(item, where, body):
         role = resources.get(item["resourceId"], {}).get("role", "?")
-        where = f"section '{heading}', paragraph {n}" if heading else f"paragraph {n}"
         click.echo(f"\n[{item['id']} | {role} | {where}]  {item['title']}\n{body}")
 
     for item in hinted:
-        rows = list(search.cached_paragraphs([item]))
+        rows = list(search.readable_units([item], resources))
         if not rows:
-            click.echo(f"\n{item['id']} is not fetched yet: py -m cli fetch -I {item['id']}")
+            click.echo(f"\n{item['id']} has no text yet: py -m cli fetch -I {item['id']}")
             continue
-        click.echo(f"\n=== From the hinted chapter: {item['title']} ({len(rows)} paragraphs)")
-        if whole:
-            chosen = [(n, heading, body) for _, n, heading, body in rows]
+        book = bool(resources.get(item["resourceId"], {}).get("catalogueId"))
+        click.echo(f"\n=== From the hinted {'book' if book else 'chapter'}: {item['title']} "
+                   f"({len(rows)} {'pages' if book else 'paragraphs'})")
+        if whole and not book:
+            chosen = list(range(len(rows)))
         else:
-            index = search.Index([((n, heading, body), body) for _, n, heading, body in rows])
-            chosen = [key for _, key in index.rank(query)[:top]]
-            # Few matching words is common in a weak topic; the chapter was still chosen for it,
-            # so what it opens with fills the rest.
-            for _, n, heading, body in rows:
-                if len(chosen) >= top:
+            index = search.Index([(pos, body) for pos, (_, _, _, body) in enumerate(rows)])
+            chosen = [pos for _, pos in index.rank(query)[:top]]
+            # Few matching words is common in a weak topic; a chapter was still chosen for it,
+            # so what it opens with fills the rest. A book is too long for that to help.
+            for pos in range(len(rows)):
+                if len(chosen) >= top or book:
                     break
-                if (n, heading, body) not in chosen:
-                    chosen.append((n, heading, body))
-        for n, heading, body in sorted(chosen):
-            show(item, n, heading, body)
+                if pos not in chosen:
+                    chosen.append(pos)
+        for pos in sorted(chosen):
+            _, where, _, body = rows[pos]
+            show(item, where, body)
 
     others = [i for i in cat["items"] if i not in hinted and i.get("kind") != "video"
               and i["ages"]["min"] <= key[0] <= i["ages"]["max"]]
-    rows = list(search.cached_paragraphs(others))
+    rows = list(search.readable_units(others, resources))
     if rows:
-        click.echo(f"\n=== Elsewhere ({len(rows)} paragraphs searched)")
-        index = search.Index([((item, n, heading, body), body) for item, n, heading, body in rows])
-        for _, (item, n, heading, body) in index.rank(query)[:top]:
-            show(item, n, heading, body)
+        click.echo(f"\n=== Elsewhere ({len(rows)} paragraphs and pages searched)")
+        index = search.Index([(pos, body) for pos, (_, _, _, body) in enumerate(rows)])
+        for _, pos in index.rank(query)[:top]:
+            item, where, _, body = rows[pos]
+            show(item, where, body)
 
 
 # --- correcting and removing -----------------------------------------------------------------
@@ -684,9 +712,13 @@ def filter_records(what, kind, lang, age, strand, lens, role, rights, status, to
     show_all = everything or status == "archived"
     usable = None if show_all else sift.usable_ids(cat, storage.load_blocked(), _today())
 
+    items = {i["id"]: i for i in cat["items"]}
+    resources = {r["id"]: r for r in cat["resources"]}
+
     def read_text(item_id):
-        blocks = text.read_cache(item_id)
-        return [body for kind_, body in blocks if kind_ == "p"] if blocks else None
+        item = items[item_id]
+        found = text.units(item, resources.get(item["resourceId"]))
+        return [body for _, _, body in found] if found else None
 
     results, notes = sift.sift(cat, collection, conditions, usable, read_text)
     total = len(results)

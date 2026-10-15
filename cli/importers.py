@@ -144,6 +144,49 @@ def import_topics(cat: dict, rows, today: str) -> tuple[list[str], list[str], li
     return list(dict.fromkeys(changed)), notes, skipped
 
 
+# --- the site's catalogue of books -----------------------------------------------------------
+
+def import_books(cat: dict, catalogue: dict, today: str, blocked=None):
+    """Each book and set of notes the site has catalogued becomes a resource under its own
+    catalogue id, with one item standing for its whole text.
+
+    Nothing is copied: the text stays where the site extracted it, and is read from there.
+    Role and rights are the site's confirmed ones. Planning entries are left out - they may
+    be cited for nothing, and they include what the owner keeps out of lessons.
+    """
+    have = {r["id"] for r in cat["resources"]}
+    changed, skipped = [], []
+    for entry in catalogue["entries"]:
+        cid = entry["id"]
+        if entry.get("role") == "planning":
+            skipped.append(f"{cid}: planning, cited for nothing")
+            continue
+        if cid in have:
+            continue
+        if blocked and blocked.found_in(entry.get("title") or ""):
+            skipped.append(f"{cid}: its title carries a blocked name")
+            continue
+        language = entry.get("language")
+        languages = ["en", "tr"] if language == "mixed" else [language]
+        record = {
+            "id": cid, "kind": "book", "title": entry["title"], "languages": languages,
+            # The site's catalogue says nothing about age; narrow it with `set` once known.
+            "ages": {"min": 5, "max": 18}, "strands": [], "lenses": [],
+            "role": entry["role"], "rights": entry.get("rights", "pending"), "status": "to_verify",
+            "notes": "Text read from the site's own extraction. The age range is still to set.",
+            "catalogueId": cid,
+        }
+        item = {
+            "id": storage.make_id("items", "book", cid), "resourceId": cid, "kind": "chapter",
+            "title": entry["title"], "languages": languages, "ages": {"min": 5, "max": 18},
+            "strands": [], "lenses": [], "retrieved": today,
+        }
+        cat["resources"].append(record)
+        cat["items"].append(item)
+        changed += [cid, item["id"]]
+    return changed, skipped
+
+
 # --- the subtitled-videos sheet --------------------------------------------------------------
 
 def video_rows(path: str):

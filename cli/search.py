@@ -51,11 +51,10 @@ class Index:
         return scored
 
 
-def cached_paragraphs(items):
-    """(item, paragraph number, heading, text) for every fetched item."""
+def readable_units(items, resources: dict):
+    """(item, where, heading, text) for every unit of every item that has text: paragraphs
+    of fetched pages, pages of catalogued books."""
     for item in items:
-        blocks = text.read_cache(item["id"])
-        if blocks:
-            for n, heading, body in text.paragraphs(blocks):
-                if len(body.split()) >= 8:  # footnotes and headings-as-paragraphs say little
-                    yield item, n, heading, body
+        for where, heading, body in text.units(item, resources.get(item["resourceId"])) or []:
+            if len(body.split()) >= 8:  # footnotes and headings-as-paragraphs say little
+                yield item, where, heading, body

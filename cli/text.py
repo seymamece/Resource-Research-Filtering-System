@@ -217,14 +217,51 @@ def paragraphs(blocks):
             yield n, heading, text
 
 
-def quote_found(item_id: str, quote: str) -> bool | None:
-    """Whether the quote is in the item's text, compared as the site compares (case, accents
-    and punctuation aside). None when the item has not been fetched yet."""
-    blocks = read_cache(item_id)
+def site_pages(catalogue_id: str) -> list[tuple[str, str]] | None:
+    """(label, text) per page of a book in the site's catalogue, from the text the site has
+    already extracted (SOURCES_DIR/_text). Read only: the site owns these files."""
+    path = storage.sources_dir() / "_text" / f"{catalogue_id}.json"
+    if not path.exists():
+        return None
+    return [(str(p["label"]), p["text"]) for p in json.loads(path.read_text(encoding="utf-8"))["pages"]]
+
+
+def units(item: dict, resource: dict | None) -> list[tuple[str, str | None, str]] | None:
+    """(where, heading, text) for each readable unit of an item, None if there is no text.
+
+    A web item is read from cache/text, a paragraph at a time. A book the site has
+    catalogued is read from the site's extracted pages, a page at a time, labelled the way
+    the site cites them ("p. 77", "p. s6").
+    """
+    cid = (resource or {}).get("catalogueId")
+    if cid:
+        pages = site_pages(cid)
+        return None if pages is None else [(f"p. {label}", None, body) for label, body in pages]
+    blocks = read_cache(item["id"])
     if blocks is None:
         return None
-    haystack = " " + normalise(" ".join(text for _, text in blocks)) + " "
-    return " " + normalise(quote) + " " in haystack
+    return [(f"section '{h}', paragraph {n}" if h else f"paragraph {n}", h, body)
+            for n, h, body in paragraphs(blocks)]
+
+
+def _contains(text: str, quote: str) -> bool:
+    return " " + normalise(quote) + " " in " " + normalise(text) + " "
+
+
+def quote_found(item: dict, resource: dict | None, quote: str, where: str | None = None) -> bool | None:
+    """Whether the quote is in the item's text, compared as the site compares (case, accents
+    and punctuation aside). In a book it must be on the page cited, or run on to the next.
+    None when there is no text to check against yet."""
+    found = units(item, resource)
+    if found is None:
+        return None
+    if (resource or {}).get("catalogueId") and where:
+        for i, (label, _, body) in enumerate(found):
+            if label == where:
+                following = found[i + 1][2] if i + 1 < len(found) else ""
+                return _contains(body + " " + following, quote)
+        return False
+    return _contains(" ".join(body for _, _, body in found), quote)
 
 
 def fetch(url: str, attempts: int = 3) -> tuple[int, str]:

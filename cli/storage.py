@@ -39,6 +39,11 @@ def site_dir() -> Path:
     return Path(os.environ.get("SITE_DIR") or root().parent / "online-curriculum-")
 
 
+def sources_dir() -> Path:
+    """The site's SOURCES_DIR: its catalogue of books and their extracted page texts."""
+    return Path(os.environ.get("SOURCES_DIR") or "G:/My Drive/Sources")
+
+
 def empty() -> dict:
     return {"version": 1, **{c: [] for c in COLLECTIONS}}
 

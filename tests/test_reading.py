@@ -65,10 +65,58 @@ class CacheAndQuoteTest(unittest.TestCase):
         self.assertEqual([(n, h) for n, h, _ in rows], [(1, None), (2, None), (3, "Kinds of reason")])
 
     def test_a_quote_must_be_in_the_text_as_written(self):
-        self.assertTrue(text.quote_found("i-1", "reason, the soul and the mind are three functions"))
-        self.assertTrue(text.quote_found("i-1", "Reason, the Soul, and the Mind are three functions"))
-        self.assertFalse(text.quote_found("i-1", "reason, the heart and the mind are three functions"))
-        self.assertIsNone(text.quote_found("i-2", "anything at all here to check"))
+        self.assertTrue(text.quote_found(self.item, None, "reason, the soul and the mind are three functions"))
+        self.assertTrue(text.quote_found(self.item, None, "Reason, the Soul, and the Mind are three functions"))
+        self.assertFalse(text.quote_found(self.item, None, "reason, the heart and the mind are three functions"))
+        self.assertIsNone(text.quote_found({"id": "i-2"}, None, "anything at all here to check"))
+
+
+class BookTest(unittest.TestCase):
+    """A book the site has catalogued is read from the site's extraction, page by page."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        sources = Path(self.tmp.name)
+        (sources / "_text").mkdir()
+        (sources / "_text" / "s-0123456789.json").write_text(json.dumps({
+            "version": 1, "id": "s-0123456789", "unit": "page", "pages": [
+                {"n": 1, "label": "42", "text": "According to Muslim theologians, the essentials of\n"
+                                                "Prophethood are truthfulness, trust-\nworthiness and"},
+                {"n": 2, "label": "43", "text": "communicating God's messages, intelligence."}]}),
+            encoding="utf-8")
+        self.env = mock.patch.dict(os.environ, {"SOURCES_DIR": str(sources)})
+        self.env.start()
+        self.book = {"id": "s-0123456789", "catalogueId": "s-0123456789"}
+        self.item = {"id": "i-b"}
+
+    def tearDown(self):
+        self.env.stop()
+        self.tmp.cleanup()
+
+    def test_pages_are_labelled_as_the_site_cites_them(self):
+        self.assertEqual([w for w, _, _ in text.units(self.item, self.book)], ["p. 42", "p. 43"])
+
+    def test_a_quote_must_be_on_its_page_or_run_on_to_the_next(self):
+        quote = "Prophethood are truthfulness, trustworthiness and communicating God's messages"
+        self.assertTrue(text.quote_found(self.item, self.book, quote, "p. 42"))
+        self.assertFalse(text.quote_found(self.item, self.book, quote, "p. 43"))
+        self.assertFalse(text.quote_found(self.item, self.book, quote, "p. 99"))
+
+    def test_import_takes_role_and_rights_from_the_site_and_leaves_planning_out(self):
+        from cli import importers, model, storage
+        cat = storage.empty()
+        catalogue = {"entries": [
+            {"id": "s-0123456789", "title": "The Messenger of God", "language": "en",
+             "role": "religious", "rights": "pending"},
+            {"id": "s-aaaaaaaaaa", "title": "Time Management", "language": "en",
+             "role": "method", "rights": "restricted"},
+            {"id": "s-bbbbbbbbbb", "title": "A seminar file", "language": "tr", "role": "planning"}]}
+        changed, skipped = importers.import_books(cat, catalogue, "2026-10-15")
+        self.assertEqual([r["id"] for r in cat["resources"]], ["s-0123456789", "s-aaaaaaaaaa"])
+        self.assertEqual(cat["resources"][1]["rights"], "restricted")
+        self.assertEqual(skipped, ["s-bbbbbbbbbb: planning, cited for nothing"])
+        self.assertEqual(model.check(cat), [])
+        self.assertEqual(importers.import_books(cat, catalogue, "2026-10-15")[0], [])
 
 
 class SearchTest(unittest.TestCase):
